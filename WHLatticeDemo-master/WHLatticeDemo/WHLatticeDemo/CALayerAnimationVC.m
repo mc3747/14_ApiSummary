@@ -8,6 +8,7 @@
 
 #import "CALayerAnimationVC.h"
 
+
 @interface CALayerAnimationVC ()
 
 @end
@@ -19,14 +20,35 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)hiddenAnimateAction:(id)sender {
 }
-*/
+
+- (IBAction)baseAnimateAction:(id)sender {
+    [self pushVC:@"BaseAnimationController"];
+}
+- (IBAction)keyFrameAnimateAction:(id)sender {
+    [self pushVC:@"KeyFrameAnimationController"];
+}
+
+- (IBAction)groupAnimateAction:(id)sender {
+    [self pushVC:@"GroupAnimationController"];
+}
+- (IBAction)transitionAnimateAction:(id)sender {
+    [self pushVC:@"TransitionAnimationController"];
+}
+
+- (IBAction)exampleAnimateAction:(id)sender {
+    [self pushVC:@"ComprehensiveCaseController"];
+}
+
+#pragma mark -  通用push方法
+- (void)pushVC:(NSString *)vcName {
+    Class class = NSClassFromString(vcName);
+    if (class) {
+        UIViewController *vc = [[class alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
+    
+}
 
 @end
