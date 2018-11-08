@@ -7,6 +7,7 @@
 //
 
 #import "TransitionAnimationController.h"
+#import "BATransitionDemo.h"
 
 @interface TransitionAnimationController ()
 
@@ -34,9 +35,19 @@
     
     [self changeView:YES];
     
-
+    UIButton *moreBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 100 , 100, 100, 50)];
+    [moreBtn setTitle:@"更多转场效果" forState:UIControlStateNormal];
+    moreBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+    [moreBtn setBackgroundColor:[UIColor greenColor]];
+    [moreBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [moreBtn addTarget:self action:@selector(jumpToMoreTransitions) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:moreBtn];
 }
-
+- (void)jumpToMoreTransitions {
+    BATransitionDemo *vc = [[BATransitionDemo alloc] init];
+    vc.title = @"更多转场效果";
+    [self.navigationController pushViewController:vc animated:YES];
+}
 -(NSArray *)operateTitleArray{
     return [NSArray arrayWithObjects:@"fade",@"moveIn",@"push",@"reveal",@"cube",@"suck",@"oglFlip",@"ripple",@"Curl",@"UnCurl",@"caOpen",@"caClose", nil];
 }

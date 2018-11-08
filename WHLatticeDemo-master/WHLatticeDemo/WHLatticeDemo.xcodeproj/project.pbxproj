@@ -92,6 +92,15 @@
 		42D63547219177160063E763 /* PDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D63545219177160063E763 /* PDView.m */; };
 		42D6354E21917AC10063E763 /* AnimateSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D6354C21917AC10063E763 /* AnimateSummaryVC.m */; };
 		42D6354F21917AC10063E763 /* AnimateSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D6354D21917AC10063E763 /* AnimateSummaryVC.xib */; };
+		42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F62193B9E400FFD237 /* BAActivityIndicatorView.m */; };
+		42F771FC2193B9E400FFD237 /* BALoadingWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F72193B9E400FFD237 /* BALoadingWaveView.m */; };
+		42F771FD2193B9E400FFD237 /* BALoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F92193B9E400FFD237 /* BALoadingView.m */; };
+		42F772012193BA5F00FFD237 /* UIView+BAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772002193BA5F00FFD237 /* UIView+BAAnimation.m */; };
+		42F772052193BA6600FFD237 /* UIView+BATransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772032193BA6600FFD237 /* UIView+BATransition.m */; };
+		42F772092193BA9E00FFD237 /* BATransitionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772072193BA9E00FFD237 /* BATransitionDemo.m */; };
+		42F7720A2193BA9E00FFD237 /* BATransitionDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F772082193BA9E00FFD237 /* BATransitionDemo.xib */; };
+		42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7720C2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m */; };
+		42F7720F2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F7720D2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib */; };
 		68881A2A1EF0FC1200229107 /* LayerBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68881A291EF0FC1200229107 /* LayerBaseVC.m */; };
 /* End PBXBuildFile section */
 
@@ -249,6 +258,22 @@
 		42D6354B21917AC10063E763 /* AnimateSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateSummaryVC.h; sourceTree = "<group>"; };
 		42D6354C21917AC10063E763 /* AnimateSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateSummaryVC.m; sourceTree = "<group>"; };
 		42D6354D21917AC10063E763 /* AnimateSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimateSummaryVC.xib; sourceTree = "<group>"; };
+		42F771F52193B9E400FFD237 /* BALoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALoadingView.h; sourceTree = "<group>"; };
+		42F771F62193B9E400FFD237 /* BAActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAActivityIndicatorView.m; sourceTree = "<group>"; };
+		42F771F72193B9E400FFD237 /* BALoadingWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALoadingWaveView.m; sourceTree = "<group>"; };
+		42F771F82193B9E400FFD237 /* BAActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAActivityIndicatorView.h; sourceTree = "<group>"; };
+		42F771F92193B9E400FFD237 /* BALoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALoadingView.m; sourceTree = "<group>"; };
+		42F771FA2193B9E400FFD237 /* BALoadingWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALoadingWaveView.h; sourceTree = "<group>"; };
+		42F771FF2193BA5F00FFD237 /* UIView+BAAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BAAnimation.h"; sourceTree = "<group>"; };
+		42F772002193BA5F00FFD237 /* UIView+BAAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BAAnimation.m"; sourceTree = "<group>"; };
+		42F772032193BA6600FFD237 /* UIView+BATransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BATransition.m"; sourceTree = "<group>"; };
+		42F772042193BA6600FFD237 /* UIView+BATransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BATransition.h"; sourceTree = "<group>"; };
+		42F772062193BA9D00FFD237 /* BATransitionDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATransitionDemo.h; sourceTree = "<group>"; };
+		42F772072193BA9E00FFD237 /* BATransitionDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATransitionDemo.m; sourceTree = "<group>"; };
+		42F772082193BA9E00FFD237 /* BATransitionDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BATransitionDemo.xib; sourceTree = "<group>"; };
+		42F7720B2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACAKeyframeAnimationDemo.h; sourceTree = "<group>"; };
+		42F7720C2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACAKeyframeAnimationDemo.m; sourceTree = "<group>"; };
+		42F7720D2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BACAKeyframeAnimationDemo.xib; sourceTree = "<group>"; };
 		68881A1F1EF0FC1200229107 /* WHLatticeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHLatticeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68881A281EF0FC1200229107 /* LayerBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerBaseVC.h; sourceTree = "<group>"; };
 		68881A291EF0FC1200229107 /* LayerBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerBaseVC.m; sourceTree = "<group>"; };
@@ -491,6 +516,9 @@
 			children = (
 				42936E372192EAC60076F47A /* TransitionAnimationController.h */,
 				42936E362192EAC50076F47A /* TransitionAnimationController.m */,
+				42F772062193BA9D00FFD237 /* BATransitionDemo.h */,
+				42F772072193BA9E00FFD237 /* BATransitionDemo.m */,
+				42F772082193BA9E00FFD237 /* BATransitionDemo.xib */,
 			);
 			name = "5，TransitionAnimate";
 			sourceTree = "<group>";
@@ -509,6 +537,9 @@
 			children = (
 				42936E302192EAAE0076F47A /* KeyFrameAnimationController.h */,
 				42936E312192EAAF0076F47A /* KeyFrameAnimationController.m */,
+				42F7720B2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.h */,
+				42F7720C2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m */,
+				42F7720D2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib */,
 			);
 			name = "3，KeyFrameAnimate";
 			sourceTree = "<group>";
@@ -525,6 +556,9 @@
 		42936E112192DA740076F47A /* 0，Source */ = {
 			isa = PBXGroup;
 			children = (
+				42F771F42193B9E400FFD237 /* BALoadingView */,
+				42F772022193BA6600FFD237 /* BATransition */,
+				42F771FE2193BA5F00FFD237 /* BAUIViewAnimation */,
 				42936E512192EEA00076F47A /* Sounds */,
 				42936E152192DAB70076F47A /* BaseAnimateVC.h */,
 				42936E162192DAB70076F47A /* BaseAnimateVC.m */,
@@ -788,6 +822,37 @@
 			name = 3_AnimateSummary;
 			sourceTree = "<group>";
 		};
+		42F771F42193B9E400FFD237 /* BALoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				42F771F52193B9E400FFD237 /* BALoadingView.h */,
+				42F771F92193B9E400FFD237 /* BALoadingView.m */,
+				42F771F82193B9E400FFD237 /* BAActivityIndicatorView.h */,
+				42F771F62193B9E400FFD237 /* BAActivityIndicatorView.m */,
+				42F771FA2193B9E400FFD237 /* BALoadingWaveView.h */,
+				42F771F72193B9E400FFD237 /* BALoadingWaveView.m */,
+			);
+			path = BALoadingView;
+			sourceTree = "<group>";
+		};
+		42F771FE2193BA5F00FFD237 /* BAUIViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				42F771FF2193BA5F00FFD237 /* UIView+BAAnimation.h */,
+				42F772002193BA5F00FFD237 /* UIView+BAAnimation.m */,
+			);
+			path = BAUIViewAnimation;
+			sourceTree = "<group>";
+		};
+		42F772022193BA6600FFD237 /* BATransition */ = {
+			isa = PBXGroup;
+			children = (
+				42F772032193BA6600FFD237 /* UIView+BATransition.m */,
+				42F772042193BA6600FFD237 /* UIView+BATransition.h */,
+			);
+			path = BATransition;
+			sourceTree = "<group>";
+		};
 		68881A161EF0FC1200229107 = {
 			isa = PBXGroup;
 			children = (
@@ -896,8 +961,10 @@
 				42D6354F21917AC10063E763 /* AnimateSummaryVC.xib in Resources */,
 				42D6350521912BF30063E763 /* LayerAndAnimateVC.xib in Resources */,
 				42936E552192EEA00076F47A /* selected.caf in Resources */,
+				42F7720F2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib in Resources */,
 				42936E262192E0F60076F47A /* Main.storyboard in Resources */,
 				42936E242192E0F60076F47A /* Assets.xcassets in Resources */,
+				42F7720A2193BA9E00FFD237 /* BATransitionDemo.xib in Resources */,
 				42936DF421928A420076F47A /* frontpage_refresh_release@3x.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -925,6 +992,7 @@
 				42936E0321928A420076F47A /* LNHeaderAnimator.m in Sources */,
 				42936DEF21928A420076F47A /* LNHeaderDIYAnimator.m in Sources */,
 				42D6353E219175880063E763 /* PDLayerLabel.m in Sources */,
+				42F772012193BA5F00FFD237 /* UIView+BAAnimation.m in Sources */,
 				42D6350E21912ED00063E763 /* CALayerControlsViewController.m in Sources */,
 				42936E272192E0F60076F47A /* main.m in Sources */,
 				42936DFD21928A420076F47A /* LNRefreshFooter.m in Sources */,
@@ -938,9 +1006,11 @@
 				42936DF721928A420076F47A /* UIImage+animatedGIF.m in Sources */,
 				42936E382192EAC60076F47A /* TransitionAnimationController.m in Sources */,
 				42D6352F219170F70063E763 /* CATiledLayerVC.m in Sources */,
+				42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */,
 				42D63535219171200063E763 /* CAEAGLLayerVC.m in Sources */,
 				42936E4D2192EB210076F47A /* DCPathItemButton.m in Sources */,
 				42D635322191710F0063E763 /* CAShapeLayerVC.m in Sources */,
+				42F772092193BA9E00FFD237 /* BATransitionDemo.m in Sources */,
 				42936DF021928A420076F47A /* LNHeaderJDAnimator.m in Sources */,
 				42D6350F21912ED00063E763 /* CALayerViewController.m in Sources */,
 				68881A2A1EF0FC1200229107 /* LayerBaseVC.m in Sources */,
@@ -953,11 +1023,14 @@
 				42D6353B219171450063E763 /* CAEmitterLayerVC.m in Sources */,
 				42C52C27218841A5001D7A07 /* DemoView.m in Sources */,
 				42D63520219170890063E763 /* CAScrollLayerVC.m in Sources */,
+				42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */,
 				42936E142192DA9D0076F47A /* TitleButton.m in Sources */,
 				42936E3B2192EAE30076F47A /* ComprehensiveCaseController.m in Sources */,
+				42F772052193BA6600FFD237 /* UIView+BATransition.m in Sources */,
 				42D63538219171350063E763 /* CATransformLayerVC.m in Sources */,
 				42936DEA21928A420076F47A /* LNHeaderFeizhuAnimator.m in Sources */,
 				42936DFC21928A420076F47A /* LNRefreshAnimator.m in Sources */,
+				42F771FD2193B9E400FFD237 /* BALoadingView.m in Sources */,
 				42936DED21928A420076F47A /* LNHeaderNetEaseNewsAnimator.m in Sources */,
 				42936E282192E0F60076F47A /* AppDelegate.m in Sources */,
 				42D6354E21917AC10063E763 /* AnimateSummaryVC.m in Sources */,
@@ -965,6 +1038,7 @@
 				42B93C0021918EF000CBB02D /* ThirdPartAnimationVC.m in Sources */,
 				42936E4F2192EB210076F47A /* MCFireworksButton.m in Sources */,
 				42D6352C219170E60063E763 /* CAReplicatorLayerVC.m in Sources */,
+				42F771FC2193B9E400FFD237 /* BALoadingWaveView.m in Sources */,
 				42936DFE21928A420076F47A /* LNRefreshConst.m in Sources */,
 				42936DF921928A420076F47A /* LNHeaderELEAnimator.m in Sources */,
 				42936E4C2192EB210076F47A /* DCPathButton.m in Sources */,

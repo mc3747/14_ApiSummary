@@ -7,6 +7,7 @@
 //
 
 #import "KeyFrameAnimationController.h"
+#import "BACAKeyframeAnimationDemo.h"
 
 
 
@@ -24,6 +25,27 @@
     _demoView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2-25, SCREEN_HEIGHT/2-50,50,50)];
     _demoView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_demoView];
+    
+    for (int i = 0; i<4; i++) {
+        CGFloat btnWidth =  (SCREEN_WIDTH - 5 * 10) / 4.f;
+        UIButton *moreBtn = [[UIButton alloc] initWithFrame:CGRectMake(10*(i + 1) + btnWidth * i , 100, btnWidth, 50)];
+        NSString *title = [NSString stringWithFormat:@"更多关键帧效果%d",i + 1];
+        [moreBtn setTitle:title forState:UIControlStateNormal];
+        moreBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+        [moreBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [moreBtn setBackgroundColor:[UIColor greenColor]];
+        moreBtn.tag = i;
+        [moreBtn addTarget:self action:@selector(jumpToMoreTransitions:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:moreBtn];
+    };
+  
+}
+
+- (void)jumpToMoreTransitions:(id)sender {
+    BACAKeyframeAnimationDemo *vc = [[BACAKeyframeAnimationDemo alloc] init];
+    vc.animationType = (int)((UIButton *)sender).tag ;
+    vc.title = @"更多关键帧效果";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(NSArray *)operateTitleArray{

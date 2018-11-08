@@ -36,7 +36,7 @@
 #pragma mark - 2.Setting View and Style
 
 - (void)setupNavBar {
-    
+    self.title = @"动画绘图总结";
 }
 
 - (void)setupView {
