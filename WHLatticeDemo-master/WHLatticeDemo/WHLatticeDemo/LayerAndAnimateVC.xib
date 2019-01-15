@@ -56,6 +56,15 @@
                         <action selector="drawSummaryAction:" destination="-1" eventType="touchUpInside" id="Yf1-tJ-WdA"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F82-8V-rtm">
+                    <rect key="frame" x="16" y="532" width="343" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="5，布局的总结"/>
+                    <connections>
+                        <action selector="autoLayoutAction:" destination="-1" eventType="touchUpInside" id="Atx-jD-oQT"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="nk5-ox-Xl1"/>

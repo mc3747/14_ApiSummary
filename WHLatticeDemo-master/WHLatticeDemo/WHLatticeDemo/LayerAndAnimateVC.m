@@ -11,7 +11,7 @@
 #import "ClassListViewController.h"
 #import "AnimateSummaryVC.h"
 #import "DrawSummaryVC.h"
-
+#import "AutoLayoutVC.h"
 
 @interface LayerAndAnimateVC ()
 
@@ -63,6 +63,12 @@
 - (IBAction)drawSummaryAction:(id)sender {
     DrawSummaryVC *vc = [[DrawSummaryVC alloc] init];
     vc.title = @"绘图总结";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)autoLayoutAction:(id)sender {
+    AutoLayoutVC *vc = [[AutoLayoutVC alloc] init];
+    vc.title = @"自动布局总结";
     [self.navigationController pushViewController:vc animated:YES];
 }
 

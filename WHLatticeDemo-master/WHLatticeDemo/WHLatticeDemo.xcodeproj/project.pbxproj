@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4210994121ED8F580097102C /* AutoLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210993F21ED8F580097102C /* AutoLayoutVC.m */; };
+		4210994221ED8F580097102C /* AutoLayoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4210994021ED8F580097102C /* AutoLayoutVC.xib */; };
+		4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994421EDB9C90097102C /* ArrayDataSource.m */; };
+		4210994A21EDBB0E0097102C /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994721EDBB0D0097102C /* TestCell.m */; };
+		4210994B21EDBB0E0097102C /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994821EDBB0E0097102C /* TestModel.m */; };
 		42936D99219283AA0076F47A /* LayerBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42936D98219283AA0076F47A /* LayerBaseVC.xib */; };
 		42936D9E219288640076F47A /* DrawSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42936D9C219288640076F47A /* DrawSummaryVC.m */; };
 		42936D9F219288640076F47A /* DrawSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42936D9D219288640076F47A /* DrawSummaryVC.xib */; };
@@ -101,10 +106,20 @@
 		42F7720A2193BA9E00FFD237 /* BATransitionDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F772082193BA9E00FFD237 /* BATransitionDemo.xib */; };
 		42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7720C2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m */; };
 		42F7720F2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F7720D2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib */; };
+		56524138B517A91662499CF2 /* libPods-WHLatticeDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6F2A82BE7518D63196A9DB /* libPods-WHLatticeDemo.a */; };
 		68881A2A1EF0FC1200229107 /* LayerBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 68881A291EF0FC1200229107 /* LayerBaseVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4210993E21ED8F580097102C /* AutoLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutVC.h; sourceTree = "<group>"; };
+		4210993F21ED8F580097102C /* AutoLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutVC.m; sourceTree = "<group>"; };
+		4210994021ED8F580097102C /* AutoLayoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutVC.xib; sourceTree = "<group>"; };
+		4210994321EDB9C90097102C /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		4210994421EDB9C90097102C /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		4210994621EDBB0D0097102C /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		4210994721EDBB0D0097102C /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		4210994821EDBB0E0097102C /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		4210994921EDBB0E0097102C /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
 		42936D98219283AA0076F47A /* LayerBaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayerBaseVC.xib; sourceTree = "<group>"; };
 		42936D9B219288640076F47A /* DrawSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawSummaryVC.h; sourceTree = "<group>"; };
 		42936D9C219288640076F47A /* DrawSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawSummaryVC.m; sourceTree = "<group>"; };
@@ -274,9 +289,12 @@
 		42F7720B2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACAKeyframeAnimationDemo.h; sourceTree = "<group>"; };
 		42F7720C2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACAKeyframeAnimationDemo.m; sourceTree = "<group>"; };
 		42F7720D2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BACAKeyframeAnimationDemo.xib; sourceTree = "<group>"; };
+		4578D8D57C20BD33FAAE9CD5 /* Pods-WHLatticeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHLatticeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WHLatticeDemo/Pods-WHLatticeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5E92FB8E9C291B5BCFB3855C /* Pods-WHLatticeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHLatticeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WHLatticeDemo/Pods-WHLatticeDemo.release.xcconfig"; sourceTree = "<group>"; };
 		68881A1F1EF0FC1200229107 /* WHLatticeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHLatticeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68881A281EF0FC1200229107 /* LayerBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayerBaseVC.h; sourceTree = "<group>"; };
 		68881A291EF0FC1200229107 /* LayerBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerBaseVC.m; sourceTree = "<group>"; };
+		DB6F2A82BE7518D63196A9DB /* libPods-WHLatticeDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WHLatticeDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,12 +302,110 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56524138B517A91662499CF2 /* libPods-WHLatticeDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27709B24923224CDF4F2BDC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4578D8D57C20BD33FAAE9CD5 /* Pods-WHLatticeDemo.debug.xcconfig */,
+				5E92FB8E9C291B5BCFB3855C /* Pods-WHLatticeDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4210993521ED6B5D0097102C /* 5_布局summary */ = {
+			isa = PBXGroup;
+			children = (
+				4210994C21EDC7730097102C /* 廋化table */,
+				4210993E21ED8F580097102C /* AutoLayoutVC.h */,
+				4210993F21ED8F580097102C /* AutoLayoutVC.m */,
+				4210994021ED8F580097102C /* AutoLayoutVC.xib */,
+				4210993621ED6C450097102C /* 1，Frame系 */,
+				4210993721ED6C530097102C /* 2，AutoLayout系 */,
+				4210993C21ED8A4B0097102C /* 3，性能系 */,
+				4210993D21ED8A540097102C /* 4，跨平台系 */,
+			);
+			name = "5_布局summary";
+			sourceTree = "<group>";
+		};
+		4210993621ED6C450097102C /* 1，Frame系 */ = {
+			isa = PBXGroup;
+			children = (
+				4210993821ED6C830097102C /* 1，纯Frame */,
+				4210993921ED6C8F0097102C /* 2，MyLayout框架 */,
+			);
+			name = "1，Frame系";
+			sourceTree = "<group>";
+		};
+		4210993721ED6C530097102C /* 2，AutoLayout系 */ = {
+			isa = PBXGroup;
+			children = (
+				4210993A21ED6CAF0097102C /* 1，纯AutoLayout */,
+				4210993B21ED6CC10097102C /* 2，Masonry框架 */,
+			);
+			name = "2，AutoLayout系";
+			sourceTree = "<group>";
+		};
+		4210993821ED6C830097102C /* 1，纯Frame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "1，纯Frame";
+			sourceTree = "<group>";
+		};
+		4210993921ED6C8F0097102C /* 2，MyLayout框架 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "2，MyLayout框架";
+			sourceTree = "<group>";
+		};
+		4210993A21ED6CAF0097102C /* 1，纯AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "1，纯AutoLayout";
+			sourceTree = "<group>";
+		};
+		4210993B21ED6CC10097102C /* 2，Masonry框架 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "2，Masonry框架";
+			sourceTree = "<group>";
+		};
+		4210993C21ED8A4B0097102C /* 3，性能系 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "3，性能系";
+			sourceTree = "<group>";
+		};
+		4210993D21ED8A540097102C /* 4，跨平台系 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "4，跨平台系";
+			sourceTree = "<group>";
+		};
+		4210994C21EDC7730097102C /* 廋化table */ = {
+			isa = PBXGroup;
+			children = (
+				4210994621EDBB0D0097102C /* TestModel.h */,
+				4210994821EDBB0E0097102C /* TestModel.m */,
+				4210994921EDBB0E0097102C /* TestCell.h */,
+				4210994721EDBB0D0097102C /* TestCell.m */,
+				4210994321EDB9C90097102C /* ArrayDataSource.h */,
+				4210994421EDB9C90097102C /* ArrayDataSource.m */,
+			);
+			name = "廋化table";
+			sourceTree = "<group>";
+		};
 		42936D9A219287550076F47A /* 4_DrawSummary */ = {
 			isa = PBXGroup;
 			children = (
@@ -853,11 +969,21 @@
 			path = BATransition;
 			sourceTree = "<group>";
 		};
+		4D0F13CB6EDC515D00257120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6F2A82BE7518D63196A9DB /* libPods-WHLatticeDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68881A161EF0FC1200229107 = {
 			isa = PBXGroup;
 			children = (
 				68881A211EF0FC1200229107 /* WHLatticeDemo */,
 				68881A201EF0FC1200229107 /* Products */,
+				27709B24923224CDF4F2BDC1 /* Pods */,
+				4D0F13CB6EDC515D00257120 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -879,6 +1005,7 @@
 				42D6350721912EA10063E763 /* 2_LayerClassify */,
 				42D6354A21917A890063E763 /* 3_AnimateSummary */,
 				42936D9A219287550076F47A /* 4_DrawSummary */,
+				4210993521ED6B5D0097102C /* 5_布局summary */,
 				42936E192192E0F60076F47A /* Others */,
 			);
 			path = WHLatticeDemo;
@@ -891,9 +1018,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68881A361EF0FC1200229107 /* Build configuration list for PBXNativeTarget "WHLatticeDemo" */;
 			buildPhases = (
+				5BC630ABB6B1493F6D391CC2 /* [CP] Check Pods Manifest.lock */,
 				68881A1B1EF0FC1200229107 /* Sources */,
 				68881A1C1EF0FC1200229107 /* Frameworks */,
 				68881A1D1EF0FC1200229107 /* Resources */,
+				8554328ACF9B462B0957E673 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -960,6 +1089,7 @@
 				42936E562192EEA00076F47A /* fold.caf in Resources */,
 				42D6354F21917AC10063E763 /* AnimateSummaryVC.xib in Resources */,
 				42D6350521912BF30063E763 /* LayerAndAnimateVC.xib in Resources */,
+				4210994221ED8F580097102C /* AutoLayoutVC.xib in Resources */,
 				42936E552192EEA00076F47A /* selected.caf in Resources */,
 				42F7720F2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib in Resources */,
 				42936E262192E0F60076F47A /* Main.storyboard in Resources */,
@@ -970,6 +1100,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BC630ABB6B1493F6D391CC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WHLatticeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8554328ACF9B462B0957E673 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WHLatticeDemo/Pods-WHLatticeDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FlexLib/FlexLib.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FlexLib.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WHLatticeDemo/Pods-WHLatticeDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68881A1B1EF0FC1200229107 /* Sources */ = {
@@ -998,6 +1167,7 @@
 				42936DFD21928A420076F47A /* LNRefreshFooter.m in Sources */,
 				42936E0621928A420076F47A /* RefreshAnimateVC.m in Sources */,
 				42D63529219170CC0063E763 /* CAGradientLayerVC.m in Sources */,
+				4210994A21EDBB0E0097102C /* TestCell.m in Sources */,
 				42936E172192DAB70076F47A /* BaseAnimateVC.m in Sources */,
 				42B93BFA2191877800CBB02D /* CALayerAnimationVC.m in Sources */,
 				42936E0221928A420076F47A /* NSObject+LNRefresh.m in Sources */,
@@ -1008,6 +1178,7 @@
 				42D6352F219170F70063E763 /* CATiledLayerVC.m in Sources */,
 				42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */,
 				42D63535219171200063E763 /* CAEAGLLayerVC.m in Sources */,
+				4210994121ED8F580097102C /* AutoLayoutVC.m in Sources */,
 				42936E4D2192EB210076F47A /* DCPathItemButton.m in Sources */,
 				42D635322191710F0063E763 /* CAShapeLayerVC.m in Sources */,
 				42F772092193BA9E00FFD237 /* BATransitionDemo.m in Sources */,
@@ -1021,6 +1192,7 @@
 				42936E352192EABE0076F47A /* GroupAnimationController.m in Sources */,
 				42936DE921928A420076F47A /* LNHeaderAnimator+Analysis.m in Sources */,
 				42D6353B219171450063E763 /* CAEmitterLayerVC.m in Sources */,
+				4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */,
 				42C52C27218841A5001D7A07 /* DemoView.m in Sources */,
 				42D63520219170890063E763 /* CAScrollLayerVC.m in Sources */,
 				42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */,
@@ -1040,6 +1212,7 @@
 				42D6352C219170E60063E763 /* CAReplicatorLayerVC.m in Sources */,
 				42F771FC2193B9E400FFD237 /* BALoadingWaveView.m in Sources */,
 				42936DFE21928A420076F47A /* LNRefreshConst.m in Sources */,
+				4210994B21EDBB0E0097102C /* TestModel.m in Sources */,
 				42936DF921928A420076F47A /* LNHeaderELEAnimator.m in Sources */,
 				42936E4C2192EB210076F47A /* DCPathButton.m in Sources */,
 				42936E4B2192EB210076F47A /* DWBubbleMenuButton.m in Sources */,
@@ -1187,6 +1360,7 @@
 		};
 		68881A371EF0FC1200229107 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4578D8D57C20BD33FAAE9CD5 /* Pods-WHLatticeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MQBF47L68X;
@@ -1201,6 +1375,7 @@
 		};
 		68881A381EF0FC1200229107 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E92FB8E9C291B5BCFB3855C /* Pods-WHLatticeDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MQBF47L68X;

@@ -1,0 +1,36 @@
+PODS:
+  - ComponentKit (0.15)
+  - FlexLib (1.7.0):
+    - FlexLib/no-arc (= 1.7.0)
+    - Yoga
+  - FlexLib/no-arc (1.7.0):
+    - Yoga
+  - Masonry (1.1.0)
+  - Yoga (1.9.0)
+  - YogaKit (1.9.0):
+    - Yoga (~> 1.9)
+
+DEPENDENCIES:
+  - ComponentKit
+  - FlexLib
+  - Masonry
+  - YogaKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ComponentKit
+    - FlexLib
+    - Masonry
+    - Yoga
+    - YogaKit
+
+SPEC CHECKSUMS:
+  ComponentKit: 02f5ab822d9183835d9afb0a780d29ebf0b94fdb
+  FlexLib: 1c53987bf615c9bd5dce12cbc04415119866b53e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Yoga: aaae8abea68951f60bee05f6277d3eed90bb91bb
+  YogaKit: d447a9bb808718e6f58e52a2255a8050081a3ead
+
+PODFILE CHECKSUM: 6cee9f5ca10af51ec0a9176da0647dbffedf92a6
+
+COCOAPODS: 1.5.0.beta.1
