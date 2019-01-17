@@ -321,7 +321,7 @@
 		4210993521ED6B5D0097102C /* 5_布局summary */ = {
 			isa = PBXGroup;
 			children = (
-				4210994C21EDC7730097102C /* 廋化table */,
+				4210994C21EDC7730097102C /* 瘦化table */,
 				4210993E21ED8F580097102C /* AutoLayoutVC.h */,
 				4210993F21ED8F580097102C /* AutoLayoutVC.m */,
 				4210994021ED8F580097102C /* AutoLayoutVC.xib */,
@@ -393,7 +393,7 @@
 			name = "4，跨平台系";
 			sourceTree = "<group>";
 		};
-		4210994C21EDC7730097102C /* 廋化table */ = {
+		4210994C21EDC7730097102C /* 瘦化table */ = {
 			isa = PBXGroup;
 			children = (
 				4210994621EDBB0D0097102C /* TestModel.h */,
@@ -403,7 +403,7 @@
 				4210994321EDB9C90097102C /* ArrayDataSource.h */,
 				4210994421EDB9C90097102C /* ArrayDataSource.m */,
 			);
-			name = "廋化table";
+			name = "瘦化table";
 			sourceTree = "<group>";
 		};
 		42936D9A219287550076F47A /* 4_DrawSummary */ = {

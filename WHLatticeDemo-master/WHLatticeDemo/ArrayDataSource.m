@@ -43,8 +43,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
     if (!cell) {
         Class class = NSClassFromString(self.cellName);
-        
-        cell = [[class alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:self.cellIdentifier];
+        if (class) {
+             cell = [[class alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:self.cellIdentifier];
+        }else {
+             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:self.cellIdentifier];
+        };
     }
     id item = self.itmes[indexPath.row];
     self.configureBlock(cell, item);
