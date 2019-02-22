@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4201D5CE221FE6480069080D /* UIImage+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 4201D5CD221FE6480069080D /* UIImage+CornerRadius.m */; };
+		4201D5D2221FE9080069080D /* ImageSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4201D5D0221FE9080069080D /* ImageSummaryVC.m */; };
+		4201D5D3221FE9080069080D /* ImageSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4201D5D1221FE9080069080D /* ImageSummaryVC.xib */; };
 		4210994121ED8F580097102C /* AutoLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210993F21ED8F580097102C /* AutoLayoutVC.m */; };
 		4210994221ED8F580097102C /* AutoLayoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4210994021ED8F580097102C /* AutoLayoutVC.xib */; };
 		4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994421EDB9C90097102C /* ArrayDataSource.m */; };
@@ -111,6 +114,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4201D5CC221FE6480069080D /* UIImage+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+CornerRadius.h"; sourceTree = "<group>"; };
+		4201D5CD221FE6480069080D /* UIImage+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CornerRadius.m"; sourceTree = "<group>"; };
+		4201D5CF221FE9080069080D /* ImageSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSummaryVC.h; sourceTree = "<group>"; };
+		4201D5D0221FE9080069080D /* ImageSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSummaryVC.m; sourceTree = "<group>"; };
+		4201D5D1221FE9080069080D /* ImageSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSummaryVC.xib; sourceTree = "<group>"; };
 		4210993E21ED8F580097102C /* AutoLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutVC.h; sourceTree = "<group>"; };
 		4210993F21ED8F580097102C /* AutoLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutVC.m; sourceTree = "<group>"; };
 		4210994021ED8F580097102C /* AutoLayoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutVC.xib; sourceTree = "<group>"; };
@@ -316,6 +324,18 @@
 				5E92FB8E9C291B5BCFB3855C /* Pods-WHLatticeDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4201D5CB221FE3E90069080D /* 6_图形部分总结 */ = {
+			isa = PBXGroup;
+			children = (
+				4201D5CF221FE9080069080D /* ImageSummaryVC.h */,
+				4201D5D0221FE9080069080D /* ImageSummaryVC.m */,
+				4201D5D1221FE9080069080D /* ImageSummaryVC.xib */,
+				4201D5CC221FE6480069080D /* UIImage+CornerRadius.h */,
+				4201D5CD221FE6480069080D /* UIImage+CornerRadius.m */,
+			);
+			name = "6_图形部分总结";
 			sourceTree = "<group>";
 		};
 		4210993521ED6B5D0097102C /* 5_布局summary */ = {
@@ -1006,6 +1026,7 @@
 				42D6354A21917A890063E763 /* 3_AnimateSummary */,
 				42936D9A219287550076F47A /* 4_DrawSummary */,
 				4210993521ED6B5D0097102C /* 5_布局summary */,
+				4201D5CB221FE3E90069080D /* 6_图形部分总结 */,
 				42936E192192E0F60076F47A /* Others */,
 			);
 			path = WHLatticeDemo;
@@ -1093,6 +1114,7 @@
 				42936E552192EEA00076F47A /* selected.caf in Resources */,
 				42F7720F2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib in Resources */,
 				42936E262192E0F60076F47A /* Main.storyboard in Resources */,
+				4201D5D3221FE9080069080D /* ImageSummaryVC.xib in Resources */,
 				42936E242192E0F60076F47A /* Assets.xcassets in Resources */,
 				42F7720A2193BA9E00FFD237 /* BATransitionDemo.xib in Resources */,
 				42936DF421928A420076F47A /* frontpage_refresh_release@3x.gif in Resources */,
@@ -1197,6 +1219,7 @@
 				42D63520219170890063E763 /* CAScrollLayerVC.m in Sources */,
 				42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */,
 				42936E142192DA9D0076F47A /* TitleButton.m in Sources */,
+				4201D5CE221FE6480069080D /* UIImage+CornerRadius.m in Sources */,
 				42936E3B2192EAE30076F47A /* ComprehensiveCaseController.m in Sources */,
 				42F772052193BA6600FFD237 /* UIView+BATransition.m in Sources */,
 				42D63538219171350063E763 /* CATransformLayerVC.m in Sources */,
@@ -1215,6 +1238,7 @@
 				4210994B21EDBB0E0097102C /* TestModel.m in Sources */,
 				42936DF921928A420076F47A /* LNHeaderELEAnimator.m in Sources */,
 				42936E4C2192EB210076F47A /* DCPathButton.m in Sources */,
+				4201D5D2221FE9080069080D /* ImageSummaryVC.m in Sources */,
 				42936E4B2192EB210076F47A /* DWBubbleMenuButton.m in Sources */,
 				42936E502192EB210076F47A /* MCFireworksView.m in Sources */,
 				42B93BF42191874A00CBB02D /* UIViewAnimationVC.m in Sources */,

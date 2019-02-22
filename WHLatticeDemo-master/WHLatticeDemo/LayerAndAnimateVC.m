@@ -12,6 +12,7 @@
 #import "AnimateSummaryVC.h"
 #import "DrawSummaryVC.h"
 #import "AutoLayoutVC.h"
+#import "ImageSummaryVC.h"
 
 @interface LayerAndAnimateVC ()
 
@@ -72,6 +73,11 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)imageSummaryAction:(id)sender {
+    ImageSummaryVC *vc = [[ImageSummaryVC alloc] init];
+    vc.title = @"UIKit常见图形问题总结";
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 #pragma mark - 3.Request Data
 
