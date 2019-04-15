@@ -9,7 +9,7 @@
 
 
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
 #define FLEXBASEURL     @"flexPreviewBaseUrl"
@@ -18,8 +18,9 @@
 
 @class FlexRootView;
 @class YGLayout;
+@class FlexAttr;
 
-typedef NSData* (*FlexLoadFunc)(NSString* flexName);
+typedef NSData* (*FlexLoadFunc)(NSString* flexName,NSObject* owner);
 typedef CGFloat (*FlexScaleFunc)(CGFloat f,const char* attrName);
 
 typedef enum{
@@ -87,7 +88,16 @@ void FlexSetCustomScale(FlexScaleFunc scaleFunc);
 
 @interface FlexNode : NSObject<NSCoding>
 
-+(FlexNode*)loadNodeFromRes:(NSString*)flexName;
+@property (nonatomic, strong) NSString* viewClassName;
+@property (nonatomic, strong) NSString* name;
+@property (nonatomic, strong) NSString* onPress;
+@property (nonatomic, strong) NSArray<FlexAttr*>* layoutParams;
+@property (nonatomic, strong) NSArray<FlexAttr*>* viewAttrs;
+@property (nonatomic, strong) NSArray<FlexNode*>* children;
+
+
++(FlexNode*)loadNodeFromRes:(NSString*)flexName
+                      Owner:(NSObject*)owner;
 +(FlexNode*)loadNodeData:(NSData*)data;
 +(NSString*)getCacheDir;
 +(void)clearFlexCache;
@@ -102,6 +112,12 @@ void FlexSetCustomScale(FlexScaleFunc scaleFunc);
 
 @interface NSObject (Flex)
 
+//load xml layout data in owner
+-(NSData*)loadXmlLayoutData:(NSString*)flexname;
+
+//bind variables with name ?
+-(BOOL)needBindVariable;
+
 // owner custom create view
 -(UIView*)createView:(Class)cls Name:(NSString*)name;
 -(void)postCreateView:(UIView*)view;
@@ -110,7 +126,28 @@ void FlexSetCustomScale(FlexScaleFunc scaleFunc);
 -(NSBundle*)bundleForStrings;
 -(NSString*)tableForStrings;
 
-// image bundle
+// xml文件所在bundle
+-(NSBundle*)bundleForRes;
+
+// image所在bundle，默认使用bundleForRes的结果
 -(NSBundle*)bundleForImages;
 
 @end
+
+
+@interface FlexClickRange : NSObject<NSCopying>
+
+@property (nonatomic,copy) NSString* name;
+@property (nonatomic,assign) NSRange range;
+@property (nonatomic,copy) NSString* onPress;
+
+@end
+
+
+// 创建AttributedString
+NSMutableAttributedString* createAttributedString(NSArray<FlexNode*>* childElems,
+                                                  NSObject* owner,
+                                                  UIFont* defaultFont,
+                                                  UIColor* defaultColor,
+                                                  NSMutableArray<FlexClickRange*>* clicks);
+

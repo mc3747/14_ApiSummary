@@ -12,7 +12,7 @@
 #import "FlexRootView.h"
 #import "YogaKit/UIView+Yoga.h"
 
-static void* gObserverFrame         = (void*)1;
+static void* gObserverFrame = &gObserverFrame;
 
 @interface FlexFrameView()
 {
@@ -84,10 +84,21 @@ static void* gObserverFrame         = (void*)1;
 -(void)subFrameChanged:(UIView*)subView
                   Rect:(CGRect)newFrame
 {
-    if(!CGSizeEqualToSize(newFrame.size,self.frame.size))
+    if(!(self.flexibleWidth||self.flexibleHeight)){
+        return;
+    }
+    
+    CGRect rc = self.frame ;
+    UIEdgeInsets safeArea = _flexRootView.safeArea;
+    if(self.flexibleWidth){
+        rc.size.width = CGRectGetWidth(newFrame) + safeArea.left + safeArea.right ;
+    }
+    if(self.flexibleHeight){
+        rc.size.height = CGRectGetHeight(newFrame) + safeArea.top + safeArea.bottom;
+    }
+    
+    if(!CGSizeEqualToSize(rc.size,self.frame.size))
     {
-        CGRect rc = self.frame ;
-        rc.size = newFrame.size ;
         self.frame = rc ;
         if(self.onFrameChange != nil)
         {
@@ -110,5 +121,13 @@ static void* gObserverFrame         = (void*)1;
 -(BOOL)flexibleHeight
 {
     return _flexRootView.flexibleHeight;
+}
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize
+{
+    return [_flexRootView calculateSize:targetSize];
+}
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize withHorizontalFittingPriority:(UILayoutPriority)horizontalFittingPriority verticalFittingPriority:(UILayoutPriority)verticalFittingPriority
+{
+    return [_flexRootView calculateSize:targetSize];
 }
 @end

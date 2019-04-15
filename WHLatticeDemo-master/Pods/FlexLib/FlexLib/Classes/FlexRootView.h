@@ -21,6 +21,7 @@
 @interface UIView(FlexPublic)
 
 @property(nonatomic,readonly) FlexRootView* rootView;
+@property(nonatomic,readonly) NSObject* owner;
 
 +(UIView*)buildFlexView:(Class)viewCls
                  Layout:(NSArray<NSString*>*)layoutAttrs
@@ -73,8 +74,9 @@
 @property(nonatomic,assign) BOOL flexibleWidth;
 @property(nonatomic,assign) BOOL flexibleHeight;
 
-//四周距离父窗口边界的距离
+//四周距离父窗口边界的距离,优先使用block，低优先级使用safeArea
 @property(nonatomic,assign) UIEdgeInsets safeArea;
+@property(nonatomic,copy) UIEdgeInsets (^calcSafeArea)(void);
 
 //获取xml中的顶级窗口
 @property(nonatomic,readonly) UIView* topSubView;

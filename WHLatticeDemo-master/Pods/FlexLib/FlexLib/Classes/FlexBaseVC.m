@@ -19,7 +19,7 @@
 #import "FlexHttpVC.h"
 #import "FlexNode.h"
 
-static void* gObserverFrame         = (void*)1;
+static void* gObserverFrame = &gObserverFrame;
 
 @interface FlexBaseVC ()
 {
@@ -45,6 +45,7 @@ static void* gObserverFrame         = (void*)1;
     self = [super init];
     if (self) {
         _avoidKeyboard = YES;
+        _avoidiPhoneXBottom = YES;
         _keyboardHeight = 0;
         _keepNavbarTranslucent = YES;
     }
@@ -223,14 +224,16 @@ static void* gObserverFrame         = (void*)1;
     
     _bUpdating = YES;
     
-    NSLog(@"Flexbox: reloading layout file %@ ...",_flexName);
+    NSString* flexname = _flexName.lastPathComponent ;
+    
+    NSLog(@"Flexbox: reloading layout file %@ ...",flexname);
     
     __weak FlexBaseVC* weakSelf = self;
     dispatch_queue_t queue = dispatch_get_global_queue(
                                                        DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue,^{
         NSError* error = nil;
-        NSData* flexData = FlexFetchLayoutFile(_flexName, &error);
+        NSData* flexData = FlexFetchLayoutFile(flexname, &error);
         dispatch_async(dispatch_get_main_queue(), ^{
                 [weakSelf resetByFlexData:flexData];
         });
@@ -252,33 +255,42 @@ static void* gObserverFrame         = (void*)1;
 }
 -(CGFloat)getStatusBarHeight:(BOOL)portrait
 {
-    return portrait ? 20 : 0;
+    if(IS_IPHONE){
+        return portrait?20:0;
+    }
+    return 20;
+}
+-(CGFloat)getNavibarHeight
+{
+    if(self.navigationController!=nil && !self.navigationController.navigationBar.hidden)
+    {
+        return self.navigationController.navigationBar.frame.size.height ;
+    }
+    return 0;
 }
 - (UIEdgeInsets)getSafeArea:(BOOL)portrait
 {
     if(!IsIphoneX())
     {
-        CGFloat height = 0;
-        if(self.navigationController!=nil)
-        {
-            height += self.navigationController.navigationBar.frame.size.height ;
-        }
+        CGFloat height = [self getStatusBarHeight:portrait] ;
         
-        height += [self getStatusBarHeight:portrait] ;
+        height += [self getNavibarHeight] ;
         
         return UIEdgeInsetsMake(height, 0, 0, 0);
     }
     
-    CGFloat height = 0;
-    if(self.navigationController!=nil)
-    {
-        height += self.navigationController.navigationBar.frame.size.height ;
+    CGFloat height = [self getNavibarHeight];
+    CGFloat bottom = portrait ? 34 : 21 ;
+    
+    if( _keyboardHeight > 0 || (!self.avoidiPhoneXBottom) ){
+        bottom = 0;
     }
+    
     if(portrait){
         height += 44 ;
-        return UIEdgeInsetsMake(height, 0, _keyboardHeight>0?0:34, 0);
+        return UIEdgeInsetsMake(height, 0, bottom, 0);
     }
-    return UIEdgeInsetsMake(height, 44, _keyboardHeight>0?0:21, 44);
+    return UIEdgeInsetsMake(height, 44, bottom, 44);
 }
 
 -(void)layoutFlexRootViews{

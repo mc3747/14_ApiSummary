@@ -27,20 +27,20 @@ static CKComponentAnimationHooks hooksForCAAnimation(CKComponent *component, CAA
   // immediately to protect against the *caller* mutating the animation after this point but before it's used.)
   CAAnimation *copiedAnimation = [originalAnimation copy];
   return {
-    .didRemount = ^(id context){
-      CALayer *layer = layerPath ? [component.viewForAnimation valueForKeyPath:layerPath] : component.viewForAnimation.layer;
-      CKCAssertNotNil(layer, @"%@ has no mounted layer at key path %@, so it cannot be animated", [component class], layerPath);
-      NSString *key = [[NSUUID UUID] UUIDString];
-
-      // CAMediaTiming beginTime is specified in the time space of the superlayer. Since the component has no way to
-      // access the superlayer when constructing the animation, we document that beginTime should be specified in
-      // absolute time and perform the adjustment here.
-      if (copiedAnimation.beginTime != 0.0) {
-        copiedAnimation.beginTime = [layer.superlayer convertTime:copiedAnimation.beginTime fromLayer:nil];
-      }
-      [layer addAnimation:copiedAnimation forKey:key];
-      return [[CKAppliedAnimationContext alloc] initWithTargetLayer:layer key:key];
-    },
+//    .didRemount = ^(id context){
+//      CALayer *layer = layerPath ? [component.viewForAnimation valueForKeyPath:layerPath] : component.viewForAnimation.layer;
+//      CKCAssertNotNil(layer, @"%@ has no mounted layer at key path %@, so it cannot be animated", [component class], layerPath);
+//      NSString *key = [[NSUUID UUID] UUIDString];
+//
+//      // CAMediaTiming beginTime is specified in the time space of the superlayer. Since the component has no way to
+//      // access the superlayer when constructing the animation, we document that beginTime should be specified in
+//      // absolute time and perform the adjustment here.
+//      if (copiedAnimation.beginTime != 0.0) {
+//        copiedAnimation.beginTime = [layer.superlayer convertTime:copiedAnimation.beginTime fromLayer:nil];
+//      }
+//      [layer addAnimation:copiedAnimation forKey:key];
+//      return [[CKAppliedAnimationContext alloc] initWithTargetLayer:layer key:key];
+//    },
     .cleanup = ^(CKAppliedAnimationContext *context){
       [context.targetLayer removeAnimationForKey:context.key];
     }

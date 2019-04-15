@@ -17,9 +17,9 @@
 #import "FlexUtils.h"
 #import "FlexStyleMgr.h"
 
-static void* gObserverHidden    = (void*)1;
-static void* gObserverText      = (void*)2;
-static void* gObserverAttrText  = (void*)3;
+static void* gObserverHidden    = &gObserverHidden;
+static void* gObserverText = &gObserverText;
+static void* gObserverAttrText  = &gObserverAttrText;
 
 static NSInteger _compareInputView(UIView * _Nonnull f,
                                    UIView * _Nonnull s,
@@ -61,7 +61,7 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
 }
 -(FlexRootView*)rootView
 {
-    UIView* parent = self.superview;
+    UIView* parent = self;
     while(parent!=nil){
         if([parent isKindOfClass:[FlexRootView class]]){
             return (FlexRootView*)parent;
@@ -70,6 +70,20 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
     }
     return nil;
 }
+-(NSObject*)owner
+{
+    UIView* parent = self;
+    while(parent!=nil){
+        if([parent isKindOfClass:[FlexRootView class]] &&
+           [(FlexRootView*)parent owner]!=nil)
+        {
+            return [(FlexRootView*)parent owner];
+        }
+        parent = parent.superview;
+    }
+    return nil;
+}
+
 -(UIView*)findLeaf
 {
     if(self.yoga.isLeaf)
@@ -121,18 +135,20 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
 -(void)setViewAttr:(NSString*) name
              Value:(NSString*) value
 {
-    FlexSetViewAttr(self, name, value,nil);
+    FlexSetViewAttr(self, name, value,self.owner);
 }
 -(void)setViewAttrs:(NSArray<FlexAttr*>*)attrs
 {
+    NSObject* owner = self.owner ;
     for (FlexAttr* attr in attrs) {
-        FlexSetViewAttr(self, attr.name, attr.value,nil);
+        FlexSetViewAttr(self, attr.name, attr.value,owner);
     }
 }
 -(void)setViewAttrStrings:(NSArray<NSString*>*)stringAttrs
 {
+    NSObject* owner = self.owner ;
     for (NSInteger i=0;i+1<stringAttrs.count;i+=2) {
-        FlexSetViewAttr(self, stringAttrs[i], stringAttrs[i+1],nil);
+        FlexSetViewAttr(self, stringAttrs[i], stringAttrs[i+1],owner);
     }
 }
 -(void)setLayoutAttr:(NSString*) name
@@ -283,7 +299,7 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
     FlexRootView* root = [[FlexRootView alloc]init];
     root->_owner = owner;
     
-    FlexNode* node = [FlexNode loadNodeFromRes:resName];
+    FlexNode* node = [FlexNode loadNodeFromRes:resName Owner:owner];
     if(node != nil){
         UIView* sub ;
         
@@ -319,8 +335,11 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
     [_observedViews addObject:subView];
     
     [subView addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:gObserverHidden];
-    [subView addObserver:self forKeyPath:@"text" options:0 context:gObserverText];
-    [subView addObserver:self forKeyPath:@"attributedText" options:0 context:gObserverAttrText];
+    
+    if([subView isKindOfClass:[UILabel class]]){
+        [subView addObserver:self forKeyPath:@"text" options:0 context:gObserverText];
+        [subView addObserver:self forKeyPath:@"attributedText" options:0 context:gObserverAttrText];
+    }
 }
 -(void)removeWatchView:(UIView*)view
 {
@@ -330,8 +349,11 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
     [_observedViews removeObject:view];
     
     [view removeObserver:self forKeyPath:@"hidden"];
-    [view removeObserver:self forKeyPath:@"text"];
-    [view removeObserver:self forKeyPath:@"attributedText"];
+    
+    if([view isKindOfClass:[UILabel class]]){
+        [view removeObserver:self forKeyPath:@"text"];
+        [view removeObserver:self forKeyPath:@"attributedText"];
+    }
 }
 
 #pragma mark - KVO
@@ -340,8 +362,12 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
 {
     if(_bInLayouting||object == nil)
     {
-        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
-        return;
+        if(context==gObserverHidden ||
+           context==gObserverText||
+           context==gObserverAttrText)
+        {
+            return;
+        }
     }
     
     if( context == gObserverHidden ){
@@ -389,7 +415,7 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
         else
             layout.height = YGPointValue(safeArea.size.height) ;
         
-        _thisConfigFrame = CGRectMake(layout.left.value, layout.top.value, layout.width.value, layout.height.value);
+        self->_thisConfigFrame = CGRectMake(layout.left.value, layout.top.value, layout.width.value, layout.height.value);
     }];
 }
 
@@ -397,6 +423,8 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
 {
     CGRect rcSafeArea = self.superview.frame ;
     rcSafeArea.origin = CGPointZero;
+    if(self.calcSafeArea!=nil)
+        return UIEdgeInsetsInsetRect(rcSafeArea,self.calcSafeArea());
     return UIEdgeInsetsInsetRect(rcSafeArea,self.safeArea);
 }
 -(BOOL)isConfigSame

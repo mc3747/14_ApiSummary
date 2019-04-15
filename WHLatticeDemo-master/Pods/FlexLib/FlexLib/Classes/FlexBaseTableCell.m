@@ -12,7 +12,7 @@
 #import "FlexBaseTableCell.h"
 #import "FlexRootView.h"
 
-static void* gObserverFrame         = (void*)1;
+static void* gObserverFrame         = &gObserverFrame;
 
 @interface FlexBaseTableCell()
 {
@@ -29,27 +29,50 @@ static void* gObserverFrame         = (void*)1;
     }
     return self;
 }
+
+-(void)internalInit:(NSString*)flexName
+{
+    if(_flexRootView!=nil)
+        return;
+    
+    __weak FlexBaseTableCell* weakSelf = self;
+    
+    _flexRootView = [FlexRootView loadWithNodeFile:flexName Owner:self];
+    _flexRootView.flexibleHeight = YES ;
+    _flexRootView.onDidLayout = ^{
+        [weakSelf onRootViewDidLayout];
+    };
+    [self.contentView addSubview:_flexRootView];
+    
+    if(!_bObserved){
+        [self addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:gObserverFrame];
+        _bObserved = YES;
+    }
+    
+    [self onInit];
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle: style reuseIdentifier:reuseIdentifier];
+    
+    if( self != nil){
+        [self internalInit:nil];
+    }
+    return self;
+}
+
 -(instancetype)initWithFlex:(NSString*)flexName
             reuseIdentifier:(nullable NSString *)reuseIdentifier
 {
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     
     if( self != nil){
-        __weak FlexBaseTableCell* weakSelf = self;
-        
-        _flexRootView = [FlexRootView loadWithNodeFile:flexName Owner:self];
-        _flexRootView.flexibleHeight = YES ;
-        _flexRootView.onDidLayout = ^{
-            [weakSelf onRootViewDidLayout];
-        };
-        [self.contentView addSubview:_flexRootView];
-
-        if(!_bObserved){
-            [self addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:gObserverFrame];
-            _bObserved = YES;
-        }
+        [self internalInit:flexName];
     }
     return self ;
+}
+- (void)onInit{
 }
 -(UITableView*)tableView
 {
@@ -59,6 +82,9 @@ static void* gObserverFrame         = (void*)1;
         view = [view superview];
     }
     return (UITableView*)view;
+}
+- (FlexRootView *)rootView{
+    return _flexRootView;
 }
 - (void)onRootViewDidLayout
 {
@@ -90,6 +116,14 @@ static void* gObserverFrame         = (void*)1;
     }else{
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
+}
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize
+{
+    return [self calculateSize:targetSize];
+}
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize withHorizontalFittingPriority:(UILayoutPriority)horizontalFittingPriority verticalFittingPriority:(UILayoutPriority)verticalFittingPriority
+{
+    return [self calculateSize:targetSize];
 }
 -(CGFloat)heightForWidth:(CGFloat)width
 {

@@ -14,7 +14,7 @@
 #import "FlexRootView.h"
 #import "FlexUtils.h"
 
-static void* gObserverFrame         = (void*)1;
+static void* gObserverFrame = &gObserverFrame;
 
 @interface FlexCustomBaseView()
 {
@@ -67,11 +67,12 @@ static void* gObserverFrame         = (void*)1;
     if(_frameView == nil){
         __weak FlexCustomBaseView* weakSelf = self;
         
-        _frameView = [[FlexFrameView alloc]initWithFlex:[self getFlexName] Frame:frame Owner:self];
+        CGRect rcFrameView = frame;
+        rcFrameView.origin = CGPointZero;
+        
+        _frameView = [[FlexFrameView alloc]initWithFlex:[self getFlexName] Frame:rcFrameView Owner:self];
         _frameView.onFrameChange = ^(CGRect rc){
-            if(!CGSizeEqualToSize(rc.size, weakSelf.frame.size)){
-                [weakSelf markDirty];
-            }
+            [weakSelf onFrameChange:rc];
         };
         [self addSubview:_frameView];
         
@@ -81,6 +82,22 @@ static void* gObserverFrame         = (void*)1;
         }
         
         [self onInit];
+    }
+}
+
+-(void)onFrameChange:(CGRect)rc
+{
+    if(!CGSizeEqualToSize(rc.size, self.frame.size)){
+        if([self isFlexLayoutEnable]){
+            [self markDirty];
+        }else{
+            CGRect rcSelf = self.frame ;
+            if(self.flexibleWidth)
+                rcSelf.size.width = rc.size.width;
+            if(self.flexibleHeight)
+                rcSelf.size.height = rc.size.height;
+            self.frame = rcSelf;
+        }
     }
 }
 
@@ -106,6 +123,14 @@ static void* gObserverFrame         = (void*)1;
 {
     CGSize sz=[_frameView.rootView calculateSize:size];
     return sz;
+}
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize
+{
+    return [_frameView.rootView calculateSize:targetSize];
+}
+- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize withHorizontalFittingPriority:(UILayoutPriority)horizontalFittingPriority verticalFittingPriority:(UILayoutPriority)verticalFittingPriority
+{
+    return [_frameView.rootView calculateSize:targetSize];
 }
 -(void)setFlexibleWidth:(BOOL)flexibleWidth
 {

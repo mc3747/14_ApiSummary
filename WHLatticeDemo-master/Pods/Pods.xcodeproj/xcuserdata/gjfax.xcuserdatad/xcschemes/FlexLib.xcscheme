@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "754F1A614C83E2135B591CC847558447"
+               BlueprintIdentifier = "9BEB49E190513C577CC015FEBD8A19BB"
                BlueprintName = "FlexLib"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libFlexLib.a">

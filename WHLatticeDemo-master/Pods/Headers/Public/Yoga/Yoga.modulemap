@@ -1,6 +1,0 @@
-module yoga [system] {
-  umbrella header "Yoga-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -5,6 +5,6 @@ target 'WHLatticeDemo' do
 pod 'Masonry'
 pod 'ComponentKit'
 pod 'FlexLib'
-pod 'YogaKit'
+
 
 end

@@ -65,6 +65,11 @@ static NameValue _gcontentModes[] =
 {
 }
 
+-(void)afterInit:(NSObject*)owner
+        rootView:(FlexRootView*)rootView
+{
+}
+
 #pragma mark - attribute
 
 FLEXSET(bgColor)
@@ -75,6 +80,33 @@ FLEXSET(bgColor)
     }
 }
 
+FLEXSET(font)
+{
+    SEL sel = @selector(setFont:);
+    NSMethodSignature* sig = [self.class instanceMethodSignatureForSelector:sel];
+    if(sig == nil)
+    {
+        NSLog(@"Flexbox: no setFont: in class %@",[self class]);
+        return ;
+    }
+    
+    UIFont* font = fontFromString(sValue);
+    if(font==nil){
+        return;
+    }
+    
+    @try{
+        
+        NSInvocation* inv = [NSInvocation invocationWithMethodSignature:sig] ;
+        [inv setTarget:self];
+        [inv setSelector:sel];
+        [inv setArgument:&font atIndex:2];
+        
+        [inv invoke];
+    }@catch(NSException* e){
+        NSLog(@"Flexbox: setFont: called failed.");
+    }
+}
 FLEXSET(borderWidth)
 {
     CGFloat f = [sValue floatValue] ;
@@ -291,5 +323,10 @@ FLEXSETBOOL(exclusiveTouch)
 FLEXSETBOOL(autoresizesSubviews)
 FLEXSETBOOL(opaque)
 FLEXSETBOOL(clearsContextBeforeDrawing)
+
+FLEXSET(value)
+{
+    NSLog(@"%@ not implement value property, UIView.value should not be called.",self.class);
+}
 
 @end

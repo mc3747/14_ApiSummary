@@ -27,8 +27,8 @@
 
 #pragma mark - Name values
 
-NSData* loadFromNetwork(NSString* resName);
-NSData* loadFromFile(NSString* resName);
+NSData* loadFromNetwork(NSString* resName,NSObject* owner);
+NSData* loadFromFile(NSString* resName,NSObject* owner);
 CGFloat scaleLinear(CGFloat f,const char* attrName);
 
 // 全局变量
@@ -111,6 +111,16 @@ static CGFloat ScaleSize(const char* s,
 static YGValue String2YGValue(const char* s,
                               const char* attrName)
 {
+    if(strcmp(s, "none")==0)
+    {
+        return (YGValue) { .value = NAN, .unit = YGUnitUndefined };
+        
+    }else if(strcmp(s, "auto")==0){
+        
+        return (YGValue) { .value = NAN, .unit = YGUnitAuto };
+        
+    }
+    
     int len = (int) strlen(s) ;
     if(len==0||len>100){
         NSLog(@"Flexbox: wrong number or pecentage value:%s",s);
@@ -145,6 +155,30 @@ NSString* FlexLocalizeValue(NSString* value,
     }
     return s;
 }
+
+NSString* FlexProcessAttrValue(NSString* attrName,
+                               NSString* attrValue,
+                               NSObject* owner)
+{
+    // '*abc' means scale the value by the screen size,
+    // '**abc' means '*abc'
+    if(attrValue.length>=2 && [attrValue characterAtIndex:0]=='*')
+    {
+        NSString* v = [attrValue substringFromIndex:1];
+        if([v hasPrefix:@"*"]){
+            attrValue = v;
+        }else{
+            float f=[v floatValue];
+            f = gScaleFunc(f,[attrName cStringUsingEncoding:NSASCIIStringEncoding]);
+            attrValue=[NSString stringWithFormat:@"%f",f];
+        }
+    }
+    
+    // localize value
+    attrValue = FlexLocalizeValue(attrValue, owner);
+    return attrValue;
+}
+
 void FlexSetViewAttr(UIView* view,
                      NSString* attrName,
                      NSString* attrValue,
@@ -168,22 +202,7 @@ void FlexSetViewAttr(UIView* view,
         return ;
     }
     
-    // '*abc' means scale the value by the screen size,
-    // '**abc' means '*abc'
-    if(attrValue.length>=2 && [attrValue characterAtIndex:0]=='*')
-    {
-        NSString* v = [attrValue substringFromIndex:1];
-        if([v hasPrefix:@"*"]){
-            attrValue = v;
-        }else{
-            float f=[v floatValue];
-            f = gScaleFunc(f,[attrName cStringUsingEncoding:NSASCIIStringEncoding]);
-            attrValue=[NSString stringWithFormat:@"%f",f];
-        }
-    }
-    
-    // localize value
-    attrValue = FlexLocalizeValue(attrValue, owner);
+    attrValue = FlexProcessAttrValue(attrName,attrValue, owner);
     
     @try{
         
@@ -195,7 +214,7 @@ void FlexSetViewAttr(UIView* view,
         
         [inv invoke];
     }@catch(NSException* e){
-        NSLog(@"Flexbox: %@ called failed.",methodDesc);
+        NSLog(@"Flexbox: **** exception occur in %@::%@ property *** \r\nReason - %@.\r\n This may cause memory leak.",[view class],attrName,[e reason]);
     }
 }
 
@@ -240,6 +259,8 @@ SETENUMVALUE(display,_display,YGDisplay);
 
     SETNUMVALUE(flexGrow);
     SETNUMVALUE(flexShrink);
+    
+    SETYGVALUE(flexBasis);
     
     SETYGVALUE(left);
     SETYGVALUE(top);
@@ -293,23 +314,39 @@ void FlexApplyLayoutParam(YGLayout* layout,
                           NSString* key,
                           NSString* value)
 {
-    if( [key compare:@"flex" options:NSLiteralSearch]==NSOrderedSame)
+    if( [@"flex" compare:key options:NSLiteralSearch]==NSOrderedSame)
     {
         ApplyLayoutParam(layout, @"flexShrink", value);
         ApplyLayoutParam(layout, @"flexGrow", value);
+    }else if( [@"margin" compare:key options:NSLiteralSearch]==NSOrderedSame){
+        
+        NSArray* ary = [value componentsSeparatedByString:@"/"];
+        if( ary.count==1 ){
+            ApplyLayoutParam(layout, key, value);
+        }else if(ary.count==4){
+            ApplyLayoutParam(layout, @"marginLeft", ary[0]);
+            ApplyLayoutParam(layout, @"marginTop", ary[1]);
+            ApplyLayoutParam(layout, @"marginRight", ary[2]);
+            ApplyLayoutParam(layout, @"marginBottom", ary[3]);
+        }
+        
+    }else if( [@"padding" compare:key options:NSLiteralSearch]==NSOrderedSame){
+        
+        NSArray* ary = [value componentsSeparatedByString:@"/"];
+        if( ary.count==1 ){
+            ApplyLayoutParam(layout, key, value);
+        }else if(ary.count==4){
+            ApplyLayoutParam(layout, @"paddingLeft", ary[0]);
+            ApplyLayoutParam(layout, @"paddingTop", ary[1]);
+            ApplyLayoutParam(layout, @"paddingRight", ary[2]);
+            ApplyLayoutParam(layout, @"paddingBottom", ary[3]);
+        }
+        
     }else{
         ApplyLayoutParam(layout, key, value);
     }
 }
 @interface FlexNode()
-
-@property (nonatomic, strong) NSString* viewClassName;
-@property (nonatomic, strong) NSString* name;
-@property (nonatomic, strong) NSString* onPress;
-@property (nonatomic, strong) NSArray<FlexAttr*>* layoutParams;
-@property (nonatomic, strong) NSArray<FlexAttr*>* viewAttrs;
-@property (nonatomic, strong) NSArray<FlexNode*>* children;
-
 @end
 
 @implementation FlexNode
@@ -369,6 +406,7 @@ void FlexApplyLayoutParam(YGLayout* layout,
                 NSLog(@"Flexbox: Class %@ init return nil",cls);
                 return nil;
             }
+            [view afterInit:owner rootView:rootView];
         }@catch(NSException* exception){
              NSLog(@"Flexbox: Class %@ init failed - %@",cls,exception);
             return nil;
@@ -378,7 +416,10 @@ void FlexApplyLayoutParam(YGLayout* layout,
     if(self.name.length>0){
         @try{
             view.viewAttrs.name = self.name ;
-            [owner setValue:view forKey:self.name];
+            
+            if([owner needBindVariable]){
+                [owner setValue:view forKey:self.name];
+            }
         }@catch(NSException* exception){
             NSLog(@"Flexbox: name %@ not found in owner %@",self.name,[owner class]);
         }@finally
@@ -630,6 +671,7 @@ void FlexApplyLayoutParam(YGLayout* layout,
     return [FlexNode buildNodeWithXml:root];
 }
 +(FlexNode*)loadNodeFromRes:(NSString*)flexName
+                      Owner:(NSObject*)owner
 {
     FlexNode* node;
     BOOL isAbsoluteRes = [flexName hasPrefix:@"/"];
@@ -640,10 +682,15 @@ void FlexApplyLayoutParam(YGLayout* layout,
             return node;
     }
     
-    NSData* xmlData = isAbsoluteRes ? loadFromFile(flexName) : gLoadFunc(flexName) ;
-    if(xmlData == nil){
-        NSLog(@"Flexbox: flex res %@ load failed.",flexName);
-        return nil;
+    NSData* xmlData = [owner loadXmlLayoutData:flexName];
+    
+    if(xmlData==nil){
+        xmlData = isAbsoluteRes ? loadFromFile(flexName,owner) : gLoadFunc(flexName,owner) ;
+        
+        if(xmlData == nil){
+            NSLog(@"Flexbox: flex res %@ load failed.",flexName);
+            return nil;
+        }
     }
     node = [FlexNode loadNodeData:xmlData];
     
@@ -776,7 +823,7 @@ NSData* FlexFetchLayoutFile(NSString* flexName,NSError** outError)
     return FlexFetchHttpRes(url, outError);
 }
 
-NSData* loadFromFile(NSString* resName)
+NSData* loadFromFile(NSString* resName,NSObject* owner)
 {
     NSString* path;
     
@@ -784,7 +831,7 @@ NSData* loadFromFile(NSString* resName)
         // it's absolute path
         path = resName ;
     }else{
-        path = [[NSBundle mainBundle]pathForResource:resName ofType:@"xml"];
+        path = [[owner bundleForRes]pathForResource:resName ofType:@"xml"];
     }
     
     if(path==nil){
@@ -793,7 +840,7 @@ NSData* loadFromFile(NSString* resName)
     }
     return [NSData dataWithContentsOfFile:path];
 }
-NSData* loadFromNetwork(NSString* resName)
+NSData* loadFromNetwork(NSString* resName,NSObject* owner)
 {
     NSError* error = nil;
     NSData* flexData = FlexFetchLayoutFile(resName, &error);
@@ -904,6 +951,15 @@ float FlexGetScaleOffset(void)
 
 @implementation NSObject (Flex)
 
+-(NSData*)loadXmlLayoutData:(NSString*)flexname
+{
+    return nil;
+}
+
+-(BOOL)needBindVariable
+{
+    return YES;
+}
 -(UIView*)createView:(Class)cls
                 Name:(NSString*)name
 {
@@ -922,10 +978,169 @@ float FlexGetScaleOffset(void)
 {
     return nil;
 }
-
--(NSBundle*)bundleForImages
+-(NSBundle*)bundleForRes
 {
     return [NSBundle mainBundle];
 }
+-(NSBundle*)bundleForImages
+{
+    return [self bundleForRes];
+}
 @end
+
+#pragma mark - 创建AttributedString支持
+
+
+static NameValue _underlineValue[] =
+{
+    {"none", NSUnderlineStyleNone},
+    {"single", NSUnderlineStyleSingle},
+    {"thick", NSUnderlineStyleThick},
+    {"double", NSUnderlineStyleDouble},
+    {"solid", NSUnderlinePatternSolid},
+    {"dot", NSUnderlinePatternDot},
+    {"dash", NSUnderlinePatternDash},
+    {"dashdot", NSUnderlinePatternDashDot},
+    {"dashdotdot", NSUnderlinePatternDashDotDot},
+};
+
+@implementation FlexClickRange
+- (id)copyWithZone:(NSZone *)zone {
+    FlexClickRange *model = [[FlexClickRange allocWithZone:zone] init];
+    model.name = self.name;
+    model.range = self.range;
+    model.onPress = self.onPress;
+    return model;
+}
+@end
+
+
+static NSAttributedString* createAttributedText(FlexNode* node,
+                                                NSObject* owner,
+                                                UIFont* defaultFont,
+                                                UIColor* defaultColor)
+{
+    NSString* text = @"";
+    NSMutableDictionary* dict = [NSMutableDictionary dictionary];
+    
+    for (FlexAttr* attr in node.viewAttrs) {
+        
+        attr.value = FlexProcessAttrValue(attr.name, attr.value, owner);
+        
+        if( [attr.name isEqualToString:@"text"] ){
+            
+            text = attr.value;
+            
+        }else if( [attr.name isEqualToString:@"font"]){
+            
+            UIFont* font = fontFromString(attr.value);
+            [dict setObject:font forKey:NSFontAttributeName];
+            
+        }else if( [attr.name isEqualToString:@"fontSize"]){
+            
+            UIFont* font = [UIFont systemFontOfSize:[attr.value floatValue]];
+            if(font!=nil){
+                [dict setObject:font forKey:NSFontAttributeName];
+            }
+            
+        }else if( [attr.name isEqualToString:@"color"]){
+            
+            UIColor* color = colorFromString(attr.value, owner);
+            if( color!=nil){
+                [dict setObject:color forKey:NSForegroundColorAttributeName];
+            }
+        }else if( [attr.name isEqualToString:@"bgColor"]){
+            UIColor* color = colorFromString(attr.value, owner);
+            if( color!=nil){
+                [dict setObject:color forKey:NSBackgroundColorAttributeName];
+            }
+        }else if( [attr.name isEqualToString:@"strike"]){
+            
+            int underline = NSString2Int(attr.value, _underlineValue, sizeof(_underlineValue)/sizeof(NameValue));
+            [dict setObject:@(underline) forKey:NSStrikethroughStyleAttributeName];
+        }else if( [attr.name isEqualToString:@"underline"]){
+            
+            int underline = NSString2Int(attr.value, _underlineValue, sizeof(_underlineValue)/sizeof(NameValue));
+            [dict setObject:@(underline) forKey:NSUnderlineStyleAttributeName];
+        }else if( [attr.name isEqualToString:@"kern"]){
+            
+            int kern = [attr.value intValue];
+            [dict setObject:@(kern) forKey:NSKernAttributeName];
+        }
+    }
+    
+    if( [dict objectForKey:NSFontAttributeName]==nil && defaultFont!=nil ){
+        [dict setObject:defaultFont forKey:NSFontAttributeName];
+    }
+    if( [dict objectForKey:NSForegroundColorAttributeName]==nil && defaultColor!=nil ){
+        [dict setObject:defaultColor forKey:NSForegroundColorAttributeName];
+    }
+    
+    return [[NSAttributedString alloc]initWithString:text attributes:dict];
+}
+static NSAttributedString* createAttributedImage(FlexNode* node,NSObject* owner)
+{
+    NSTextAttachment* attach = [[NSTextAttachment alloc]init];
+    
+    for (FlexAttr* attr in node.viewAttrs) {
+        
+        attr.value = FlexProcessAttrValue(attr.name, attr.value, owner);
+        
+        if( [attr.name isEqualToString:@"source"] ){
+            UIImage* img = [UIImage imageNamed:attr.value inBundle:[owner bundleForImages] compatibleWithTraitCollection:nil];
+            attach.image = img ;
+        }else if( [attr.name isEqualToString:@"bounds"] ){
+            NSArray* ary = [attr.value componentsSeparatedByString:@"/"];
+            if(ary.count>=4){
+                CGFloat x = [ary[0]floatValue];
+                CGFloat y = [ary[1]floatValue];
+                CGFloat w = [ary[2]floatValue];
+                CGFloat h = [ary[3]floatValue];
+                attach.bounds = CGRectMake(x, y, w, h);
+            }
+        }else if( [attr.name isEqualToString:@"size"] ){
+            NSArray* ary = [attr.value componentsSeparatedByString:@"/"];
+            if(ary.count>=2){
+                CGFloat w = [ary[0]floatValue];
+                CGFloat h = [ary[1]floatValue];
+                attach.bounds = CGRectMake(0, 0, w, h);
+            }
+        }
+    }
+    
+    return [NSAttributedString attributedStringWithAttachment:attach];
+}
+
+NSMutableAttributedString* createAttributedString(NSArray<FlexNode*>* childElems,
+                                                  NSObject* owner,
+                                                  UIFont* defaultFont,
+                                                  UIColor* defaultColor,
+                                                  NSMutableArray<FlexClickRange*>* clicks)
+{
+    NSMutableAttributedString* attrString = [[NSMutableAttributedString alloc]init];
+    
+    for (FlexNode* node in childElems) {
+        
+        NSUInteger oldLength = attrString.length;
+        
+        if( [node.viewClassName isEqualToString:@"Text"] ){
+            
+            [attrString appendAttributedString:createAttributedText(node,owner,defaultFont,defaultColor)];
+            
+        }else if( [node.viewClassName isEqualToString:@"Image"] ){
+            
+            [attrString appendAttributedString:createAttributedImage(node, owner)];
+        }
+        
+        if( node.onPress.length>0 ){
+            FlexClickRange* click = [[FlexClickRange alloc]init];
+            click.name = node.name;
+            click.onPress = node.onPress;
+            click.range = NSMakeRange(oldLength, attrString.length-oldLength);
+            [clicks addObject:click];
+        }
+    }
+    return attrString;
+}
+
 
