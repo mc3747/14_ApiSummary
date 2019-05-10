@@ -28,12 +28,12 @@
 + (NSArray *)modelList {
 
     NSArray *dictArray = @[
-                @{@"title": @"jodan", @"desc": @"公牛"},
-                @{@"title": @"kobe", @"desc": @"湖人"},
-                @{@"title": @"james", @"desc":@"热火"},
-                @{@"title": @"yaoming", @"desc":@"火箭"},
-                @{@"title": @"kury", @"desc": @"勇士"},
-                @{@"title": @"pake", @"desc": @"雷霆"}
+                @{@"title": @"Frame系1", @"desc": @"纯Frame"},
+                @{@"title": @"Frame系2", @"desc": @"MyLayout"},
+                @{@"title": @"Frame系3", @"desc":@"SDLayout"},
+                @{@"title": @"AutoLayout系1", @"desc":@"纯AutoLayout"},
+                @{@"title": @"AutoLayout系2", @"desc": @"Masonry"},
+                @{@"title": @"AutoLayout系3", @"desc": @"PureLayout"}
                 ];
     NSMutableArray *tmpArr = [NSMutableArray array];
     for (NSDictionary *dict in dictArray) {

@@ -6,26 +6,30 @@ PODS:
   - FlexLib/no-arc (2.2.2):
     - Yoga (= 1.6.0)
   - Masonry (1.1.0)
+  - SDAutoLayout (2.2.1)
   - Yoga (1.6.0)
 
 DEPENDENCIES:
   - ComponentKit
   - FlexLib
   - Masonry
+  - SDAutoLayout
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - ComponentKit
     - FlexLib
     - Masonry
+    - SDAutoLayout
     - Yoga
 
 SPEC CHECKSUMS:
   ComponentKit: 02f5ab822d9183835d9afb0a780d29ebf0b94fdb
   FlexLib: f996d47215bfadf5c55cfc1777e5d10d43a00e2f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDAutoLayout: 8bf6b3bbc8b01f775d4defbb4fda2ace805461be
   Yoga: 81670877477311136b1b3f69a6307ce62e1c89cf
 
-PODFILE CHECKSUM: 33321b4927a3cc05d20bc07404566faeafd3d908
+PODFILE CHECKSUM: a8abd210738b339c82a76f3d0d88b188e64a53d4
 
 COCOAPODS: 1.5.0.beta.1

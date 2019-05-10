@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0391F906D7AB15D7E4A193E52036D846"
+               BlueprintIdentifier = "CF625015B18CFA50C9DDE5212109E70E"
                BlueprintName = "Pods-WHLatticeDemo"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-WHLatticeDemo.a">

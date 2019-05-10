@@ -15,6 +15,33 @@
 		4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994421EDB9C90097102C /* ArrayDataSource.m */; };
 		4210994A21EDBB0E0097102C /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994721EDBB0D0097102C /* TestCell.m */; };
 		4210994B21EDBB0E0097102C /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994821EDBB0E0097102C /* TestModel.m */; };
+		426D55E52285C7E10060AEF4 /* Case10ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55A22285C7DF0060AEF4 /* Case10ViewController.m */; };
+		426D55E62285C7E10060AEF4 /* UIView+TTGHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55A52285C7DF0060AEF4 /* UIView+TTGHook.m */; };
+		426D55E72285C7E10060AEF4 /* Case1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55A92285C7DF0060AEF4 /* Case1ViewController.m */; };
+		426D55E82285C7E10060AEF4 /* Case4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55AC2285C7DF0060AEF4 /* Case4ViewController.m */; };
+		426D55E92285C7E10060AEF4 /* Case4Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55AE2285C7DF0060AEF4 /* Case4Cell.m */; };
+		426D55EA2285C7E10060AEF4 /* Case4DataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55AF2285C7DF0060AEF4 /* Case4DataEntity.m */; };
+		426D55EB2285C7E10060AEF4 /* Case5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55B22285C7E00060AEF4 /* Case5ViewController.m */; };
+		426D55EC2285C7E10060AEF4 /* Case13TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55B52285C7E00060AEF4 /* Case13TableViewCell.m */; };
+		426D55ED2285C7E10060AEF4 /* Case13ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55B82285C7E00060AEF4 /* Case13ViewController.m */; };
+		426D55EE2285C7E10060AEF4 /* Case2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55BA2285C7E00060AEF4 /* Case2ViewController.m */; };
+		426D55EF2285C7E10060AEF4 /* Case3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55BD2285C7E00060AEF4 /* Case3ViewController.m */; };
+		426D55F02285C7E10060AEF4 /* Case7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55C12285C7E00060AEF4 /* Case7ViewController.m */; };
+		426D55F12285C7E10060AEF4 /* Case14Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55C42285C7E00060AEF4 /* Case14Cell.m */; };
+		426D55F22285C7E10060AEF4 /* Case14StairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55C52285C7E00060AEF4 /* Case14StairView.m */; };
+		426D55F32285C7E10060AEF4 /* Case14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55C62285C7E00060AEF4 /* Case14ViewController.m */; };
+		426D55F42285C7E10060AEF4 /* Case6ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55CB2285C7E00060AEF4 /* Case6ItemView.m */; };
+		426D55F52285C7E10060AEF4 /* Case6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55CC2285C7E00060AEF4 /* Case6ViewController.m */; };
+		426D55F62285C7E10060AEF4 /* Case15ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55D02285C7E10060AEF4 /* Case15ViewController.m */; };
+		426D55F72285C7E10060AEF4 /* Case8Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55D32285C7E10060AEF4 /* Case8Cell.m */; };
+		426D55F82285C7E10060AEF4 /* Case8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55D52285C7E10060AEF4 /* Case8ViewController.m */; };
+		426D55F92285C7E10060AEF4 /* Case8DataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55D72285C7E10060AEF4 /* Case8DataEntity.m */; };
+		426D55FA2285C7E10060AEF4 /* Case12ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55DA2285C7E10060AEF4 /* Case12ViewController.m */; };
+		426D55FB2285C7E10060AEF4 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55DC2285C7E10060AEF4 /* Common.m */; };
+		426D55FC2285C7E10060AEF4 /* MasonryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55DE2285C7E10060AEF4 /* MasonryDemoViewController.m */; };
+		426D55FD2285C7E10060AEF4 /* Case9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55E12285C7E10060AEF4 /* Case9ViewController.m */; };
+		426D55FE2285C7E10060AEF4 /* Case11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55E32285C7E10060AEF4 /* Case11ViewController.m */; };
+		426D56002285C81F0060AEF4 /* MasonryDemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426D55FF2285C81F0060AEF4 /* MasonryDemoViewController.storyboard */; };
 		42936D99219283AA0076F47A /* LayerBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42936D98219283AA0076F47A /* LayerBaseVC.xib */; };
 		42936D9E219288640076F47A /* DrawSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42936D9C219288640076F47A /* DrawSummaryVC.m */; };
 		42936D9F219288640076F47A /* DrawSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42936D9D219288640076F47A /* DrawSummaryVC.xib */; };
@@ -143,6 +170,59 @@
 		4210994721EDBB0D0097102C /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		4210994821EDBB0E0097102C /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		4210994921EDBB0E0097102C /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		426D55A02285C7DF0060AEF4 /* MasonryDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryDemoViewController.h; sourceTree = "<group>"; };
+		426D55A22285C7DF0060AEF4 /* Case10ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case10ViewController.m; sourceTree = "<group>"; };
+		426D55A32285C7DF0060AEF4 /* Case10ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case10ViewController.h; sourceTree = "<group>"; };
+		426D55A52285C7DF0060AEF4 /* UIView+TTGHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TTGHook.m"; sourceTree = "<group>"; };
+		426D55A62285C7DF0060AEF4 /* UIView+TTGHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTGHook.h"; sourceTree = "<group>"; };
+		426D55A82285C7DF0060AEF4 /* Case1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case1ViewController.h; sourceTree = "<group>"; };
+		426D55A92285C7DF0060AEF4 /* Case1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case1ViewController.m; sourceTree = "<group>"; };
+		426D55AB2285C7DF0060AEF4 /* Case4Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case4Cell.h; sourceTree = "<group>"; };
+		426D55AC2285C7DF0060AEF4 /* Case4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case4ViewController.m; sourceTree = "<group>"; };
+		426D55AD2285C7DF0060AEF4 /* Case4DataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case4DataEntity.h; sourceTree = "<group>"; };
+		426D55AE2285C7DF0060AEF4 /* Case4Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case4Cell.m; sourceTree = "<group>"; };
+		426D55AF2285C7DF0060AEF4 /* Case4DataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case4DataEntity.m; sourceTree = "<group>"; };
+		426D55B02285C7DF0060AEF4 /* Case4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case4ViewController.h; sourceTree = "<group>"; };
+		426D55B22285C7E00060AEF4 /* Case5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case5ViewController.m; sourceTree = "<group>"; };
+		426D55B32285C7E00060AEF4 /* Case5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case5ViewController.h; sourceTree = "<group>"; };
+		426D55B52285C7E00060AEF4 /* Case13TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case13TableViewCell.m; sourceTree = "<group>"; };
+		426D55B62285C7E00060AEF4 /* Case13ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case13ViewController.h; sourceTree = "<group>"; };
+		426D55B72285C7E00060AEF4 /* Case13TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case13TableViewCell.h; sourceTree = "<group>"; };
+		426D55B82285C7E00060AEF4 /* Case13ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case13ViewController.m; sourceTree = "<group>"; };
+		426D55BA2285C7E00060AEF4 /* Case2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case2ViewController.m; sourceTree = "<group>"; };
+		426D55BB2285C7E00060AEF4 /* Case2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case2ViewController.h; sourceTree = "<group>"; };
+		426D55BD2285C7E00060AEF4 /* Case3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case3ViewController.m; sourceTree = "<group>"; };
+		426D55BE2285C7E00060AEF4 /* Case3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case3ViewController.h; sourceTree = "<group>"; };
+		426D55C02285C7E00060AEF4 /* Case7ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case7ViewController.h; sourceTree = "<group>"; };
+		426D55C12285C7E00060AEF4 /* Case7ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case7ViewController.m; sourceTree = "<group>"; };
+		426D55C32285C7E00060AEF4 /* Case14ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case14ViewController.h; sourceTree = "<group>"; };
+		426D55C42285C7E00060AEF4 /* Case14Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case14Cell.m; sourceTree = "<group>"; };
+		426D55C52285C7E00060AEF4 /* Case14StairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case14StairView.m; sourceTree = "<group>"; };
+		426D55C62285C7E00060AEF4 /* Case14ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case14ViewController.m; sourceTree = "<group>"; };
+		426D55C72285C7E00060AEF4 /* Case14StairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case14StairView.h; sourceTree = "<group>"; };
+		426D55C82285C7E00060AEF4 /* Case14Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case14Cell.h; sourceTree = "<group>"; };
+		426D55CA2285C7E00060AEF4 /* Case6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case6ViewController.h; sourceTree = "<group>"; };
+		426D55CB2285C7E00060AEF4 /* Case6ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case6ItemView.m; sourceTree = "<group>"; };
+		426D55CC2285C7E00060AEF4 /* Case6ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case6ViewController.m; sourceTree = "<group>"; };
+		426D55CD2285C7E00060AEF4 /* Case6ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case6ItemView.h; sourceTree = "<group>"; };
+		426D55CF2285C7E10060AEF4 /* Case15ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case15ViewController.h; sourceTree = "<group>"; };
+		426D55D02285C7E10060AEF4 /* Case15ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case15ViewController.m; sourceTree = "<group>"; };
+		426D55D22285C7E10060AEF4 /* Case8DataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case8DataEntity.h; sourceTree = "<group>"; };
+		426D55D32285C7E10060AEF4 /* Case8Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case8Cell.m; sourceTree = "<group>"; };
+		426D55D42285C7E10060AEF4 /* Case8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case8ViewController.h; sourceTree = "<group>"; };
+		426D55D52285C7E10060AEF4 /* Case8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case8ViewController.m; sourceTree = "<group>"; };
+		426D55D62285C7E10060AEF4 /* Case8Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case8Cell.h; sourceTree = "<group>"; };
+		426D55D72285C7E10060AEF4 /* Case8DataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case8DataEntity.m; sourceTree = "<group>"; };
+		426D55D92285C7E10060AEF4 /* Case12ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case12ViewController.h; sourceTree = "<group>"; };
+		426D55DA2285C7E10060AEF4 /* Case12ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case12ViewController.m; sourceTree = "<group>"; };
+		426D55DC2285C7E10060AEF4 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		426D55DD2285C7E10060AEF4 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		426D55DE2285C7E10060AEF4 /* MasonryDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryDemoViewController.m; sourceTree = "<group>"; };
+		426D55E02285C7E10060AEF4 /* Case9ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case9ViewController.h; sourceTree = "<group>"; };
+		426D55E12285C7E10060AEF4 /* Case9ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case9ViewController.m; sourceTree = "<group>"; };
+		426D55E32285C7E10060AEF4 /* Case11ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case11ViewController.m; sourceTree = "<group>"; };
+		426D55E42285C7E10060AEF4 /* Case11ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case11ViewController.h; sourceTree = "<group>"; };
+		426D55FF2285C81F0060AEF4 /* MasonryDemoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MasonryDemoViewController.storyboard; sourceTree = "<group>"; };
 		42936D98219283AA0076F47A /* LayerBaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayerBaseVC.xib; sourceTree = "<group>"; };
 		42936D9B219288640076F47A /* DrawSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawSummaryVC.h; sourceTree = "<group>"; };
 		42936D9C219288640076F47A /* DrawSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawSummaryVC.m; sourceTree = "<group>"; };
@@ -386,6 +466,13 @@
 			name = "6_图形部分总结";
 			sourceTree = "<group>";
 		};
+		4203727E2284082E00438844 /* 3，SDLayout框架 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "3，SDLayout框架";
+			sourceTree = "<group>";
+		};
 		4210993521ED6B5D0097102C /* 5_布局summary */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +493,7 @@
 			children = (
 				4210993821ED6C830097102C /* 1，纯Frame */,
 				4210993921ED6C8F0097102C /* 2，MyLayout框架 */,
+				4203727E2284082E00438844 /* 3，SDLayout框架 */,
 			);
 			name = "1，Frame系";
 			sourceTree = "<group>";
@@ -415,7 +503,7 @@
 			children = (
 				4210993A21ED6CAF0097102C /* 1，纯AutoLayout */,
 				4210993B21ED6CC10097102C /* 2，Masonry框架 */,
-				42DE3A522264722300422577 /* 3，PureLayout */,
+				42DE3A522264722300422577 /* 3，PureLayout框架 */,
 			);
 			name = "2，AutoLayout系";
 			sourceTree = "<group>";
@@ -444,6 +532,26 @@
 		4210993B21ED6CC10097102C /* 2，Masonry框架 */ = {
 			isa = PBXGroup;
 			children = (
+				426D55A72285C7DF0060AEF4 /* Case1 */,
+				426D55B92285C7E00060AEF4 /* Case2 */,
+				426D55BC2285C7E00060AEF4 /* Case3 */,
+				426D55AA2285C7DF0060AEF4 /* Case4 */,
+				426D55B12285C7E00060AEF4 /* Case5 */,
+				426D55C92285C7E00060AEF4 /* Case6 */,
+				426D55BF2285C7E00060AEF4 /* Case7 */,
+				426D55D12285C7E10060AEF4 /* Case8 */,
+				426D55DF2285C7E10060AEF4 /* Case9 */,
+				426D55A12285C7DF0060AEF4 /* Case10 */,
+				426D55E22285C7E10060AEF4 /* Case11 */,
+				426D55D82285C7E10060AEF4 /* Case12 */,
+				426D55B42285C7E00060AEF4 /* Case13 */,
+				426D55C22285C7E00060AEF4 /* Case14 */,
+				426D55CE2285C7E10060AEF4 /* Case15 */,
+				426D55DB2285C7E10060AEF4 /* Common */,
+				426D55A42285C7DF0060AEF4 /* Debug */,
+				426D55A02285C7DF0060AEF4 /* MasonryDemoViewController.h */,
+				426D55DE2285C7E10060AEF4 /* MasonryDemoViewController.m */,
+				426D55FF2285C81F0060AEF4 /* MasonryDemoViewController.storyboard */,
 			);
 			name = "2，Masonry框架";
 			sourceTree = "<group>";
@@ -473,6 +581,175 @@
 				4210994421EDB9C90097102C /* ArrayDataSource.m */,
 			);
 			name = "瘦化table";
+			sourceTree = "<group>";
+		};
+		426D55A12285C7DF0060AEF4 /* Case10 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55A22285C7DF0060AEF4 /* Case10ViewController.m */,
+				426D55A32285C7DF0060AEF4 /* Case10ViewController.h */,
+			);
+			path = Case10;
+			sourceTree = "<group>";
+		};
+		426D55A42285C7DF0060AEF4 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				426D55A52285C7DF0060AEF4 /* UIView+TTGHook.m */,
+				426D55A62285C7DF0060AEF4 /* UIView+TTGHook.h */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		426D55A72285C7DF0060AEF4 /* Case1 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55A82285C7DF0060AEF4 /* Case1ViewController.h */,
+				426D55A92285C7DF0060AEF4 /* Case1ViewController.m */,
+			);
+			path = Case1;
+			sourceTree = "<group>";
+		};
+		426D55AA2285C7DF0060AEF4 /* Case4 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55AB2285C7DF0060AEF4 /* Case4Cell.h */,
+				426D55AC2285C7DF0060AEF4 /* Case4ViewController.m */,
+				426D55AD2285C7DF0060AEF4 /* Case4DataEntity.h */,
+				426D55AE2285C7DF0060AEF4 /* Case4Cell.m */,
+				426D55AF2285C7DF0060AEF4 /* Case4DataEntity.m */,
+				426D55B02285C7DF0060AEF4 /* Case4ViewController.h */,
+			);
+			path = Case4;
+			sourceTree = "<group>";
+		};
+		426D55B12285C7E00060AEF4 /* Case5 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55B22285C7E00060AEF4 /* Case5ViewController.m */,
+				426D55B32285C7E00060AEF4 /* Case5ViewController.h */,
+			);
+			path = Case5;
+			sourceTree = "<group>";
+		};
+		426D55B42285C7E00060AEF4 /* Case13 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55B52285C7E00060AEF4 /* Case13TableViewCell.m */,
+				426D55B62285C7E00060AEF4 /* Case13ViewController.h */,
+				426D55B72285C7E00060AEF4 /* Case13TableViewCell.h */,
+				426D55B82285C7E00060AEF4 /* Case13ViewController.m */,
+			);
+			path = Case13;
+			sourceTree = "<group>";
+		};
+		426D55B92285C7E00060AEF4 /* Case2 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55BA2285C7E00060AEF4 /* Case2ViewController.m */,
+				426D55BB2285C7E00060AEF4 /* Case2ViewController.h */,
+			);
+			path = Case2;
+			sourceTree = "<group>";
+		};
+		426D55BC2285C7E00060AEF4 /* Case3 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55BD2285C7E00060AEF4 /* Case3ViewController.m */,
+				426D55BE2285C7E00060AEF4 /* Case3ViewController.h */,
+			);
+			path = Case3;
+			sourceTree = "<group>";
+		};
+		426D55BF2285C7E00060AEF4 /* Case7 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55C02285C7E00060AEF4 /* Case7ViewController.h */,
+				426D55C12285C7E00060AEF4 /* Case7ViewController.m */,
+			);
+			path = Case7;
+			sourceTree = "<group>";
+		};
+		426D55C22285C7E00060AEF4 /* Case14 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55C32285C7E00060AEF4 /* Case14ViewController.h */,
+				426D55C42285C7E00060AEF4 /* Case14Cell.m */,
+				426D55C52285C7E00060AEF4 /* Case14StairView.m */,
+				426D55C62285C7E00060AEF4 /* Case14ViewController.m */,
+				426D55C72285C7E00060AEF4 /* Case14StairView.h */,
+				426D55C82285C7E00060AEF4 /* Case14Cell.h */,
+			);
+			path = Case14;
+			sourceTree = "<group>";
+		};
+		426D55C92285C7E00060AEF4 /* Case6 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55CA2285C7E00060AEF4 /* Case6ViewController.h */,
+				426D55CB2285C7E00060AEF4 /* Case6ItemView.m */,
+				426D55CC2285C7E00060AEF4 /* Case6ViewController.m */,
+				426D55CD2285C7E00060AEF4 /* Case6ItemView.h */,
+			);
+			path = Case6;
+			sourceTree = "<group>";
+		};
+		426D55CE2285C7E10060AEF4 /* Case15 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55CF2285C7E10060AEF4 /* Case15ViewController.h */,
+				426D55D02285C7E10060AEF4 /* Case15ViewController.m */,
+			);
+			path = Case15;
+			sourceTree = "<group>";
+		};
+		426D55D12285C7E10060AEF4 /* Case8 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55D22285C7E10060AEF4 /* Case8DataEntity.h */,
+				426D55D32285C7E10060AEF4 /* Case8Cell.m */,
+				426D55D42285C7E10060AEF4 /* Case8ViewController.h */,
+				426D55D52285C7E10060AEF4 /* Case8ViewController.m */,
+				426D55D62285C7E10060AEF4 /* Case8Cell.h */,
+				426D55D72285C7E10060AEF4 /* Case8DataEntity.m */,
+			);
+			path = Case8;
+			sourceTree = "<group>";
+		};
+		426D55D82285C7E10060AEF4 /* Case12 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55D92285C7E10060AEF4 /* Case12ViewController.h */,
+				426D55DA2285C7E10060AEF4 /* Case12ViewController.m */,
+			);
+			path = Case12;
+			sourceTree = "<group>";
+		};
+		426D55DB2285C7E10060AEF4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				426D55DC2285C7E10060AEF4 /* Common.m */,
+				426D55DD2285C7E10060AEF4 /* Common.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		426D55DF2285C7E10060AEF4 /* Case9 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55E02285C7E10060AEF4 /* Case9ViewController.h */,
+				426D55E12285C7E10060AEF4 /* Case9ViewController.m */,
+			);
+			path = Case9;
+			sourceTree = "<group>";
+		};
+		426D55E22285C7E10060AEF4 /* Case11 */ = {
+			isa = PBXGroup;
+			children = (
+				426D55E32285C7E10060AEF4 /* Case11ViewController.m */,
+				426D55E42285C7E10060AEF4 /* Case11ViewController.h */,
+			);
+			path = Case11;
 			sourceTree = "<group>";
 		};
 		42936D9A219287550076F47A /* 4_DrawSummary */ = {
@@ -1007,7 +1284,7 @@
 			name = 3_AnimateSummary;
 			sourceTree = "<group>";
 		};
-		42DE3A522264722300422577 /* 3，PureLayout */ = {
+		42DE3A522264722300422577 /* 3，PureLayout框架 */ = {
 			isa = PBXGroup;
 			children = (
 				42DE3A54226472B100422577 /* ALiOSDemoListController.h */,
@@ -1015,7 +1292,7 @@
 				42DE3C0C22647CC700422577 /* PureLayout */,
 				42DE3B202264732300422577 /* DemoClasses */,
 			);
-			name = "3，PureLayout";
+			name = "3，PureLayout框架";
 			sourceTree = "<group>";
 		};
 		42DE3B202264732300422577 /* DemoClasses */ = {
@@ -1207,6 +1484,7 @@
 				42B93BFB2191877900CBB02D /* CALayerAnimationVC.xib in Resources */,
 				42B93C0121918EF000CBB02D /* ThirdPartAnimationVC.xib in Resources */,
 				42D6351221912EEF0063E763 /* ClassListViewController.storyboard in Resources */,
+				426D56002285C81F0060AEF4 /* MasonryDemoViewController.storyboard in Resources */,
 				42936D9F219288640076F47A /* DrawSummaryVC.xib in Resources */,
 				42936E252192E0F60076F47A /* LaunchScreen.storyboard in Resources */,
 				42B93BF52191874A00CBB02D /* UIViewAnimationVC.xib in Resources */,
@@ -1276,10 +1554,17 @@
 			files = (
 				42936DEE21928A420076F47A /* YLoadingPanel.m in Sources */,
 				42936E0121928A420076F47A /* LNFooterAnimator.m in Sources */,
+				426D55E62285C7E10060AEF4 /* UIView+TTGHook.m in Sources */,
 				42C52C2A218841BC001D7A07 /* DemoLayer.m in Sources */,
+				426D55FD2285C7E10060AEF4 /* Case9ViewController.m in Sources */,
+				426D55FC2285C7E10060AEF4 /* MasonryDemoViewController.m in Sources */,
+				426D55E92285C7E10060AEF4 /* Case4Cell.m in Sources */,
 				42936DF221928A420076F47A /* LNHeaderTmallAnimator.m in Sources */,
 				42D63547219177160063E763 /* PDView.m in Sources */,
 				42DE3B382264733C00422577 /* ALiOSDemo6ViewController.m in Sources */,
+				426D55F02285C7E10060AEF4 /* Case7ViewController.m in Sources */,
+				426D55F62285C7E10060AEF4 /* Case15ViewController.m in Sources */,
+				426D55F72285C7E10060AEF4 /* Case8Cell.m in Sources */,
 				42D63541219175CB0063E763 /* PDScrollView.m in Sources */,
 				42936E0521928A420076F47A /* DemoVC.m in Sources */,
 				42936DF121928A420076F47A /* LNHeaderKaolaAnimator.m in Sources */,
@@ -1289,12 +1574,18 @@
 				42D63523219170A00063E763 /* CATextLayerVC.m in Sources */,
 				42936DFF21928A420076F47A /* LNRefreshComponent.m in Sources */,
 				42936E0321928A420076F47A /* LNHeaderAnimator.m in Sources */,
+				426D55FB2285C7E10060AEF4 /* Common.m in Sources */,
 				42936DEF21928A420076F47A /* LNHeaderDIYAnimator.m in Sources */,
+				426D55F92285C7E10060AEF4 /* Case8DataEntity.m in Sources */,
 				42D6353E219175880063E763 /* PDLayerLabel.m in Sources */,
 				42F772012193BA5F00FFD237 /* UIView+BAAnimation.m in Sources */,
 				42D6350E21912ED00063E763 /* CALayerControlsViewController.m in Sources */,
+				426D55F22285C7E10060AEF4 /* Case14StairView.m in Sources */,
+				426D55FE2285C7E10060AEF4 /* Case11ViewController.m in Sources */,
 				42DE3B392264733C00422577 /* ALiOSDemo10ViewController.m in Sources */,
 				42936E272192E0F60076F47A /* main.m in Sources */,
+				426D55FA2285C7E10060AEF4 /* Case12ViewController.m in Sources */,
+				426D55EA2285C7E10060AEF4 /* Case4DataEntity.m in Sources */,
 				42936DFD21928A420076F47A /* LNRefreshFooter.m in Sources */,
 				42936E0621928A420076F47A /* RefreshAnimateVC.m in Sources */,
 				42D63529219170CC0063E763 /* CAGradientLayerVC.m in Sources */,
@@ -1309,10 +1600,12 @@
 				42DE3B3B2264733C00422577 /* ALiOSDemo9ViewController.m in Sources */,
 				42936DF721928A420076F47A /* UIImage+animatedGIF.m in Sources */,
 				42DE3B3A2264733C00422577 /* ALiOSDemo3ViewController.m in Sources */,
+				426D55EC2285C7E10060AEF4 /* Case13TableViewCell.m in Sources */,
 				42DE3B402264733C00422577 /* ALiOSDemo2ViewController.m in Sources */,
 				42936E382192EAC60076F47A /* TransitionAnimationController.m in Sources */,
 				42D6352F219170F70063E763 /* CATiledLayerVC.m in Sources */,
 				42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */,
+				426D55F12285C7E10060AEF4 /* Case14Cell.m in Sources */,
 				42D63535219171200063E763 /* CAEAGLLayerVC.m in Sources */,
 				4210994121ED8F580097102C /* AutoLayoutVC.m in Sources */,
 				42DE3B3D2264733C00422577 /* ALiOSDemo1ViewController.m in Sources */,
@@ -1322,34 +1615,44 @@
 				42F772092193BA9E00FFD237 /* BATransitionDemo.m in Sources */,
 				42936DF021928A420076F47A /* LNHeaderJDAnimator.m in Sources */,
 				42D6350F21912ED00063E763 /* CALayerViewController.m in Sources */,
+				426D55F52285C7E10060AEF4 /* Case6ViewController.m in Sources */,
 				68881A2A1EF0FC1200229107 /* LayerBaseVC.m in Sources */,
+				426D55EB2285C7E10060AEF4 /* Case5ViewController.m in Sources */,
 				42D63503219128FE0063E763 /* LayerAndAnimateVC.m in Sources */,
 				42936DF821928A420076F47A /* LNHeaderMeituanAnimator.m in Sources */,
+				426D55F42285C7E10060AEF4 /* Case6ItemView.m in Sources */,
 				42D63544219176630063E763 /* ReflectionView.m in Sources */,
 				42936E2F2192E88B0076F47A /* BaseAnimationController.m in Sources */,
 				42936E352192EABE0076F47A /* GroupAnimationController.m in Sources */,
 				42936DE921928A420076F47A /* LNHeaderAnimator+Analysis.m in Sources */,
 				42D6353B219171450063E763 /* CAEmitterLayerVC.m in Sources */,
 				4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */,
+				426D55E82285C7E10060AEF4 /* Case4ViewController.m in Sources */,
 				42C52C27218841A5001D7A07 /* DemoView.m in Sources */,
 				42D63520219170890063E763 /* CAScrollLayerVC.m in Sources */,
+				426D55E72285C7E10060AEF4 /* Case1ViewController.m in Sources */,
 				42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */,
 				42936E142192DA9D0076F47A /* TitleButton.m in Sources */,
 				4201D5CE221FE6480069080D /* UIImage+CornerRadius.m in Sources */,
 				42936E3B2192EAE30076F47A /* ComprehensiveCaseController.m in Sources */,
+				426D55EF2285C7E10060AEF4 /* Case3ViewController.m in Sources */,
 				42DE3B412264733C00422577 /* ALiOSDemo5ViewController.m in Sources */,
 				42F772052193BA6600FFD237 /* UIView+BATransition.m in Sources */,
+				426D55F82285C7E10060AEF4 /* Case8ViewController.m in Sources */,
 				42D63538219171350063E763 /* CATransformLayerVC.m in Sources */,
 				42936DEA21928A420076F47A /* LNHeaderFeizhuAnimator.m in Sources */,
 				42936DFC21928A420076F47A /* LNRefreshAnimator.m in Sources */,
 				42F771FD2193B9E400FFD237 /* BALoadingView.m in Sources */,
 				42936DED21928A420076F47A /* LNHeaderNetEaseNewsAnimator.m in Sources */,
 				42936E282192E0F60076F47A /* AppDelegate.m in Sources */,
+				426D55EE2285C7E10060AEF4 /* Case2ViewController.m in Sources */,
+				426D55E52285C7E10060AEF4 /* Case10ViewController.m in Sources */,
 				42D6354E21917AC10063E763 /* AnimateSummaryVC.m in Sources */,
 				42936E4E2192EB210076F47A /* DCPathCenterButton.m in Sources */,
 				42DE3A55226472B100422577 /* ALiOSDemoListController.m in Sources */,
 				42B93C0021918EF000CBB02D /* ThirdPartAnimationVC.m in Sources */,
 				42936E4F2192EB210076F47A /* MCFireworksButton.m in Sources */,
+				426D55ED2285C7E10060AEF4 /* Case13ViewController.m in Sources */,
 				42D6352C219170E60063E763 /* CAReplicatorLayerVC.m in Sources */,
 				42DE3B3C2264733C00422577 /* ALiOSDemo4ViewController.m in Sources */,
 				42F771FC2193B9E400FFD237 /* BALoadingWaveView.m in Sources */,
@@ -1365,6 +1668,7 @@
 				42B93BF42191874A00CBB02D /* UIViewAnimationVC.m in Sources */,
 				42DE3C1722647CD700422577 /* NSArray+PureLayout.m in Sources */,
 				42D63526219170B70063E763 /* AVPlayerLayerVC.m in Sources */,
+				426D55F32285C7E10060AEF4 /* Case14ViewController.m in Sources */,
 				42936E0021928A420076F47A /* LNRefreshHandler.m in Sources */,
 				42936DFB21928A420076F47A /* LNRefreshHeader.m in Sources */,
 			);
