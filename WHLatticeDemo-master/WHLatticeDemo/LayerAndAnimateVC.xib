@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,62 +20,126 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6G-lT-o5D">
-                    <rect key="frame" x="16" y="121" width="343" height="55"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6G-lT-o5D">
+                    <rect key="frame" x="10" y="30" width="355" height="40"/>
                     <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="1,CAlayer的基础"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zhd-Ah-kJ3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="1,CAlayer的基础">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="layerBaseAction:" destination="-1" eventType="touchUpInside" id="dmX-MF-Xiw"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3L-ol-JBH">
-                    <rect key="frame" x="16" y="194" width="343" height="55"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3L-ol-JBH">
+                    <rect key="frame" x="10" y="80" width="355" height="40"/>
                     <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="2,CAlayer图层分类"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6wc-6L-q1O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="2,CAlayer图层分类">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="layerClassifyAction:" destination="-1" eventType="touchUpInside" id="fdn-nJ-MPq"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxn-ky-iMh">
-                    <rect key="frame" x="16" y="274" width="343" height="55"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxn-ky-iMh">
+                    <rect key="frame" x="10" y="130" width="355" height="40"/>
                     <color key="backgroundColor" red="0.92941176469999998" green="0.4039215686" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="3，动画的总结"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DJb-N2-Yie"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="3，动画的总结">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="animationSummaryAction:" destination="-1" eventType="touchUpInside" id="wtL-HJ-wT9"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfi-Dv-ywS">
-                    <rect key="frame" x="16" y="351" width="343" height="55"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfi-Dv-ywS">
+                    <rect key="frame" x="10" y="180" width="355" height="40"/>
                     <color key="backgroundColor" red="0.087506058469999995" green="0.79567833129999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="4，绘图的总结"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="g5u-RX-dcR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="4，绘图的总结">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="drawSummaryAction:" destination="-1" eventType="touchUpInside" id="Yf1-tJ-WdA"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F82-8V-rtm">
-                    <rect key="frame" x="16" y="431" width="343" height="55"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F82-8V-rtm">
+                    <rect key="frame" x="10" y="280" width="355" height="40"/>
                     <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="5，布局的总结"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fO2-NB-FI4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="6，布局的总结">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="autoLayoutAction:" destination="-1" eventType="touchUpInside" id="Atx-jD-oQT"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqF-Yy-Fam">
-                    <rect key="frame" x="16" y="517" width="343" height="56"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqF-Yy-Fam">
+                    <rect key="frame" x="10" y="230" width="355" height="40"/>
                     <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="6，UIKit常见图形问题总结"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Wmc-x4-hnd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="5，UIKit常见图形问题总结">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
                     <connections>
                         <action selector="imageSummaryAction:" destination="-1" eventType="touchUpInside" id="8F3-lM-Ay0"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFX-jc-fPu">
+                    <rect key="frame" x="10" y="330" width="355" height="40"/>
+                    <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="z3i-pS-ue5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="7，屏幕适配方案总结">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gqF-Yy-Fam" firstAttribute="top" secondItem="nfi-Dv-ywS" secondAttribute="bottom" constant="10" id="32c-OG-66i"/>
+                <constraint firstItem="YFX-jc-fPu" firstAttribute="leading" secondItem="nk5-ox-Xl1" secondAttribute="leading" constant="10" id="3Or-FD-pvJ"/>
+                <constraint firstItem="nfi-Dv-ywS" firstAttribute="top" secondItem="Dxn-ky-iMh" secondAttribute="bottom" constant="10" id="3X9-PC-2l4"/>
+                <constraint firstItem="Dxn-ky-iMh" firstAttribute="leading" secondItem="nk5-ox-Xl1" secondAttribute="leading" constant="10" id="3pB-uJ-wgZ"/>
+                <constraint firstItem="YFX-jc-fPu" firstAttribute="top" secondItem="F82-8V-rtm" secondAttribute="bottom" constant="10" id="6Qc-uV-7J6"/>
+                <constraint firstItem="a6G-lT-o5D" firstAttribute="top" secondItem="nk5-ox-Xl1" secondAttribute="top" constant="10" id="6Wm-Xl-XHs"/>
+                <constraint firstItem="nk5-ox-Xl1" firstAttribute="trailing" secondItem="Dxn-ky-iMh" secondAttribute="trailing" constant="10" id="9gy-gs-R9s"/>
+                <constraint firstItem="gqF-Yy-Fam" firstAttribute="leading" secondItem="nk5-ox-Xl1" secondAttribute="leading" constant="10" id="GZe-qP-AO0"/>
+                <constraint firstItem="L3L-ol-JBH" firstAttribute="leading" secondItem="nk5-ox-Xl1" secondAttribute="leading" constant="10" id="H3o-2r-qIz"/>
+                <constraint firstItem="nk5-ox-Xl1" firstAttribute="trailing" secondItem="YFX-jc-fPu" secondAttribute="trailing" constant="10" id="HPG-3L-OHT"/>
+                <constraint firstItem="nk5-ox-Xl1" firstAttribute="trailing" secondItem="gqF-Yy-Fam" secondAttribute="trailing" constant="10" id="Lgy-vu-XCz"/>
+                <constraint firstItem="nk5-ox-Xl1" firstAttribute="trailing" secondItem="nfi-Dv-ywS" secondAttribute="trailing" constant="10" id="Mse-d2-Q6J"/>
+                <constraint firstItem="nfi-Dv-ywS" firstAttribute="leading" secondItem="nk5-ox-Xl1" secondAttribute="leading" constant="10" id="PuZ-u6-k11"/>
+                <constraint firstItem="nk5-ox-Xl1" firstAttribute="trailing" secondItem="a6G-lT-o5D" secondAttribute="trailing" constant="10" id="U8d-db-QI8"/>
+                <constraint firstItem="nk5-ox-Xl1" firstAttribute="trailing" secondItem="F82-8V-rtm" secondAttribute="trailing" constant="10" id="WeL-jg-BzM"/>
+                <constraint firstItem="a6G-lT-o5D" firstAttribute="leading" secondItem="nk5-ox-Xl1" secondAttribute="leading" constant="10" id="Xbn-Yh-u2A"/>
+                <constraint firstItem="L3L-ol-JBH" firstAttribute="top" secondItem="a6G-lT-o5D" secondAttribute="bottom" constant="10" id="Xxr-cR-P8D"/>
+                <constraint firstItem="nk5-ox-Xl1" firstAttribute="trailing" secondItem="L3L-ol-JBH" secondAttribute="trailing" constant="10" id="bVk-Sz-n6U"/>
+                <constraint firstItem="Dxn-ky-iMh" firstAttribute="top" secondItem="L3L-ol-JBH" secondAttribute="bottom" constant="10" id="cxL-7q-arA"/>
+                <constraint firstItem="F82-8V-rtm" firstAttribute="leading" secondItem="nk5-ox-Xl1" secondAttribute="leading" constant="10" id="hE5-NY-oQg"/>
+                <constraint firstItem="F82-8V-rtm" firstAttribute="top" secondItem="gqF-Yy-Fam" secondAttribute="bottom" constant="10" id="yeg-n4-VfZ"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="nk5-ox-Xl1"/>
             <point key="canvasLocation" x="-978.39999999999998" y="109.29535232383809"/>
         </view>

@@ -42,6 +42,17 @@
 		426D55FD2285C7E10060AEF4 /* Case9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55E12285C7E10060AEF4 /* Case9ViewController.m */; };
 		426D55FE2285C7E10060AEF4 /* Case11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55E32285C7E10060AEF4 /* Case11ViewController.m */; };
 		426D56002285C81F0060AEF4 /* MasonryDemoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426D55FF2285C81F0060AEF4 /* MasonryDemoViewController.storyboard */; };
+		426D56052286B8360060AEF4 /* ScreenAdaptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D56042286B8360060AEF4 /* ScreenAdaptionVC.m */; };
+		426D56082286B9670060AEF4 /* UIViewController+ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D56072286B9670060AEF4 /* UIViewController+ContentView.m */; };
+		426D56102286C4570060AEF4 /* UIFont+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D560F2286C4570060AEF4 /* UIFont+runtime.m */; };
+		426D56202286C5CD0060AEF4 /* UITextView+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D56122286C5CD0060AEF4 /* UITextView+Fit.m */; };
+		426D56212286C5CD0060AEF4 /* UILabel+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D56132286C5CD0060AEF4 /* UILabel+Fit.m */; };
+		426D56222286C5CD0060AEF4 /* UIButton+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D56142286C5CD0060AEF4 /* UIButton+Fit.m */; };
+		426D56232286C5CD0060AEF4 /* UITextField+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D56172286C5CD0060AEF4 /* UITextField+Fit.m */; };
+		426D56242286C5CD0060AEF4 /* NSLayoutConstraint+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D561C2286C5CD0060AEF4 /* NSLayoutConstraint+Fit.m */; };
+		426D56252286C5CD0060AEF4 /* UIView+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D561E2286C5CD0060AEF4 /* UIView+Fit.m */; };
+		426D56292286CF540060AEF4 /* AdaptSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D56282286CF540060AEF4 /* AdaptSystemManager.m */; };
+		426D562D2286DB510060AEF4 /* AdaptPhoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D562C2286DB510060AEF4 /* AdaptPhoneManager.m */; };
 		42936D99219283AA0076F47A /* LayerBaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42936D98219283AA0076F47A /* LayerBaseVC.xib */; };
 		42936D9E219288640076F47A /* DrawSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42936D9C219288640076F47A /* DrawSummaryVC.m */; };
 		42936D9F219288640076F47A /* DrawSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42936D9D219288640076F47A /* DrawSummaryVC.xib */; };
@@ -223,6 +234,32 @@
 		426D55E32285C7E10060AEF4 /* Case11ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Case11ViewController.m; sourceTree = "<group>"; };
 		426D55E42285C7E10060AEF4 /* Case11ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Case11ViewController.h; sourceTree = "<group>"; };
 		426D55FF2285C81F0060AEF4 /* MasonryDemoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MasonryDemoViewController.storyboard; sourceTree = "<group>"; };
+		426D56022286B7AF0060AEF4 /* Adaption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaption.h; sourceTree = "<group>"; };
+		426D56032286B8360060AEF4 /* ScreenAdaptionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenAdaptionVC.h; sourceTree = "<group>"; };
+		426D56042286B8360060AEF4 /* ScreenAdaptionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenAdaptionVC.m; sourceTree = "<group>"; };
+		426D56062286B9670060AEF4 /* UIViewController+ContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ContentView.h"; sourceTree = "<group>"; };
+		426D56072286B9670060AEF4 /* UIViewController+ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ContentView.m"; sourceTree = "<group>"; };
+		426D560D2286C3940060AEF4 /* AdaptFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptFont.h; sourceTree = "<group>"; };
+		426D560E2286C4570060AEF4 /* UIFont+runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+runtime.h"; sourceTree = "<group>"; };
+		426D560F2286C4570060AEF4 /* UIFont+runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+runtime.m"; sourceTree = "<group>"; };
+		426D56122286C5CD0060AEF4 /* UITextView+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Fit.m"; sourceTree = "<group>"; };
+		426D56132286C5CD0060AEF4 /* UILabel+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Fit.m"; sourceTree = "<group>"; };
+		426D56142286C5CD0060AEF4 /* UIButton+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Fit.m"; sourceTree = "<group>"; };
+		426D56152286C5CD0060AEF4 /* NSLayoutConstraint+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Fit.h"; sourceTree = "<group>"; };
+		426D56162286C5CD0060AEF4 /* ShiDianFontFitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiDianFontFitHeader.h; sourceTree = "<group>"; };
+		426D56172286C5CD0060AEF4 /* UITextField+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Fit.m"; sourceTree = "<group>"; };
+		426D56182286C5CD0060AEF4 /* UIView+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fit.h"; sourceTree = "<group>"; };
+		426D56192286C5CD0060AEF4 /* UITextView+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Fit.h"; sourceTree = "<group>"; };
+		426D561A2286C5CD0060AEF4 /* DynamicProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicProperty.h; sourceTree = "<group>"; };
+		426D561B2286C5CD0060AEF4 /* UILabel+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Fit.h"; sourceTree = "<group>"; };
+		426D561C2286C5CD0060AEF4 /* NSLayoutConstraint+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Fit.m"; sourceTree = "<group>"; };
+		426D561D2286C5CD0060AEF4 /* UIButton+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Fit.h"; sourceTree = "<group>"; };
+		426D561E2286C5CD0060AEF4 /* UIView+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fit.m"; sourceTree = "<group>"; };
+		426D561F2286C5CD0060AEF4 /* UITextField+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Fit.h"; sourceTree = "<group>"; };
+		426D56272286CF540060AEF4 /* AdaptSystemManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptSystemManager.h; sourceTree = "<group>"; };
+		426D56282286CF540060AEF4 /* AdaptSystemManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdaptSystemManager.m; sourceTree = "<group>"; };
+		426D562B2286DB510060AEF4 /* AdaptPhoneManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptPhoneManager.h; sourceTree = "<group>"; };
+		426D562C2286DB510060AEF4 /* AdaptPhoneManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdaptPhoneManager.m; sourceTree = "<group>"; };
 		42936D98219283AA0076F47A /* LayerBaseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LayerBaseVC.xib; sourceTree = "<group>"; };
 		42936D9B219288640076F47A /* DrawSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawSummaryVC.h; sourceTree = "<group>"; };
 		42936D9C219288640076F47A /* DrawSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawSummaryVC.m; sourceTree = "<group>"; };
@@ -454,7 +491,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4201D5CB221FE3E90069080D /* 6_图形部分总结 */ = {
+		4201D5CB221FE3E90069080D /* 5_图形部分总结 */ = {
 			isa = PBXGroup;
 			children = (
 				4201D5CF221FE9080069080D /* ImageSummaryVC.h */,
@@ -463,7 +500,7 @@
 				4201D5CC221FE6480069080D /* UIImage+CornerRadius.h */,
 				4201D5CD221FE6480069080D /* UIImage+CornerRadius.m */,
 			);
-			name = "6_图形部分总结";
+			name = "5_图形部分总结";
 			sourceTree = "<group>";
 		};
 		4203727E2284082E00438844 /* 3，SDLayout框架 */ = {
@@ -473,7 +510,7 @@
 			name = "3，SDLayout框架";
 			sourceTree = "<group>";
 		};
-		4210993521ED6B5D0097102C /* 5_布局summary */ = {
+		4210993521ED6B5D0097102C /* 6_布局summary */ = {
 			isa = PBXGroup;
 			children = (
 				4210994C21EDC7730097102C /* 瘦化table */,
@@ -485,7 +522,7 @@
 				4210993C21ED8A4B0097102C /* 3，性能系 */,
 				4210993D21ED8A540097102C /* 4，跨平台系 */,
 			);
-			name = "5_布局summary";
+			name = "6_布局summary";
 			sourceTree = "<group>";
 		};
 		4210993621ED6C450097102C /* 1，Frame系 */ = {
@@ -750,6 +787,87 @@
 				426D55E42285C7E10060AEF4 /* Case11ViewController.h */,
 			);
 			path = Case11;
+			sourceTree = "<group>";
+		};
+		426D56012285D6350060AEF4 /* 7_屏幕适配总结 */ = {
+			isa = PBXGroup;
+			children = (
+				426D562A2286D78C0060AEF4 /* 适配机型 */,
+				426D56262286CB200060AEF4 /* 适配系统 */,
+				426D560C2286C2930060AEF4 /* 适配字体 */,
+				426D560A2286C2560060AEF4 /* 适配iPhone X */,
+				426D56092286C2470060AEF4 /* 适配屏幕宽度 */,
+				426D56032286B8360060AEF4 /* ScreenAdaptionVC.h */,
+				426D56042286B8360060AEF4 /* ScreenAdaptionVC.m */,
+			);
+			name = "7_屏幕适配总结";
+			sourceTree = "<group>";
+		};
+		426D56092286C2470060AEF4 /* 适配屏幕宽度 */ = {
+			isa = PBXGroup;
+			children = (
+				426D56022286B7AF0060AEF4 /* Adaption.h */,
+			);
+			name = "适配屏幕宽度";
+			sourceTree = "<group>";
+		};
+		426D560A2286C2560060AEF4 /* 适配iPhone X */ = {
+			isa = PBXGroup;
+			children = (
+				426D56062286B9670060AEF4 /* UIViewController+ContentView.h */,
+				426D56072286B9670060AEF4 /* UIViewController+ContentView.m */,
+			);
+			name = "适配iPhone X";
+			sourceTree = "<group>";
+		};
+		426D560C2286C2930060AEF4 /* 适配字体 */ = {
+			isa = PBXGroup;
+			children = (
+				426D560D2286C3940060AEF4 /* AdaptFont.h */,
+				426D560E2286C4570060AEF4 /* UIFont+runtime.h */,
+				426D560F2286C4570060AEF4 /* UIFont+runtime.m */,
+				426D56112286C5CC0060AEF4 /* ShiDianFontFit */,
+			);
+			name = "适配字体";
+			sourceTree = "<group>";
+		};
+		426D56112286C5CC0060AEF4 /* ShiDianFontFit */ = {
+			isa = PBXGroup;
+			children = (
+				426D56122286C5CD0060AEF4 /* UITextView+Fit.m */,
+				426D56132286C5CD0060AEF4 /* UILabel+Fit.m */,
+				426D56142286C5CD0060AEF4 /* UIButton+Fit.m */,
+				426D56152286C5CD0060AEF4 /* NSLayoutConstraint+Fit.h */,
+				426D56162286C5CD0060AEF4 /* ShiDianFontFitHeader.h */,
+				426D56172286C5CD0060AEF4 /* UITextField+Fit.m */,
+				426D56182286C5CD0060AEF4 /* UIView+Fit.h */,
+				426D56192286C5CD0060AEF4 /* UITextView+Fit.h */,
+				426D561A2286C5CD0060AEF4 /* DynamicProperty.h */,
+				426D561B2286C5CD0060AEF4 /* UILabel+Fit.h */,
+				426D561C2286C5CD0060AEF4 /* NSLayoutConstraint+Fit.m */,
+				426D561D2286C5CD0060AEF4 /* UIButton+Fit.h */,
+				426D561E2286C5CD0060AEF4 /* UIView+Fit.m */,
+				426D561F2286C5CD0060AEF4 /* UITextField+Fit.h */,
+			);
+			path = ShiDianFontFit;
+			sourceTree = "<group>";
+		};
+		426D56262286CB200060AEF4 /* 适配系统 */ = {
+			isa = PBXGroup;
+			children = (
+				426D56272286CF540060AEF4 /* AdaptSystemManager.h */,
+				426D56282286CF540060AEF4 /* AdaptSystemManager.m */,
+			);
+			name = "适配系统";
+			sourceTree = "<group>";
+		};
+		426D562A2286D78C0060AEF4 /* 适配机型 */ = {
+			isa = PBXGroup;
+			children = (
+				426D562B2286DB510060AEF4 /* AdaptPhoneManager.h */,
+				426D562C2286DB510060AEF4 /* AdaptPhoneManager.m */,
+			);
+			name = "适配机型";
 			sourceTree = "<group>";
 		};
 		42936D9A219287550076F47A /* 4_DrawSummary */ = {
@@ -1407,8 +1525,9 @@
 				42D6350721912EA10063E763 /* 2_LayerClassify */,
 				42D6354A21917A890063E763 /* 3_AnimateSummary */,
 				42936D9A219287550076F47A /* 4_DrawSummary */,
-				4210993521ED6B5D0097102C /* 5_布局summary */,
-				4201D5CB221FE3E90069080D /* 6_图形部分总结 */,
+				4201D5CB221FE3E90069080D /* 5_图形部分总结 */,
+				4210993521ED6B5D0097102C /* 6_布局summary */,
+				426D56012285D6350060AEF4 /* 7_屏幕适配总结 */,
 				42936E192192E0F60076F47A /* Others */,
 			);
 			path = WHLatticeDemo;
@@ -1558,6 +1677,7 @@
 				42C52C2A218841BC001D7A07 /* DemoLayer.m in Sources */,
 				426D55FD2285C7E10060AEF4 /* Case9ViewController.m in Sources */,
 				426D55FC2285C7E10060AEF4 /* MasonryDemoViewController.m in Sources */,
+				426D56052286B8360060AEF4 /* ScreenAdaptionVC.m in Sources */,
 				426D55E92285C7E10060AEF4 /* Case4Cell.m in Sources */,
 				42936DF221928A420076F47A /* LNHeaderTmallAnimator.m in Sources */,
 				42D63547219177160063E763 /* PDView.m in Sources */,
@@ -1592,11 +1712,15 @@
 				4210994A21EDBB0E0097102C /* TestCell.m in Sources */,
 				42936E172192DAB70076F47A /* BaseAnimateVC.m in Sources */,
 				42B93BFA2191877800CBB02D /* CALayerAnimationVC.m in Sources */,
+				426D56292286CF540060AEF4 /* AdaptSystemManager.m in Sources */,
+				426D56232286C5CD0060AEF4 /* UITextField+Fit.m in Sources */,
 				42DE3B3E2264733C00422577 /* ALiOSDemo7ViewController.m in Sources */,
 				42936E0221928A420076F47A /* NSObject+LNRefresh.m in Sources */,
 				42D6351021912ED00063E763 /* ClassListViewController.m in Sources */,
 				42936DEC21928A420076F47A /* LNHeaderTaobaoAnimator.m in Sources */,
+				426D56252286C5CD0060AEF4 /* UIView+Fit.m in Sources */,
 				42DE3C1622647CD700422577 /* ALView+PureLayout.m in Sources */,
+				426D56242286C5CD0060AEF4 /* NSLayoutConstraint+Fit.m in Sources */,
 				42DE3B3B2264733C00422577 /* ALiOSDemo9ViewController.m in Sources */,
 				42936DF721928A420076F47A /* UIImage+animatedGIF.m in Sources */,
 				42DE3B3A2264733C00422577 /* ALiOSDemo3ViewController.m in Sources */,
@@ -1604,6 +1728,7 @@
 				42DE3B402264733C00422577 /* ALiOSDemo2ViewController.m in Sources */,
 				42936E382192EAC60076F47A /* TransitionAnimationController.m in Sources */,
 				42D6352F219170F70063E763 /* CATiledLayerVC.m in Sources */,
+				426D562D2286DB510060AEF4 /* AdaptPhoneManager.m in Sources */,
 				42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */,
 				426D55F12285C7E10060AEF4 /* Case14Cell.m in Sources */,
 				42D63535219171200063E763 /* CAEAGLLayerVC.m in Sources */,
@@ -1613,6 +1738,7 @@
 				42DE3B3F2264733C00422577 /* ALiOSDemo8ViewController.m in Sources */,
 				42D635322191710F0063E763 /* CAShapeLayerVC.m in Sources */,
 				42F772092193BA9E00FFD237 /* BATransitionDemo.m in Sources */,
+				426D56202286C5CD0060AEF4 /* UITextView+Fit.m in Sources */,
 				42936DF021928A420076F47A /* LNHeaderJDAnimator.m in Sources */,
 				42D6350F21912ED00063E763 /* CALayerViewController.m in Sources */,
 				426D55F52285C7E10060AEF4 /* Case6ViewController.m in Sources */,
@@ -1625,6 +1751,7 @@
 				42936E2F2192E88B0076F47A /* BaseAnimationController.m in Sources */,
 				42936E352192EABE0076F47A /* GroupAnimationController.m in Sources */,
 				42936DE921928A420076F47A /* LNHeaderAnimator+Analysis.m in Sources */,
+				426D56222286C5CD0060AEF4 /* UIButton+Fit.m in Sources */,
 				42D6353B219171450063E763 /* CAEmitterLayerVC.m in Sources */,
 				4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */,
 				426D55E82285C7E10060AEF4 /* Case4ViewController.m in Sources */,
@@ -1632,12 +1759,14 @@
 				42D63520219170890063E763 /* CAScrollLayerVC.m in Sources */,
 				426D55E72285C7E10060AEF4 /* Case1ViewController.m in Sources */,
 				42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */,
+				426D56102286C4570060AEF4 /* UIFont+runtime.m in Sources */,
 				42936E142192DA9D0076F47A /* TitleButton.m in Sources */,
 				4201D5CE221FE6480069080D /* UIImage+CornerRadius.m in Sources */,
 				42936E3B2192EAE30076F47A /* ComprehensiveCaseController.m in Sources */,
 				426D55EF2285C7E10060AEF4 /* Case3ViewController.m in Sources */,
 				42DE3B412264733C00422577 /* ALiOSDemo5ViewController.m in Sources */,
 				42F772052193BA6600FFD237 /* UIView+BATransition.m in Sources */,
+				426D56082286B9670060AEF4 /* UIViewController+ContentView.m in Sources */,
 				426D55F82285C7E10060AEF4 /* Case8ViewController.m in Sources */,
 				42D63538219171350063E763 /* CATransformLayerVC.m in Sources */,
 				42936DEA21928A420076F47A /* LNHeaderFeizhuAnimator.m in Sources */,
@@ -1664,6 +1793,7 @@
 				42936E4C2192EB210076F47A /* DCPathButton.m in Sources */,
 				4201D5D2221FE9080069080D /* ImageSummaryVC.m in Sources */,
 				42936E4B2192EB210076F47A /* DWBubbleMenuButton.m in Sources */,
+				426D56212286C5CD0060AEF4 /* UILabel+Fit.m in Sources */,
 				42936E502192EB210076F47A /* MCFireworksView.m in Sources */,
 				42B93BF42191874A00CBB02D /* UIViewAnimationVC.m in Sources */,
 				42DE3C1722647CD700422577 /* NSArray+PureLayout.m in Sources */,
