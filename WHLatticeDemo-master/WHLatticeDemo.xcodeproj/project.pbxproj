@@ -10,6 +10,53 @@
 		4201D5CE221FE6480069080D /* UIImage+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 4201D5CD221FE6480069080D /* UIImage+CornerRadius.m */; };
 		4201D5D2221FE9080069080D /* ImageSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4201D5D0221FE9080069080D /* ImageSummaryVC.m */; };
 		4201D5D3221FE9080069080D /* ImageSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4201D5D1221FE9080069080D /* ImageSummaryVC.xib */; };
+		420CFE602293854B003CB663 /* jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = 420CFE5C2293854B003CB663 /* jiantou.png */; };
+		420CFE612293854B003CB663 /* fore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 420CFE5D2293854B003CB663 /* fore.jpg */; };
+		420CFE622293854B003CB663 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 420CFE5E2293854B003CB663 /* 16.png */; };
+		420CFE632293854B003CB663 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = 420CFE5F2293854B003CB663 /* 222.png */; };
+		420CFE6522938560003CB663 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 420CFE6422938560003CB663 /* back.jpg */; };
+		420CFE7622938596003CB663 /* DrawLineViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE6622938594003CB663 /* DrawLineViewcontroller.m */; };
+		420CFE7722938596003CB663 /* DrawLineColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE6722938594003CB663 /* DrawLineColorView.m */; };
+		420CFE7822938596003CB663 /* DrawTexttView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE6B22938594003CB663 /* DrawTexttView.m */; };
+		420CFE7922938596003CB663 /* DrawImageViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE6D22938594003CB663 /* DrawImageViewcontroller.m */; };
+		420CFE7A22938596003CB663 /* DrawLineColorViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE6F22938595003CB663 /* DrawLineColorViewcontroller.m */; };
+		420CFE7B22938596003CB663 /* DrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE7022938595003CB663 /* DrawImageView.m */; };
+		420CFE7C22938596003CB663 /* DrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE7122938595003CB663 /* DrawRectView.m */; };
+		420CFE7D22938596003CB663 /* DrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE7522938596003CB663 /* DrawLineView.m */; };
+		420CFE8C229385E1003CB663 /* DrawCircleViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE7F229385E0003CB663 /* DrawCircleViewcontroller.m */; };
+		420CFE8D229385E1003CB663 /* DrawRectViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE80229385E0003CB663 /* DrawRectViewcontroller.m */; };
+		420CFE8E229385E1003CB663 /* DrawDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE85229385E0003CB663 /* DrawDownloadView.m */; };
+		420CFE8F229385E1003CB663 /* DrawCircletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE86229385E1003CB663 /* DrawCircletView.m */; };
+		420CFE90229385E1003CB663 /* DrawGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE87229385E1003CB663 /* DrawGradientController.m */; };
+		420CFE91229385E1003CB663 /* DrawTextViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE89229385E1003CB663 /* DrawTextViewcontroller.m */; };
+		420CFE92229385E1003CB663 /* DrawDownloadViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE8A229385E1003CB663 /* DrawDownloadViewcontroller.m */; };
+		420CFEA322938663003CB663 /* PQTBDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE9422938661003CB663 /* PQTBDelegate.m */; };
+		420CFEA422938663003CB663 /* SectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE9522938661003CB663 /* SectionModel.m */; };
+		420CFEA522938663003CB663 /* PQWipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE9622938661003CB663 /* PQWipeView.m */; };
+		420CFEA622938663003CB663 /* PQWipeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420CFE9922938661003CB663 /* PQWipeView.xib */; };
+		420CFEA722938663003CB663 /* UIView+pgqViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE9C22938662003CB663 /* UIView+pgqViewExtension.m */; };
+		420CFEA822938663003CB663 /* UIImage+PQImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE9D22938662003CB663 /* UIImage+PQImage.m */; };
+		420CFEA922938663003CB663 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE9E22938662003CB663 /* CellModel.m */; };
+		420CFEAA22938663003CB663 /* PQTBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFE9F22938662003CB663 /* PQTBDataSource.m */; };
+		420CFEAD22938767003CB663 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEAB22938767003CB663 /* LineView.m */; };
+		420CFEAF229387EC003CB663 /* Draw.plist in Resources */ = {isa = PBXBuildFile; fileRef = 420CFEAE229387EB003CB663 /* Draw.plist */; };
+		420CFEC1229388EA003CB663 /* ImageClipCircleAndBorderViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEB1229388E8003CB663 /* ImageClipCircleAndBorderViewcontroller.m */; };
+		420CFEC2229388EA003CB663 /* ImageCutViewViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEB3229388E8003CB663 /* ImageCutViewViewcontroller.m */; };
+		420CFEC3229388EA003CB663 /* ImageAddWaterTextViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEB4229388E9003CB663 /* ImageAddWaterTextViewcontroller.m */; };
+		420CFEC4229388EA003CB663 /* ImageClipRectImageViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEB8229388E9003CB663 /* ImageClipRectImageViewcontroller.m */; };
+		420CFEC5229388EA003CB663 /* ImageWipeViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEB9229388E9003CB663 /* ImageWipeViewcontroller.m */; };
+		420CFEC6229388EA003CB663 /* ImageAddWaterImageViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEBB229388EA003CB663 /* ImageAddWaterImageViewcontroller.m */; };
+		420CFEC7229388EA003CB663 /* ImageClipCircleViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEBE229388EA003CB663 /* ImageClipCircleViewcontroller.m */; };
+		420CFEC8229388EA003CB663 /* ImageContextViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEC0229388EA003CB663 /* ImageContextViewcontroller.m */; };
+		420CFEE52293911F003CB663 /* ListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFECC2293911E003CB663 /* ListModel.m */; };
+		420CFEE62293911F003CB663 /* CellDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFED12293911E003CB663 /* CellDrawView.m */; };
+		420CFEE72293911F003CB663 /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420CFED32293911E003CB663 /* MainCollectionViewCell.xib */; };
+		420CFEE82293911F003CB663 /* MainCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFED42293911E003CB663 /* MainCollectionViewCell.m */; };
+		420CFEE92293911F003CB663 /* AxcCAAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFED92293911E003CB663 /* AxcCAAnimation.m */; };
+		420CFEEA2293911F003CB663 /* AxcPolarAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEDE2293911E003CB663 /* AxcPolarAxis.m */; };
+		420CFEEB2293911F003CB663 /* AxcDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEDF2293911E003CB663 /* AxcDrawPath.m */; };
+		420CFEEC2293911F003CB663 /* AxcCustomDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEE22293911E003CB663 /* AxcCustomDrawPath.m */; };
+		420CFEED2293911F003CB663 /* DrawPackageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420CFEE42293911F003CB663 /* DrawPackageViewController.m */; };
 		4210994121ED8F580097102C /* AutoLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210993F21ED8F580097102C /* AutoLayoutVC.m */; };
 		4210994221ED8F580097102C /* AutoLayoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4210994021ED8F580097102C /* AutoLayoutVC.xib */; };
 		4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994421EDB9C90097102C /* ArrayDataSource.m */; };
@@ -172,6 +219,94 @@
 		4201D5CF221FE9080069080D /* ImageSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageSummaryVC.h; sourceTree = "<group>"; };
 		4201D5D0221FE9080069080D /* ImageSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSummaryVC.m; sourceTree = "<group>"; };
 		4201D5D1221FE9080069080D /* ImageSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSummaryVC.xib; sourceTree = "<group>"; };
+		420CFE5C2293854B003CB663 /* jiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jiantou.png; sourceTree = "<group>"; };
+		420CFE5D2293854B003CB663 /* fore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fore.jpg; sourceTree = "<group>"; };
+		420CFE5E2293854B003CB663 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		420CFE5F2293854B003CB663 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
+		420CFE6422938560003CB663 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		420CFE6622938594003CB663 /* DrawLineViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineViewcontroller.m; sourceTree = "<group>"; };
+		420CFE6722938594003CB663 /* DrawLineColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineColorView.m; sourceTree = "<group>"; };
+		420CFE6822938594003CB663 /* DrawImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageView.h; sourceTree = "<group>"; };
+		420CFE6922938594003CB663 /* DrawRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectView.h; sourceTree = "<group>"; };
+		420CFE6A22938594003CB663 /* DrawLineColorViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineColorViewcontroller.h; sourceTree = "<group>"; };
+		420CFE6B22938594003CB663 /* DrawTexttView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTexttView.m; sourceTree = "<group>"; };
+		420CFE6C22938594003CB663 /* DrawLineColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineColorView.h; sourceTree = "<group>"; };
+		420CFE6D22938594003CB663 /* DrawImageViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageViewcontroller.m; sourceTree = "<group>"; };
+		420CFE6E22938595003CB663 /* DrawLineViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineViewcontroller.h; sourceTree = "<group>"; };
+		420CFE6F22938595003CB663 /* DrawLineColorViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineColorViewcontroller.m; sourceTree = "<group>"; };
+		420CFE7022938595003CB663 /* DrawImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageView.m; sourceTree = "<group>"; };
+		420CFE7122938595003CB663 /* DrawRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectView.m; sourceTree = "<group>"; };
+		420CFE7222938595003CB663 /* DrawLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineView.h; sourceTree = "<group>"; };
+		420CFE7322938595003CB663 /* DrawImageViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageViewcontroller.h; sourceTree = "<group>"; };
+		420CFE7422938596003CB663 /* DrawTexttView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTexttView.h; sourceTree = "<group>"; };
+		420CFE7522938596003CB663 /* DrawLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineView.m; sourceTree = "<group>"; };
+		420CFE7E229385E0003CB663 /* DrawGradientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawGradientController.h; sourceTree = "<group>"; };
+		420CFE7F229385E0003CB663 /* DrawCircleViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCircleViewcontroller.m; sourceTree = "<group>"; };
+		420CFE80229385E0003CB663 /* DrawRectViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectViewcontroller.m; sourceTree = "<group>"; };
+		420CFE81229385E0003CB663 /* DrawDownloadViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawDownloadViewcontroller.h; sourceTree = "<group>"; };
+		420CFE82229385E0003CB663 /* DrawCircleViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircleViewcontroller.h; sourceTree = "<group>"; };
+		420CFE83229385E0003CB663 /* DrawTextViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTextViewcontroller.h; sourceTree = "<group>"; };
+		420CFE84229385E0003CB663 /* DrawRectViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectViewcontroller.h; sourceTree = "<group>"; };
+		420CFE85229385E0003CB663 /* DrawDownloadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawDownloadView.m; sourceTree = "<group>"; };
+		420CFE86229385E1003CB663 /* DrawCircletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCircletView.m; sourceTree = "<group>"; };
+		420CFE87229385E1003CB663 /* DrawGradientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawGradientController.m; sourceTree = "<group>"; };
+		420CFE88229385E1003CB663 /* DrawCircletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircletView.h; sourceTree = "<group>"; };
+		420CFE89229385E1003CB663 /* DrawTextViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTextViewcontroller.m; sourceTree = "<group>"; };
+		420CFE8A229385E1003CB663 /* DrawDownloadViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawDownloadViewcontroller.m; sourceTree = "<group>"; };
+		420CFE8B229385E1003CB663 /* DrawDownloadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawDownloadView.h; sourceTree = "<group>"; };
+		420CFE9422938661003CB663 /* PQTBDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQTBDelegate.m; sourceTree = "<group>"; };
+		420CFE9522938661003CB663 /* SectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionModel.m; sourceTree = "<group>"; };
+		420CFE9622938661003CB663 /* PQWipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQWipeView.m; sourceTree = "<group>"; };
+		420CFE9722938661003CB663 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		420CFE9822938661003CB663 /* PQTBDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQTBDelegate.h; sourceTree = "<group>"; };
+		420CFE9922938661003CB663 /* PQWipeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PQWipeView.xib; sourceTree = "<group>"; };
+		420CFE9A22938661003CB663 /* SectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionModel.h; sourceTree = "<group>"; };
+		420CFE9B22938661003CB663 /* UIView+pgqViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+pgqViewExtension.h"; sourceTree = "<group>"; };
+		420CFE9C22938662003CB663 /* UIView+pgqViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+pgqViewExtension.m"; sourceTree = "<group>"; };
+		420CFE9D22938662003CB663 /* UIImage+PQImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PQImage.m"; sourceTree = "<group>"; };
+		420CFE9E22938662003CB663 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		420CFE9F22938662003CB663 /* PQTBDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQTBDataSource.m; sourceTree = "<group>"; };
+		420CFEA022938662003CB663 /* PQWipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQWipeView.h; sourceTree = "<group>"; };
+		420CFEA122938662003CB663 /* PQTBDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQTBDataSource.h; sourceTree = "<group>"; };
+		420CFEA222938663003CB663 /* UIImage+PQImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PQImage.h"; sourceTree = "<group>"; };
+		420CFEAB22938767003CB663 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		420CFEAC22938767003CB663 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		420CFEAE229387EB003CB663 /* Draw.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Draw.plist; sourceTree = "<group>"; };
+		420CFEB1229388E8003CB663 /* ImageClipCircleAndBorderViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageClipCircleAndBorderViewcontroller.m; sourceTree = "<group>"; };
+		420CFEB2229388E8003CB663 /* ImageClipCircleAndBorderViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageClipCircleAndBorderViewcontroller.h; sourceTree = "<group>"; };
+		420CFEB3229388E8003CB663 /* ImageCutViewViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCutViewViewcontroller.m; sourceTree = "<group>"; };
+		420CFEB4229388E9003CB663 /* ImageAddWaterTextViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAddWaterTextViewcontroller.m; sourceTree = "<group>"; };
+		420CFEB5229388E9003CB663 /* ImageClipCircleViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageClipCircleViewcontroller.h; sourceTree = "<group>"; };
+		420CFEB6229388E9003CB663 /* ImageAddWaterImageViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAddWaterImageViewcontroller.h; sourceTree = "<group>"; };
+		420CFEB7229388E9003CB663 /* ImageWipeViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageWipeViewcontroller.h; sourceTree = "<group>"; };
+		420CFEB8229388E9003CB663 /* ImageClipRectImageViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageClipRectImageViewcontroller.m; sourceTree = "<group>"; };
+		420CFEB9229388E9003CB663 /* ImageWipeViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageWipeViewcontroller.m; sourceTree = "<group>"; };
+		420CFEBA229388E9003CB663 /* ImageCutViewViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCutViewViewcontroller.h; sourceTree = "<group>"; };
+		420CFEBB229388EA003CB663 /* ImageAddWaterImageViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAddWaterImageViewcontroller.m; sourceTree = "<group>"; };
+		420CFEBC229388EA003CB663 /* ImageAddWaterTextViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAddWaterTextViewcontroller.h; sourceTree = "<group>"; };
+		420CFEBD229388EA003CB663 /* ImageContextViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageContextViewcontroller.h; sourceTree = "<group>"; };
+		420CFEBE229388EA003CB663 /* ImageClipCircleViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageClipCircleViewcontroller.m; sourceTree = "<group>"; };
+		420CFEBF229388EA003CB663 /* ImageClipRectImageViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageClipRectImageViewcontroller.h; sourceTree = "<group>"; };
+		420CFEC0229388EA003CB663 /* ImageContextViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageContextViewcontroller.m; sourceTree = "<group>"; };
+		420CFECB2293911E003CB663 /* ListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListModel.h; sourceTree = "<group>"; };
+		420CFECC2293911E003CB663 /* ListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListModel.m; sourceTree = "<group>"; };
+		420CFECD2293911E003CB663 /* DrawPackageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPackageViewController.h; sourceTree = "<group>"; };
+		420CFECF2293911E003CB663 /* MainCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCollectionViewCell.h; sourceTree = "<group>"; };
+		420CFED12293911E003CB663 /* CellDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDrawView.m; sourceTree = "<group>"; };
+		420CFED22293911E003CB663 /* CellDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDrawView.h; sourceTree = "<group>"; };
+		420CFED32293911E003CB663 /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
+		420CFED42293911E003CB663 /* MainCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCollectionViewCell.m; sourceTree = "<group>"; };
+		420CFED62293911E003CB663 /* AxcDrawPathTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcDrawPathTool.h; sourceTree = "<group>"; };
+		420CFED82293911E003CB663 /* AxcCAAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcCAAnimation.h; sourceTree = "<group>"; };
+		420CFED92293911E003CB663 /* AxcCAAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcCAAnimation.m; sourceTree = "<group>"; };
+		420CFEDA2293911E003CB663 /* AxcDrawDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcDrawDefine.h; sourceTree = "<group>"; };
+		420CFEDD2293911E003CB663 /* AxcPolarAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcPolarAxis.h; sourceTree = "<group>"; };
+		420CFEDE2293911E003CB663 /* AxcPolarAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcPolarAxis.m; sourceTree = "<group>"; };
+		420CFEDF2293911E003CB663 /* AxcDrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcDrawPath.m; sourceTree = "<group>"; };
+		420CFEE02293911E003CB663 /* AxcDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcDrawPath.h; sourceTree = "<group>"; };
+		420CFEE22293911E003CB663 /* AxcCustomDrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxcCustomDrawPath.m; sourceTree = "<group>"; };
+		420CFEE32293911E003CB663 /* AxcCustomDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxcCustomDrawPath.h; sourceTree = "<group>"; };
+		420CFEE42293911F003CB663 /* DrawPackageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPackageViewController.m; sourceTree = "<group>"; };
 		4210993E21ED8F580097102C /* AutoLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutVC.h; sourceTree = "<group>"; };
 		4210993F21ED8F580097102C /* AutoLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutVC.m; sourceTree = "<group>"; };
 		4210994021ED8F580097102C /* AutoLayoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutVC.xib; sourceTree = "<group>"; };
@@ -491,18 +626,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4201D5CB221FE3E90069080D /* 5_图形部分总结 */ = {
-			isa = PBXGroup;
-			children = (
-				4201D5CF221FE9080069080D /* ImageSummaryVC.h */,
-				4201D5D0221FE9080069080D /* ImageSummaryVC.m */,
-				4201D5D1221FE9080069080D /* ImageSummaryVC.xib */,
-				4201D5CC221FE6480069080D /* UIImage+CornerRadius.h */,
-				4201D5CD221FE6480069080D /* UIImage+CornerRadius.m */,
-			);
-			name = "5_图形部分总结";
-			sourceTree = "<group>";
-		};
 		4203727E2284082E00438844 /* 3，SDLayout框架 */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,7 +633,56 @@
 			name = "3，SDLayout框架";
 			sourceTree = "<group>";
 		};
-		4210993521ED6B5D0097102C /* 6_布局summary */ = {
+		420CFE502293831A003CB663 /* 1，layer基础 */ = {
+			isa = PBXGroup;
+			children = (
+				68881A281EF0FC1200229107 /* LayerBaseVC.h */,
+				68881A291EF0FC1200229107 /* LayerBaseVC.m */,
+				42936D98219283AA0076F47A /* LayerBaseVC.xib */,
+				42C52C25218841A5001D7A07 /* DemoView.h */,
+				42C52C26218841A5001D7A07 /* DemoView.m */,
+				42C52C29218841BC001D7A07 /* DemoLayer.m */,
+				42C52C28218841BC001D7A07 /* DemoLayer.h */,
+			);
+			path = "1，layer基础";
+			sourceTree = "<group>";
+		};
+		420CFE5122938348003CB663 /* 2，layer的种类 */ = {
+			isa = PBXGroup;
+			children = (
+				42D6351121912EEF0063E763 /* ClassListViewController.storyboard */,
+				42D6350C21912ED00063E763 /* ClassListViewController.h */,
+				42D6350D21912ED00063E763 /* ClassListViewController.m */,
+				42D6351321916AEE0063E763 /* 1,CALayer */,
+				42D6351D21916C430063E763 /* 2,CAScrollLayer */,
+				42D6351C21916C3D0063E763 /* 3,CATextLayer */,
+				42D6351B21916C390063E763 /* 4,AVPlayerLayer */,
+				42D6351A21916C350063E763 /* 5,CAGradientLayer */,
+				42D6351921916C130063E763 /* 6,CAReplicatorLayer */,
+				42D6351821916C0E0063E763 /* 7,CATiledLayer */,
+				42D6351721916C0A0063E763 /* 8,CAShapeLayer */,
+				42D6351621916C060063E763 /* 9,CAEAGLLayer */,
+				42D6351521916C020063E763 /* 10,CATransformLayer */,
+				42D6351421916BF90063E763 /* 11,CAEmitterLayer */,
+			);
+			path = "2，layer的种类";
+			sourceTree = "<group>";
+		};
+		420CFE5222938372003CB663 /* 3，动画的总结 */ = {
+			isa = PBXGroup;
+			children = (
+				42D6354B21917AC10063E763 /* AnimateSummaryVC.h */,
+				42D6354C21917AC10063E763 /* AnimateSummaryVC.m */,
+				42D6354D21917AC10063E763 /* AnimateSummaryVC.xib */,
+				42B93BF02191871F00CBB02D /* #1_UIViewAnimation */,
+				42B93BF62191875500CBB02D /* #2_CALayerAnimation */,
+				42B93BFC21918E9300CBB02D /* #3_ThirdPartAnimation */,
+				42936DA0219289700076F47A /* #4_RefreshAnimation */,
+			);
+			path = "3，动画的总结";
+			sourceTree = "<group>";
+		};
+		420CFE55229383FF003CB663 /* 7，布局总结 */ = {
 			isa = PBXGroup;
 			children = (
 				4210994C21EDC7730097102C /* 瘦化table */,
@@ -522,7 +694,242 @@
 				4210993C21ED8A4B0097102C /* 3，性能系 */,
 				4210993D21ED8A540097102C /* 4，跨平台系 */,
 			);
-			name = "6_布局summary";
+			path = "7，布局总结";
+			sourceTree = "<group>";
+		};
+		420CFE562293840A003CB663 /* 8，屏幕适配总结 */ = {
+			isa = PBXGroup;
+			children = (
+				426D562A2286D78C0060AEF4 /* 适配机型 */,
+				426D56262286CB200060AEF4 /* 适配系统 */,
+				426D560C2286C2930060AEF4 /* 适配字体 */,
+				426D560A2286C2560060AEF4 /* 适配iPhone X */,
+				426D56092286C2470060AEF4 /* 适配屏幕宽度 */,
+				426D56032286B8360060AEF4 /* ScreenAdaptionVC.h */,
+				426D56042286B8360060AEF4 /* ScreenAdaptionVC.m */,
+			);
+			path = "8，屏幕适配总结";
+			sourceTree = "<group>";
+		};
+		420CFE5722938483003CB663 /* 4，绘图总结-基础 */ = {
+			isa = PBXGroup;
+			children = (
+				420CFE9322938636003CB663 /* Tools */,
+				420CFE5B22938526003CB663 /* Images */,
+				420CFE5A22938517003CB663 /* DrawController */,
+				420CFEB0229388CE003CB663 /* ImageController */,
+				420CFE592293850D003CB663 /* View */,
+				42936D9B219288640076F47A /* DrawSummaryVC.h */,
+				42936D9C219288640076F47A /* DrawSummaryVC.m */,
+				42936D9D219288640076F47A /* DrawSummaryVC.xib */,
+			);
+			path = "4，绘图总结-基础";
+			sourceTree = "<group>";
+		};
+		420CFE5822938495003CB663 /* 6，图形总结 */ = {
+			isa = PBXGroup;
+			children = (
+				4201D5CF221FE9080069080D /* ImageSummaryVC.h */,
+				4201D5D0221FE9080069080D /* ImageSummaryVC.m */,
+				4201D5D1221FE9080069080D /* ImageSummaryVC.xib */,
+				4201D5CC221FE6480069080D /* UIImage+CornerRadius.h */,
+				4201D5CD221FE6480069080D /* UIImage+CornerRadius.m */,
+			);
+			path = "6，图形总结";
+			sourceTree = "<group>";
+		};
+		420CFE592293850D003CB663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				420CFEAC22938767003CB663 /* LineView.h */,
+				420CFEAB22938767003CB663 /* LineView.m */,
+				420CFE88229385E1003CB663 /* DrawCircletView.h */,
+				420CFE86229385E1003CB663 /* DrawCircletView.m */,
+				420CFE8B229385E1003CB663 /* DrawDownloadView.h */,
+				420CFE85229385E0003CB663 /* DrawDownloadView.m */,
+				420CFE6822938594003CB663 /* DrawImageView.h */,
+				420CFE7022938595003CB663 /* DrawImageView.m */,
+				420CFE6C22938594003CB663 /* DrawLineColorView.h */,
+				420CFE6722938594003CB663 /* DrawLineColorView.m */,
+				420CFE7222938595003CB663 /* DrawLineView.h */,
+				420CFE7522938596003CB663 /* DrawLineView.m */,
+				420CFE6922938594003CB663 /* DrawRectView.h */,
+				420CFE7122938595003CB663 /* DrawRectView.m */,
+				420CFE7422938596003CB663 /* DrawTexttView.h */,
+				420CFE6B22938594003CB663 /* DrawTexttView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		420CFE5A22938517003CB663 /* DrawController */ = {
+			isa = PBXGroup;
+			children = (
+				420CFE82229385E0003CB663 /* DrawCircleViewcontroller.h */,
+				420CFE7F229385E0003CB663 /* DrawCircleViewcontroller.m */,
+				420CFE81229385E0003CB663 /* DrawDownloadViewcontroller.h */,
+				420CFE8A229385E1003CB663 /* DrawDownloadViewcontroller.m */,
+				420CFE7E229385E0003CB663 /* DrawGradientController.h */,
+				420CFE87229385E1003CB663 /* DrawGradientController.m */,
+				420CFE84229385E0003CB663 /* DrawRectViewcontroller.h */,
+				420CFE80229385E0003CB663 /* DrawRectViewcontroller.m */,
+				420CFE83229385E0003CB663 /* DrawTextViewcontroller.h */,
+				420CFE89229385E1003CB663 /* DrawTextViewcontroller.m */,
+				420CFE7322938595003CB663 /* DrawImageViewcontroller.h */,
+				420CFE6D22938594003CB663 /* DrawImageViewcontroller.m */,
+				420CFE6A22938594003CB663 /* DrawLineColorViewcontroller.h */,
+				420CFE6F22938595003CB663 /* DrawLineColorViewcontroller.m */,
+				420CFE6E22938595003CB663 /* DrawLineViewcontroller.h */,
+				420CFE6622938594003CB663 /* DrawLineViewcontroller.m */,
+			);
+			path = DrawController;
+			sourceTree = "<group>";
+		};
+		420CFE5B22938526003CB663 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				420CFE6422938560003CB663 /* back.jpg */,
+				420CFE5E2293854B003CB663 /* 16.png */,
+				420CFE5F2293854B003CB663 /* 222.png */,
+				420CFE5D2293854B003CB663 /* fore.jpg */,
+				420CFE5C2293854B003CB663 /* jiantou.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		420CFE9322938636003CB663 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				420CFEAE229387EB003CB663 /* Draw.plist */,
+				420CFE9722938661003CB663 /* CellModel.h */,
+				420CFE9E22938662003CB663 /* CellModel.m */,
+				420CFEA122938662003CB663 /* PQTBDataSource.h */,
+				420CFE9F22938662003CB663 /* PQTBDataSource.m */,
+				420CFE9822938661003CB663 /* PQTBDelegate.h */,
+				420CFE9422938661003CB663 /* PQTBDelegate.m */,
+				420CFEA022938662003CB663 /* PQWipeView.h */,
+				420CFE9622938661003CB663 /* PQWipeView.m */,
+				420CFE9922938661003CB663 /* PQWipeView.xib */,
+				420CFE9A22938661003CB663 /* SectionModel.h */,
+				420CFE9522938661003CB663 /* SectionModel.m */,
+				420CFEA222938663003CB663 /* UIImage+PQImage.h */,
+				420CFE9D22938662003CB663 /* UIImage+PQImage.m */,
+				420CFE9B22938661003CB663 /* UIView+pgqViewExtension.h */,
+				420CFE9C22938662003CB663 /* UIView+pgqViewExtension.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		420CFEB0229388CE003CB663 /* ImageController */ = {
+			isa = PBXGroup;
+			children = (
+				420CFEB6229388E9003CB663 /* ImageAddWaterImageViewcontroller.h */,
+				420CFEBB229388EA003CB663 /* ImageAddWaterImageViewcontroller.m */,
+				420CFEBC229388EA003CB663 /* ImageAddWaterTextViewcontroller.h */,
+				420CFEB4229388E9003CB663 /* ImageAddWaterTextViewcontroller.m */,
+				420CFEB2229388E8003CB663 /* ImageClipCircleAndBorderViewcontroller.h */,
+				420CFEB1229388E8003CB663 /* ImageClipCircleAndBorderViewcontroller.m */,
+				420CFEB5229388E9003CB663 /* ImageClipCircleViewcontroller.h */,
+				420CFEBE229388EA003CB663 /* ImageClipCircleViewcontroller.m */,
+				420CFEBF229388EA003CB663 /* ImageClipRectImageViewcontroller.h */,
+				420CFEB8229388E9003CB663 /* ImageClipRectImageViewcontroller.m */,
+				420CFEBD229388EA003CB663 /* ImageContextViewcontroller.h */,
+				420CFEC0229388EA003CB663 /* ImageContextViewcontroller.m */,
+				420CFEBA229388E9003CB663 /* ImageCutViewViewcontroller.h */,
+				420CFEB3229388E8003CB663 /* ImageCutViewViewcontroller.m */,
+				420CFEB7229388E9003CB663 /* ImageWipeViewcontroller.h */,
+				420CFEB9229388E9003CB663 /* ImageWipeViewcontroller.m */,
+			);
+			path = ImageController;
+			sourceTree = "<group>";
+		};
+		420CFEC922938F0F003CB663 /* 5，绘图总结-封装 */ = {
+			isa = PBXGroup;
+			children = (
+				420CFED52293911E003CB663 /* AxcDrawPathPackage */,
+				420CFECA2293911E003CB663 /* Model */,
+				420CFECE2293911E003CB663 /* View */,
+				420CFECD2293911E003CB663 /* DrawPackageViewController.h */,
+				420CFEE42293911F003CB663 /* DrawPackageViewController.m */,
+			);
+			path = "5，绘图总结-封装";
+			sourceTree = "<group>";
+		};
+		420CFECA2293911E003CB663 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				420CFECB2293911E003CB663 /* ListModel.h */,
+				420CFECC2293911E003CB663 /* ListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		420CFECE2293911E003CB663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				420CFECF2293911E003CB663 /* MainCollectionViewCell.h */,
+				420CFED02293911E003CB663 /* DrawView */,
+				420CFED32293911E003CB663 /* MainCollectionViewCell.xib */,
+				420CFED42293911E003CB663 /* MainCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		420CFED02293911E003CB663 /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				420CFED12293911E003CB663 /* CellDrawView.m */,
+				420CFED22293911E003CB663 /* CellDrawView.h */,
+			);
+			path = DrawView;
+			sourceTree = "<group>";
+		};
+		420CFED52293911E003CB663 /* AxcDrawPathPackage */ = {
+			isa = PBXGroup;
+			children = (
+				420CFED62293911E003CB663 /* AxcDrawPathTool.h */,
+				420CFED72293911E003CB663 /* AxcCAAnimation */,
+				420CFEDA2293911E003CB663 /* AxcDrawDefine.h */,
+				420CFEDB2293911E003CB663 /* AxcDrawPath */,
+				420CFEE12293911E003CB663 /* AxcCustomDrawPath */,
+			);
+			path = AxcDrawPathPackage;
+			sourceTree = "<group>";
+		};
+		420CFED72293911E003CB663 /* AxcCAAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				420CFED82293911E003CB663 /* AxcCAAnimation.h */,
+				420CFED92293911E003CB663 /* AxcCAAnimation.m */,
+			);
+			path = AxcCAAnimation;
+			sourceTree = "<group>";
+		};
+		420CFEDB2293911E003CB663 /* AxcDrawPath */ = {
+			isa = PBXGroup;
+			children = (
+				420CFEDC2293911E003CB663 /* Tools */,
+				420CFEDF2293911E003CB663 /* AxcDrawPath.m */,
+				420CFEE02293911E003CB663 /* AxcDrawPath.h */,
+			);
+			path = AxcDrawPath;
+			sourceTree = "<group>";
+		};
+		420CFEDC2293911E003CB663 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				420CFEDD2293911E003CB663 /* AxcPolarAxis.h */,
+				420CFEDE2293911E003CB663 /* AxcPolarAxis.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		420CFEE12293911E003CB663 /* AxcCustomDrawPath */ = {
+			isa = PBXGroup;
+			children = (
+				420CFEE22293911E003CB663 /* AxcCustomDrawPath.m */,
+				420CFEE32293911E003CB663 /* AxcCustomDrawPath.h */,
+			);
+			path = AxcCustomDrawPath;
 			sourceTree = "<group>";
 		};
 		4210993621ED6C450097102C /* 1，Frame系 */ = {
@@ -533,6 +940,7 @@
 				4203727E2284082E00438844 /* 3，SDLayout框架 */,
 			);
 			name = "1，Frame系";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4210993721ED6C530097102C /* 2，AutoLayout系 */ = {
@@ -543,6 +951,7 @@
 				42DE3A522264722300422577 /* 3，PureLayout框架 */,
 			);
 			name = "2，AutoLayout系";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4210993821ED6C830097102C /* 1，纯Frame */ = {
@@ -598,6 +1007,7 @@
 			children = (
 			);
 			name = "3，性能系";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4210993D21ED8A540097102C /* 4，跨平台系 */ = {
@@ -605,6 +1015,7 @@
 			children = (
 			);
 			name = "4，跨平台系";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4210994C21EDC7730097102C /* 瘦化table */ = {
@@ -618,6 +1029,7 @@
 				4210994421EDB9C90097102C /* ArrayDataSource.m */,
 			);
 			name = "瘦化table";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		426D55A12285C7DF0060AEF4 /* Case10 */ = {
@@ -789,26 +1201,13 @@
 			path = Case11;
 			sourceTree = "<group>";
 		};
-		426D56012285D6350060AEF4 /* 7_屏幕适配总结 */ = {
-			isa = PBXGroup;
-			children = (
-				426D562A2286D78C0060AEF4 /* 适配机型 */,
-				426D56262286CB200060AEF4 /* 适配系统 */,
-				426D560C2286C2930060AEF4 /* 适配字体 */,
-				426D560A2286C2560060AEF4 /* 适配iPhone X */,
-				426D56092286C2470060AEF4 /* 适配屏幕宽度 */,
-				426D56032286B8360060AEF4 /* ScreenAdaptionVC.h */,
-				426D56042286B8360060AEF4 /* ScreenAdaptionVC.m */,
-			);
-			name = "7_屏幕适配总结";
-			sourceTree = "<group>";
-		};
 		426D56092286C2470060AEF4 /* 适配屏幕宽度 */ = {
 			isa = PBXGroup;
 			children = (
 				426D56022286B7AF0060AEF4 /* Adaption.h */,
 			);
 			name = "适配屏幕宽度";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		426D560A2286C2560060AEF4 /* 适配iPhone X */ = {
@@ -818,6 +1217,7 @@
 				426D56072286B9670060AEF4 /* UIViewController+ContentView.m */,
 			);
 			name = "适配iPhone X";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		426D560C2286C2930060AEF4 /* 适配字体 */ = {
@@ -829,6 +1229,7 @@
 				426D56112286C5CC0060AEF4 /* ShiDianFontFit */,
 			);
 			name = "适配字体";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		426D56112286C5CC0060AEF4 /* ShiDianFontFit */ = {
@@ -859,6 +1260,7 @@
 				426D56282286CF540060AEF4 /* AdaptSystemManager.m */,
 			);
 			name = "适配系统";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		426D562A2286D78C0060AEF4 /* 适配机型 */ = {
@@ -868,16 +1270,7 @@
 				426D562C2286DB510060AEF4 /* AdaptPhoneManager.m */,
 			);
 			name = "适配机型";
-			sourceTree = "<group>";
-		};
-		42936D9A219287550076F47A /* 4_DrawSummary */ = {
-			isa = PBXGroup;
-			children = (
-				42936D9B219288640076F47A /* DrawSummaryVC.h */,
-				42936D9C219288640076F47A /* DrawSummaryVC.m */,
-				42936D9D219288640076F47A /* DrawSummaryVC.xib */,
-			);
-			name = 4_DrawSummary;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42936DA0219289700076F47A /* #4_RefreshAnimation */ = {
@@ -893,6 +1286,7 @@
 				42936DA121928A410076F47A /* LNRefreshAnalysis */,
 			);
 			name = "#4_RefreshAnimation";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42936DA121928A410076F47A /* LNRefreshAnalysis */ = {
@@ -1213,6 +1607,7 @@
 				42B93BF32191874A00CBB02D /* UIViewAnimationVC.xib */,
 			);
 			name = "#1_UIViewAnimation";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42B93BF62191875500CBB02D /* #2_CALayerAnimation */ = {
@@ -1230,6 +1625,7 @@
 				42936E0C2192D9820076F47A /* 6，ExampleAnimate */,
 			);
 			name = "#2_CALayerAnimation";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42B93BFC21918E9300CBB02D /* #3_ThirdPartAnimation */ = {
@@ -1240,41 +1636,7 @@
 				42B93BFF21918EF000CBB02D /* ThirdPartAnimationVC.xib */,
 			);
 			name = "#3_ThirdPartAnimation";
-			sourceTree = "<group>";
-		};
-		42D6350621912E890063E763 /* 1_LayerBase */ = {
-			isa = PBXGroup;
-			children = (
-				68881A281EF0FC1200229107 /* LayerBaseVC.h */,
-				68881A291EF0FC1200229107 /* LayerBaseVC.m */,
-				42936D98219283AA0076F47A /* LayerBaseVC.xib */,
-				42C52C25218841A5001D7A07 /* DemoView.h */,
-				42C52C26218841A5001D7A07 /* DemoView.m */,
-				42C52C29218841BC001D7A07 /* DemoLayer.m */,
-				42C52C28218841BC001D7A07 /* DemoLayer.h */,
-			);
-			name = 1_LayerBase;
-			sourceTree = "<group>";
-		};
-		42D6350721912EA10063E763 /* 2_LayerClassify */ = {
-			isa = PBXGroup;
-			children = (
-				42D6351121912EEF0063E763 /* ClassListViewController.storyboard */,
-				42D6350C21912ED00063E763 /* ClassListViewController.h */,
-				42D6350D21912ED00063E763 /* ClassListViewController.m */,
-				42D6351321916AEE0063E763 /* 1,CALayer */,
-				42D6351D21916C430063E763 /* 2,CAScrollLayer */,
-				42D6351C21916C3D0063E763 /* 3,CATextLayer */,
-				42D6351B21916C390063E763 /* 4,AVPlayerLayer */,
-				42D6351A21916C350063E763 /* 5,CAGradientLayer */,
-				42D6351921916C130063E763 /* 6,CAReplicatorLayer */,
-				42D6351821916C0E0063E763 /* 7,CATiledLayer */,
-				42D6351721916C0A0063E763 /* 8,CAShapeLayer */,
-				42D6351621916C060063E763 /* 9,CAEAGLLayer */,
-				42D6351521916C020063E763 /* 10,CATransformLayer */,
-				42D6351421916BF90063E763 /* 11,CAEmitterLayer */,
-			);
-			name = 2_LayerClassify;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351321916AEE0063E763 /* 1,CALayer */ = {
@@ -1286,6 +1648,7 @@
 				42D6350821912ECF0063E763 /* CALayerControlsViewController.m */,
 			);
 			name = "1,CALayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351421916BF90063E763 /* 11,CAEmitterLayer */ = {
@@ -1295,6 +1658,7 @@
 				42D6353A219171450063E763 /* CAEmitterLayerVC.m */,
 			);
 			name = "11,CAEmitterLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351521916C020063E763 /* 10,CATransformLayer */ = {
@@ -1304,6 +1668,7 @@
 				42D63537219171350063E763 /* CATransformLayerVC.m */,
 			);
 			name = "10,CATransformLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351621916C060063E763 /* 9,CAEAGLLayer */ = {
@@ -1315,6 +1680,7 @@
 				42D63534219171200063E763 /* CAEAGLLayerVC.m */,
 			);
 			name = "9,CAEAGLLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351721916C0A0063E763 /* 8,CAShapeLayer */ = {
@@ -1326,6 +1692,7 @@
 				42D63545219177160063E763 /* PDView.m */,
 			);
 			name = "8,CAShapeLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351821916C0E0063E763 /* 7,CATiledLayer */ = {
@@ -1335,6 +1702,7 @@
 				42D6352E219170F70063E763 /* CATiledLayerVC.m */,
 			);
 			name = "7,CATiledLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351921916C130063E763 /* 6,CAReplicatorLayer */ = {
@@ -1346,6 +1714,7 @@
 				42D63543219176630063E763 /* ReflectionView.m */,
 			);
 			name = "6,CAReplicatorLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351A21916C350063E763 /* 5,CAGradientLayer */ = {
@@ -1355,6 +1724,7 @@
 				42D63528219170CC0063E763 /* CAGradientLayerVC.m */,
 			);
 			name = "5,CAGradientLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351B21916C390063E763 /* 4,AVPlayerLayer */ = {
@@ -1364,6 +1734,7 @@
 				42D63525219170B70063E763 /* AVPlayerLayerVC.m */,
 			);
 			name = "4,AVPlayerLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351C21916C3D0063E763 /* 3,CATextLayer */ = {
@@ -1375,6 +1746,7 @@
 				42D6353D219175880063E763 /* PDLayerLabel.m */,
 			);
 			name = "3,CATextLayer";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42D6351D21916C430063E763 /* 2,CAScrollLayer */ = {
@@ -1386,20 +1758,7 @@
 				42D6353F219175CB0063E763 /* PDScrollView.m */,
 			);
 			name = "2,CAScrollLayer";
-			sourceTree = "<group>";
-		};
-		42D6354A21917A890063E763 /* 3_AnimateSummary */ = {
-			isa = PBXGroup;
-			children = (
-				42D6354B21917AC10063E763 /* AnimateSummaryVC.h */,
-				42D6354C21917AC10063E763 /* AnimateSummaryVC.m */,
-				42D6354D21917AC10063E763 /* AnimateSummaryVC.xib */,
-				42B93BF02191871F00CBB02D /* #1_UIViewAnimation */,
-				42B93BF62191875500CBB02D /* #2_CALayerAnimation */,
-				42B93BFC21918E9300CBB02D /* #3_ThirdPartAnimation */,
-				42936DA0219289700076F47A /* #4_RefreshAnimation */,
-			);
-			name = 3_AnimateSummary;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		42DE3A522264722300422577 /* 3，PureLayout框架 */ = {
@@ -1521,13 +1880,14 @@
 				42D63501219128FE0063E763 /* LayerAndAnimateVC.h */,
 				42D63502219128FE0063E763 /* LayerAndAnimateVC.m */,
 				42D6350421912BF30063E763 /* LayerAndAnimateVC.xib */,
-				42D6350621912E890063E763 /* 1_LayerBase */,
-				42D6350721912EA10063E763 /* 2_LayerClassify */,
-				42D6354A21917A890063E763 /* 3_AnimateSummary */,
-				42936D9A219287550076F47A /* 4_DrawSummary */,
-				4201D5CB221FE3E90069080D /* 5_图形部分总结 */,
-				4210993521ED6B5D0097102C /* 6_布局summary */,
-				426D56012285D6350060AEF4 /* 7_屏幕适配总结 */,
+				420CFE562293840A003CB663 /* 8，屏幕适配总结 */,
+				420CFE55229383FF003CB663 /* 7，布局总结 */,
+				420CFE5822938495003CB663 /* 6，图形总结 */,
+				420CFEC922938F0F003CB663 /* 5，绘图总结-封装 */,
+				420CFE5722938483003CB663 /* 4，绘图总结-基础 */,
+				420CFE5222938372003CB663 /* 3，动画的总结 */,
+				420CFE5122938348003CB663 /* 2，layer的种类 */,
+				420CFE502293831A003CB663 /* 1，layer基础 */,
 				42936E192192E0F60076F47A /* Others */,
 			);
 			path = WHLatticeDemo;
@@ -1596,30 +1956,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420CFE6522938560003CB663 /* back.jpg in Resources */,
 				42936DF321928A420076F47A /* frontpage_refresh_release@2x.gif in Resources */,
 				42936DEB21928A420076F47A /* feizhu_pull_refresh.gif in Resources */,
 				42936E572192EEA00076F47A /* bloom.caf in Resources */,
 				42936E0A21928B150076F47A /* lnrefresh.json in Resources */,
 				42B93BFB2191877900CBB02D /* CALayerAnimationVC.xib in Resources */,
 				42B93C0121918EF000CBB02D /* ThirdPartAnimationVC.xib in Resources */,
+				420CFE632293854B003CB663 /* 222.png in Resources */,
 				42D6351221912EEF0063E763 /* ClassListViewController.storyboard in Resources */,
 				426D56002285C81F0060AEF4 /* MasonryDemoViewController.storyboard in Resources */,
 				42936D9F219288640076F47A /* DrawSummaryVC.xib in Resources */,
 				42936E252192E0F60076F47A /* LaunchScreen.storyboard in Resources */,
+				420CFE622293854B003CB663 /* 16.png in Resources */,
 				42B93BF52191874A00CBB02D /* UIViewAnimationVC.xib in Resources */,
 				42936D99219283AA0076F47A /* LayerBaseVC.xib in Resources */,
 				42936E0921928B150076F47A /* refresh_arrow.png in Resources */,
+				420CFEA622938663003CB663 /* PQWipeView.xib in Resources */,
 				42936DF621928A420076F47A /* frontpage_refresh@2x.gif in Resources */,
 				42936DF521928A420076F47A /* frontpage_refresh@3x.gif in Resources */,
 				42936E562192EEA00076F47A /* fold.caf in Resources */,
 				42D6354F21917AC10063E763 /* AnimateSummaryVC.xib in Resources */,
 				42D6350521912BF30063E763 /* LayerAndAnimateVC.xib in Resources */,
 				4210994221ED8F580097102C /* AutoLayoutVC.xib in Resources */,
+				420CFEAF229387EC003CB663 /* Draw.plist in Resources */,
+				420CFE612293854B003CB663 /* fore.jpg in Resources */,
+				420CFEE72293911F003CB663 /* MainCollectionViewCell.xib in Resources */,
 				42936E552192EEA00076F47A /* selected.caf in Resources */,
 				42F7720F2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.xib in Resources */,
 				42936E262192E0F60076F47A /* Main.storyboard in Resources */,
 				4201D5D3221FE9080069080D /* ImageSummaryVC.xib in Resources */,
 				42936E242192E0F60076F47A /* Assets.xcassets in Resources */,
+				420CFE602293854B003CB663 /* jiantou.png in Resources */,
 				42F7720A2193BA9E00FFD237 /* BATransitionDemo.xib in Resources */,
 				42936DF421928A420076F47A /* frontpage_refresh_release@3x.gif in Resources */,
 			);
@@ -1672,19 +2040,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				42936DEE21928A420076F47A /* YLoadingPanel.m in Sources */,
+				420CFEE92293911F003CB663 /* AxcCAAnimation.m in Sources */,
+				420CFEC4229388EA003CB663 /* ImageClipRectImageViewcontroller.m in Sources */,
 				42936E0121928A420076F47A /* LNFooterAnimator.m in Sources */,
 				426D55E62285C7E10060AEF4 /* UIView+TTGHook.m in Sources */,
+				420CFEE62293911F003CB663 /* CellDrawView.m in Sources */,
 				42C52C2A218841BC001D7A07 /* DemoLayer.m in Sources */,
 				426D55FD2285C7E10060AEF4 /* Case9ViewController.m in Sources */,
 				426D55FC2285C7E10060AEF4 /* MasonryDemoViewController.m in Sources */,
+				420CFE8E229385E1003CB663 /* DrawDownloadView.m in Sources */,
 				426D56052286B8360060AEF4 /* ScreenAdaptionVC.m in Sources */,
 				426D55E92285C7E10060AEF4 /* Case4Cell.m in Sources */,
 				42936DF221928A420076F47A /* LNHeaderTmallAnimator.m in Sources */,
 				42D63547219177160063E763 /* PDView.m in Sources */,
+				420CFEAD22938767003CB663 /* LineView.m in Sources */,
+				420CFEA422938663003CB663 /* SectionModel.m in Sources */,
 				42DE3B382264733C00422577 /* ALiOSDemo6ViewController.m in Sources */,
 				426D55F02285C7E10060AEF4 /* Case7ViewController.m in Sources */,
 				426D55F62285C7E10060AEF4 /* Case15ViewController.m in Sources */,
+				420CFEC2229388EA003CB663 /* ImageCutViewViewcontroller.m in Sources */,
 				426D55F72285C7E10060AEF4 /* Case8Cell.m in Sources */,
+				420CFE7B22938596003CB663 /* DrawImageView.m in Sources */,
 				42D63541219175CB0063E763 /* PDScrollView.m in Sources */,
 				42936E0521928A420076F47A /* DemoVC.m in Sources */,
 				42936DF121928A420076F47A /* LNHeaderKaolaAnimator.m in Sources */,
@@ -1696,6 +2072,9 @@
 				42936E0321928A420076F47A /* LNHeaderAnimator.m in Sources */,
 				426D55FB2285C7E10060AEF4 /* Common.m in Sources */,
 				42936DEF21928A420076F47A /* LNHeaderDIYAnimator.m in Sources */,
+				420CFE8F229385E1003CB663 /* DrawCircletView.m in Sources */,
+				420CFEEA2293911F003CB663 /* AxcPolarAxis.m in Sources */,
+				420CFEEB2293911F003CB663 /* AxcDrawPath.m in Sources */,
 				426D55F92285C7E10060AEF4 /* Case8DataEntity.m in Sources */,
 				42D6353E219175880063E763 /* PDLayerLabel.m in Sources */,
 				42F772012193BA5F00FFD237 /* UIView+BAAnimation.m in Sources */,
@@ -1714,9 +2093,14 @@
 				42B93BFA2191877800CBB02D /* CALayerAnimationVC.m in Sources */,
 				426D56292286CF540060AEF4 /* AdaptSystemManager.m in Sources */,
 				426D56232286C5CD0060AEF4 /* UITextField+Fit.m in Sources */,
+				420CFEE82293911F003CB663 /* MainCollectionViewCell.m in Sources */,
+				420CFE7A22938596003CB663 /* DrawLineColorViewcontroller.m in Sources */,
+				420CFEE52293911F003CB663 /* ListModel.m in Sources */,
 				42DE3B3E2264733C00422577 /* ALiOSDemo7ViewController.m in Sources */,
 				42936E0221928A420076F47A /* NSObject+LNRefresh.m in Sources */,
+				420CFE7C22938596003CB663 /* DrawRectView.m in Sources */,
 				42D6351021912ED00063E763 /* ClassListViewController.m in Sources */,
+				420CFE8C229385E1003CB663 /* DrawCircleViewcontroller.m in Sources */,
 				42936DEC21928A420076F47A /* LNHeaderTaobaoAnimator.m in Sources */,
 				426D56252286C5CD0060AEF4 /* UIView+Fit.m in Sources */,
 				42DE3C1622647CD700422577 /* ALView+PureLayout.m in Sources */,
@@ -1726,36 +2110,49 @@
 				42DE3B3A2264733C00422577 /* ALiOSDemo3ViewController.m in Sources */,
 				426D55EC2285C7E10060AEF4 /* Case13TableViewCell.m in Sources */,
 				42DE3B402264733C00422577 /* ALiOSDemo2ViewController.m in Sources */,
+				420CFEED2293911F003CB663 /* DrawPackageViewController.m in Sources */,
 				42936E382192EAC60076F47A /* TransitionAnimationController.m in Sources */,
 				42D6352F219170F70063E763 /* CATiledLayerVC.m in Sources */,
 				426D562D2286DB510060AEF4 /* AdaptPhoneManager.m in Sources */,
 				42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */,
 				426D55F12285C7E10060AEF4 /* Case14Cell.m in Sources */,
 				42D63535219171200063E763 /* CAEAGLLayerVC.m in Sources */,
+				420CFEC8229388EA003CB663 /* ImageContextViewcontroller.m in Sources */,
 				4210994121ED8F580097102C /* AutoLayoutVC.m in Sources */,
+				420CFE7622938596003CB663 /* DrawLineViewcontroller.m in Sources */,
+				420CFEA822938663003CB663 /* UIImage+PQImage.m in Sources */,
 				42DE3B3D2264733C00422577 /* ALiOSDemo1ViewController.m in Sources */,
 				42936E4D2192EB210076F47A /* DCPathItemButton.m in Sources */,
+				420CFEA522938663003CB663 /* PQWipeView.m in Sources */,
 				42DE3B3F2264733C00422577 /* ALiOSDemo8ViewController.m in Sources */,
 				42D635322191710F0063E763 /* CAShapeLayerVC.m in Sources */,
+				420CFE90229385E1003CB663 /* DrawGradientController.m in Sources */,
 				42F772092193BA9E00FFD237 /* BATransitionDemo.m in Sources */,
 				426D56202286C5CD0060AEF4 /* UITextView+Fit.m in Sources */,
+				420CFEA722938663003CB663 /* UIView+pgqViewExtension.m in Sources */,
+				420CFEC5229388EA003CB663 /* ImageWipeViewcontroller.m in Sources */,
 				42936DF021928A420076F47A /* LNHeaderJDAnimator.m in Sources */,
 				42D6350F21912ED00063E763 /* CALayerViewController.m in Sources */,
+				420CFEC7229388EA003CB663 /* ImageClipCircleViewcontroller.m in Sources */,
 				426D55F52285C7E10060AEF4 /* Case6ViewController.m in Sources */,
 				68881A2A1EF0FC1200229107 /* LayerBaseVC.m in Sources */,
 				426D55EB2285C7E10060AEF4 /* Case5ViewController.m in Sources */,
 				42D63503219128FE0063E763 /* LayerAndAnimateVC.m in Sources */,
+				420CFE7822938596003CB663 /* DrawTexttView.m in Sources */,
 				42936DF821928A420076F47A /* LNHeaderMeituanAnimator.m in Sources */,
 				426D55F42285C7E10060AEF4 /* Case6ItemView.m in Sources */,
 				42D63544219176630063E763 /* ReflectionView.m in Sources */,
 				42936E2F2192E88B0076F47A /* BaseAnimationController.m in Sources */,
 				42936E352192EABE0076F47A /* GroupAnimationController.m in Sources */,
+				420CFE7D22938596003CB663 /* DrawLineView.m in Sources */,
 				42936DE921928A420076F47A /* LNHeaderAnimator+Analysis.m in Sources */,
 				426D56222286C5CD0060AEF4 /* UIButton+Fit.m in Sources */,
 				42D6353B219171450063E763 /* CAEmitterLayerVC.m in Sources */,
+				420CFE7922938596003CB663 /* DrawImageViewcontroller.m in Sources */,
 				4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */,
 				426D55E82285C7E10060AEF4 /* Case4ViewController.m in Sources */,
 				42C52C27218841A5001D7A07 /* DemoView.m in Sources */,
+				420CFEEC2293911F003CB663 /* AxcCustomDrawPath.m in Sources */,
 				42D63520219170890063E763 /* CAScrollLayerVC.m in Sources */,
 				426D55E72285C7E10060AEF4 /* Case1ViewController.m in Sources */,
 				42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */,
@@ -1764,7 +2161,10 @@
 				4201D5CE221FE6480069080D /* UIImage+CornerRadius.m in Sources */,
 				42936E3B2192EAE30076F47A /* ComprehensiveCaseController.m in Sources */,
 				426D55EF2285C7E10060AEF4 /* Case3ViewController.m in Sources */,
+				420CFE7722938596003CB663 /* DrawLineColorView.m in Sources */,
+				420CFEAA22938663003CB663 /* PQTBDataSource.m in Sources */,
 				42DE3B412264733C00422577 /* ALiOSDemo5ViewController.m in Sources */,
+				420CFEC3229388EA003CB663 /* ImageAddWaterTextViewcontroller.m in Sources */,
 				42F772052193BA6600FFD237 /* UIView+BATransition.m in Sources */,
 				426D56082286B9670060AEF4 /* UIViewController+ContentView.m in Sources */,
 				426D55F82285C7E10060AEF4 /* Case8ViewController.m in Sources */,
@@ -1774,12 +2174,17 @@
 				42F771FD2193B9E400FFD237 /* BALoadingView.m in Sources */,
 				42936DED21928A420076F47A /* LNHeaderNetEaseNewsAnimator.m in Sources */,
 				42936E282192E0F60076F47A /* AppDelegate.m in Sources */,
+				420CFEC6229388EA003CB663 /* ImageAddWaterImageViewcontroller.m in Sources */,
 				426D55EE2285C7E10060AEF4 /* Case2ViewController.m in Sources */,
 				426D55E52285C7E10060AEF4 /* Case10ViewController.m in Sources */,
+				420CFE91229385E1003CB663 /* DrawTextViewcontroller.m in Sources */,
 				42D6354E21917AC10063E763 /* AnimateSummaryVC.m in Sources */,
 				42936E4E2192EB210076F47A /* DCPathCenterButton.m in Sources */,
 				42DE3A55226472B100422577 /* ALiOSDemoListController.m in Sources */,
+				420CFEA922938663003CB663 /* CellModel.m in Sources */,
 				42B93C0021918EF000CBB02D /* ThirdPartAnimationVC.m in Sources */,
+				420CFE8D229385E1003CB663 /* DrawRectViewcontroller.m in Sources */,
+				420CFEA322938663003CB663 /* PQTBDelegate.m in Sources */,
 				42936E4F2192EB210076F47A /* MCFireworksButton.m in Sources */,
 				426D55ED2285C7E10060AEF4 /* Case13ViewController.m in Sources */,
 				42D6352C219170E60063E763 /* CAReplicatorLayerVC.m in Sources */,
@@ -1793,10 +2198,12 @@
 				42936E4C2192EB210076F47A /* DCPathButton.m in Sources */,
 				4201D5D2221FE9080069080D /* ImageSummaryVC.m in Sources */,
 				42936E4B2192EB210076F47A /* DWBubbleMenuButton.m in Sources */,
+				420CFEC1229388EA003CB663 /* ImageClipCircleAndBorderViewcontroller.m in Sources */,
 				426D56212286C5CD0060AEF4 /* UILabel+Fit.m in Sources */,
 				42936E502192EB210076F47A /* MCFireworksView.m in Sources */,
 				42B93BF42191874A00CBB02D /* UIViewAnimationVC.m in Sources */,
 				42DE3C1722647CD700422577 /* NSArray+PureLayout.m in Sources */,
+				420CFE92229385E1003CB663 /* DrawDownloadViewcontroller.m in Sources */,
 				42D63526219170B70063E763 /* AVPlayerLayerVC.m in Sources */,
 				426D55F32285C7E10060AEF4 /* Case14ViewController.m in Sources */,
 				42936E0021928A420076F47A /* LNRefreshHandler.m in Sources */,
@@ -1943,6 +2350,7 @@
 			baseConfigurationReference = 4578D8D57C20BD33FAAE9CD5 /* Pods-WHLatticeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MQBF47L68X;
 				GCC_PREFIX_HEADER = WHLatticeDemo/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/WHLatticeDemo/Others/Info.plist";
@@ -1958,6 +2366,7 @@
 			baseConfigurationReference = 5E92FB8E9C291B5BCFB3855C /* Pods-WHLatticeDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = MQBF47L68X;
 				GCC_PREFIX_HEADER = WHLatticeDemo/Others/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/WHLatticeDemo/Others/Info.plist";

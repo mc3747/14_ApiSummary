@@ -13,7 +13,7 @@
 #import "DrawSummaryVC.h"
 #import "AutoLayoutVC.h"
 #import "ImageSummaryVC.h"
-
+#import "DrawPackageViewController.h"
 @interface LayerAndAnimateVC ()
 
 @end
@@ -63,9 +63,15 @@
 }
 - (IBAction)drawSummaryAction:(id)sender {
     DrawSummaryVC *vc = [[DrawSummaryVC alloc] init];
-    vc.title = @"绘图总结";
+    vc.title = @"绘图总结-基础";
     [self.navigationController pushViewController:vc animated:YES];
 }
+- (IBAction)drawPackageAction:(id)sender {
+    DrawPackageViewController *vc = [[DrawPackageViewController alloc] init];
+    vc.title = @"绘图总结-封装";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 - (IBAction)autoLayoutAction:(id)sender {
     AutoLayoutVC *vc = [[AutoLayoutVC alloc] init];
