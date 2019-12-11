@@ -26,6 +26,16 @@
     [self.contentView addSubview:greenView];
 }
 
+/*UI写法：
+1，代码简单：复用简单常用的方法
+2，代码清晰：懒加载
+3，适配（最常用的适配：宽度适配，字体适配，机型适配，图片适配）
+ 方法1：全局宏，添加比例
+ 方法2：stack控件
+ 方法3：masonry或者autolayout，进行自动适配
+ 方法4：runtime
+ */
+#pragma mark -
 
 
 @end

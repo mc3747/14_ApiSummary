@@ -1235,20 +1235,20 @@
 		426D56112286C5CC0060AEF4 /* ShiDianFontFit */ = {
 			isa = PBXGroup;
 			children = (
-				426D56122286C5CD0060AEF4 /* UITextView+Fit.m */,
-				426D56132286C5CD0060AEF4 /* UILabel+Fit.m */,
-				426D56142286C5CD0060AEF4 /* UIButton+Fit.m */,
-				426D56152286C5CD0060AEF4 /* NSLayoutConstraint+Fit.h */,
-				426D56162286C5CD0060AEF4 /* ShiDianFontFitHeader.h */,
-				426D56172286C5CD0060AEF4 /* UITextField+Fit.m */,
 				426D56182286C5CD0060AEF4 /* UIView+Fit.h */,
-				426D56192286C5CD0060AEF4 /* UITextView+Fit.h */,
-				426D561A2286C5CD0060AEF4 /* DynamicProperty.h */,
-				426D561B2286C5CD0060AEF4 /* UILabel+Fit.h */,
-				426D561C2286C5CD0060AEF4 /* NSLayoutConstraint+Fit.m */,
-				426D561D2286C5CD0060AEF4 /* UIButton+Fit.h */,
 				426D561E2286C5CD0060AEF4 /* UIView+Fit.m */,
 				426D561F2286C5CD0060AEF4 /* UITextField+Fit.h */,
+				426D56172286C5CD0060AEF4 /* UITextField+Fit.m */,
+				426D56192286C5CD0060AEF4 /* UITextView+Fit.h */,
+				426D56122286C5CD0060AEF4 /* UITextView+Fit.m */,
+				426D561B2286C5CD0060AEF4 /* UILabel+Fit.h */,
+				426D56132286C5CD0060AEF4 /* UILabel+Fit.m */,
+				426D561D2286C5CD0060AEF4 /* UIButton+Fit.h */,
+				426D56142286C5CD0060AEF4 /* UIButton+Fit.m */,
+				426D561C2286C5CD0060AEF4 /* NSLayoutConstraint+Fit.m */,
+				426D56152286C5CD0060AEF4 /* NSLayoutConstraint+Fit.h */,
+				426D56162286C5CD0060AEF4 /* ShiDianFontFitHeader.h */,
+				426D561A2286C5CD0060AEF4 /* DynamicProperty.h */,
 			);
 			path = ShiDianFontFit;
 			sourceTree = "<group>";
