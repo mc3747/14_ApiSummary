@@ -26,14 +26,17 @@
 }
 
 + (NSArray *)modelList {
-
+//🟥🟧🟩🟦🟪🟨
     NSArray *dictArray = @[
-                @{@"title": @"Frame系1", @"desc": @"纯Frame"},
-                @{@"title": @"Frame系2", @"desc": @"MyLayout"},
-                @{@"title": @"Frame系3", @"desc":@"SDLayout"},
-                @{@"title": @"AutoLayout系1", @"desc":@"纯AutoLayout"},
-                @{@"title": @"AutoLayout系2", @"desc": @"Masonry"},
-                @{@"title": @"AutoLayout系3", @"desc": @"PureLayout"}
+                @{@"title": @"Frame系1👉", @"desc": @"🟥纯Frame"},
+                @{@"title": @"Frame系2👉", @"desc": @"🟥MyLayout"},
+                @{@"title": @"Frame系3👉", @"desc":@"🟥SDLayout"},
+                @{@"title": @"AutoLayout系1👉", @"desc":@"🟩纯AutoLayout"},
+                @{@"title": @"AutoLayout系2👉", @"desc": @"🟩Masonry"},
+                @{@"title": @"AutoLayout系3👉", @"desc": @"🟩PureLayout"},
+                @{@"title": @"案例1👉", @"desc": @"🟦后台数据控制控件的显示隐藏"},
+                @{@"title": @"案例2👉", @"desc": @"🟦控件自己的状态影响整个布局"},
+                @{@"title": @"案例3👉", @"desc": @"🟦后台json控制整个布局"}
                 ];
     NSMutableArray *tmpArr = [NSMutableArray array];
     for (NSDictionary *dict in dictArray) {

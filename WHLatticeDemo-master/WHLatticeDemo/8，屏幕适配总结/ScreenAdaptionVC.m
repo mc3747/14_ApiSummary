@@ -34,6 +34,12 @@
  方法2：stack控件
  方法3：masonry或者autolayout，进行自动适配
  方法4：runtime
+4，动态布局
+    动态显示、隐藏控件
+    改变控件，影响整个布局
+    OC语言版本MyLayout
+   Swift语言版本TangramKit
+5，
  */
 #pragma mark -
 

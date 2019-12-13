@@ -693,6 +693,7 @@
 				4210993721ED6C530097102C /* 2，AutoLayout系 */,
 				4210993C21ED8A4B0097102C /* 3，性能系 */,
 				4210993D21ED8A540097102C /* 4，跨平台系 */,
+				42FAF98123A1EE100049A836 /* 5，案例 */,
 			);
 			path = "7，布局总结";
 			sourceTree = "<group>";
@@ -946,6 +947,7 @@
 		4210993721ED6C530097102C /* 2，AutoLayout系 */ = {
 			isa = PBXGroup;
 			children = (
+				42FAF98023A1EAC70049A836 /* 4，UIStackView */,
 				4210993A21ED6CAF0097102C /* 1，纯AutoLayout */,
 				4210993B21ED6CC10097102C /* 2，Masonry框架 */,
 				42DE3A522264722300422577 /* 3，PureLayout框架 */,
@@ -1013,6 +1015,9 @@
 		4210993D21ED8A540097102C /* 4，跨平台系 */ = {
 			isa = PBXGroup;
 			children = (
+				42FAF98423A218F90049A836 /* Facebook的yoga(iOS用componentKit) */,
+				42FAF98323A2144D0049A836 /* 阿里的weex */,
+				42FAF98223A213C90049A836 /* 阿里的tangram */,
 			);
 			name = "4，跨平台系";
 			path = ..;
@@ -1846,6 +1851,41 @@
 				42F772042193BA6600FFD237 /* UIView+BATransition.h */,
 			);
 			path = BATransition;
+			sourceTree = "<group>";
+		};
+		42FAF98023A1EAC70049A836 /* 4，UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "4，UIStackView";
+			sourceTree = "<group>";
+		};
+		42FAF98123A1EE100049A836 /* 5，案例 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "5，案例";
+			sourceTree = "<group>";
+		};
+		42FAF98223A213C90049A836 /* 阿里的tangram */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "阿里的tangram";
+			sourceTree = "<group>";
+		};
+		42FAF98323A2144D0049A836 /* 阿里的weex */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "阿里的weex";
+			sourceTree = "<group>";
+		};
+		42FAF98423A218F90049A836 /* Facebook的yoga(iOS用componentKit) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Facebook的yoga(iOS用componentKit)";
 			sourceTree = "<group>";
 		};
 		4D0F13CB6EDC515D00257120 /* Frameworks */ = {
