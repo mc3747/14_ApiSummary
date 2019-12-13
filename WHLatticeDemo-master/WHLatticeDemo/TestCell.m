@@ -25,6 +25,7 @@
     
     self.descLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.bounds.size.width * 0.5f, 0, self.bounds.size.width * 0.5f, self.bounds.size.height)];
     self.descLabel.textAlignment = NSTextAlignmentLeft;
+    self.descLabel.adjustsFontSizeToFitWidth = YES;
     self.descLabel.text = m.desc;
     
     [self addSubview:self.titleLabel];

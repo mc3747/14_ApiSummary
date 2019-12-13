@@ -11,6 +11,7 @@
 #import "TestModel.h"
 #import "TestCell.h"
 #import "ALiOSDemoListController.h"
+#import "StackViewLayoutVC.h"
 
 @interface AutoLayoutVC ()<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -47,6 +48,11 @@ static NSString *const CellId = @"CellId";
         // 3.这里以push的方式加载控制器
         [self.navigationController pushViewController:vc animated:YES];
       
+    }else if(indexPath.row == 6){
+        
+        StackViewLayoutVC *vc = [[StackViewLayoutVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }else{
         ALiOSDemoListController *vc = [[ALiOSDemoListController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];

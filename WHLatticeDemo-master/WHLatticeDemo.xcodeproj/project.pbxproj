@@ -200,6 +200,7 @@
 		42DE3C1622647CD700422577 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C1022647CD600422577 /* ALView+PureLayout.m */; };
 		42DE3C1722647CD700422577 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C1422647CD700422577 /* NSArray+PureLayout.m */; };
 		42DE3C1822647CD700422577 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C1522647CD700422577 /* NSLayoutConstraint+PureLayout.m */; };
+		42E6A36C23A38C4E007B4160 /* StackViewLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6A36B23A38C4E007B4160 /* StackViewLayoutVC.m */; };
 		42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F62193B9E400FFD237 /* BAActivityIndicatorView.m */; };
 		42F771FC2193B9E400FFD237 /* BALoadingWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F72193B9E400FFD237 /* BALoadingWaveView.m */; };
 		42F771FD2193B9E400FFD237 /* BALoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F92193B9E400FFD237 /* BALoadingView.m */; };
@@ -581,6 +582,8 @@
 		42DE3C1322647CD600422577 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
 		42DE3C1422647CD700422577 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		42DE3C1522647CD700422577 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		42E6A36A23A38C4E007B4160 /* StackViewLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackViewLayoutVC.h; sourceTree = "<group>"; };
+		42E6A36B23A38C4E007B4160 /* StackViewLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewLayoutVC.m; sourceTree = "<group>"; };
 		42F771F52193B9E400FFD237 /* BALoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALoadingView.h; sourceTree = "<group>"; };
 		42F771F62193B9E400FFD237 /* BAActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAActivityIndicatorView.m; sourceTree = "<group>"; };
 		42F771F72193B9E400FFD237 /* BALoadingWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALoadingWaveView.m; sourceTree = "<group>"; };
@@ -691,7 +694,7 @@
 				4210994021ED8F580097102C /* AutoLayoutVC.xib */,
 				4210993621ED6C450097102C /* 1，Frame系 */,
 				4210993721ED6C530097102C /* 2，AutoLayout系 */,
-				4210993C21ED8A4B0097102C /* 3，性能系 */,
+				4210993C21ED8A4B0097102C /* 3，控件系 */,
 				4210993D21ED8A540097102C /* 4，跨平台系 */,
 				42FAF98123A1EE100049A836 /* 5，案例 */,
 			);
@@ -1004,11 +1007,12 @@
 			name = "2，Masonry框架";
 			sourceTree = "<group>";
 		};
-		4210993C21ED8A4B0097102C /* 3，性能系 */ = {
+		4210993C21ED8A4B0097102C /* 3，控件系 */ = {
 			isa = PBXGroup;
 			children = (
+				42E6A36923A38C12007B4160 /* 1，UIStackView */,
 			);
-			name = "3，性能系";
+			name = "3，控件系";
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1822,6 +1826,13 @@
 			name = PureLayout;
 			sourceTree = "<group>";
 		};
+		42E6A36923A38C12007B4160 /* 1，UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "1，UIStackView";
+			sourceTree = "<group>";
+		};
 		42F771F42193B9E400FFD237 /* BALoadingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1863,6 +1874,8 @@
 		42FAF98123A1EE100049A836 /* 5，案例 */ = {
 			isa = PBXGroup;
 			children = (
+				42E6A36A23A38C4E007B4160 /* StackViewLayoutVC.h */,
+				42E6A36B23A38C4E007B4160 /* StackViewLayoutVC.m */,
 			);
 			path = "5，案例";
 			sourceTree = "<group>";
@@ -2151,6 +2164,7 @@
 				426D55EC2285C7E10060AEF4 /* Case13TableViewCell.m in Sources */,
 				42DE3B402264733C00422577 /* ALiOSDemo2ViewController.m in Sources */,
 				420CFEED2293911F003CB663 /* DrawPackageViewController.m in Sources */,
+				42E6A36C23A38C4E007B4160 /* StackViewLayoutVC.m in Sources */,
 				42936E382192EAC60076F47A /* TransitionAnimationController.m in Sources */,
 				42D6352F219170F70063E763 /* CATiledLayerVC.m in Sources */,
 				426D562D2286DB510060AEF4 /* AdaptPhoneManager.m in Sources */,
