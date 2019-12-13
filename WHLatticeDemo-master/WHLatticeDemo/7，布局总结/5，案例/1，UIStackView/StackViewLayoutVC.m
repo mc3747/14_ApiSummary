@@ -7,7 +7,13 @@
 //
 
 #import "StackViewLayoutVC.h"
-
+// =====================================================
+/*
+ UIStackView适用于：
+ 1，静态的缩放，横竖屏，屏幕适配等
+ 2，等宽高，均分等
+ */
+// =====================================================
 @interface StackViewLayoutVC ()
 @property (nonatomic, strong) UIStackView *stackView;
 @end
@@ -47,6 +53,11 @@
 - (void)increaseAction:(UIButton *)button{
     for (UILabel *label in _stackView.subviews) {
         if (label.tag == 1000) {
+//            [UIView animateWithDuration:1  animations:^{
+//
+//
+//
+//            }];
 //            label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, label.frame.size.width, label.frame.size.height + 20);
             label.hidden = YES;
         }
@@ -57,6 +68,7 @@
      for (UILabel *label in _stackView.subviews) {
     if (label.tag == 1000) {
 //             label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, label.frame.size.width, label.frame.size.height - 20);
+        
          label.hidden = NO;
          }
      }
@@ -67,7 +79,7 @@
  1，axis(轴向) 属性决定了 stack 的朝向，只有垂直或水平；
  2，distribution(分布) 属性决定了其管理的视图在沿着其轴向上的布局；
  Fill : 铺满
- Fill Equal ： 等宽铺满
+ Fill Equal ： 等高铺满
  Fill Proportionally : 等比例铺满
  Equal Spacing ：等距离放置
  Equal Centering ：各个试图的中心距离保持一致，不够放置则压缩后面的试图距离；
@@ -87,16 +99,14 @@
 #pragma mark -  返回一个横向布局的stackView
 - (UIStackView *)returnHorizonalStack {
     UIStackView *containerView = [[UIStackView alloc]init];
-   
-    
     //子视图布局方向：水平或垂直
-    containerView.axis = UILayoutConstraintAxisVertical;//垂直布局
+    containerView.axis = UILayoutConstraintAxisVertical;
     //子控件依据何种规矩布局
-    containerView.distribution = UIStackViewDistributionEqualCentering;//子控件均分
+    containerView.distribution = UIStackViewDistributionFillProportionally;
     //子控件的对齐方式
-      containerView.alignment = UIStackViewAlignmentFill;
+    containerView.alignment = UIStackViewAlignmentLeading;
     //子控件之间的最小间距
-    containerView.spacing = 10;
+    containerView.spacing = 0;
   
     NSArray *tempArray = @[@"了是东风科技",@"开始的疯狂活动是多久发货的开发环境放多久发货谁开的房间水电费地方就好看是东风科技",@"老师的开发接口都是附近看到快快快快快快快快快"
         ,@"好看"];

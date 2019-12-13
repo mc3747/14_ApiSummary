@@ -201,6 +201,8 @@
 		42DE3C1722647CD700422577 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C1422647CD700422577 /* NSArray+PureLayout.m */; };
 		42DE3C1822647CD700422577 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C1522647CD700422577 /* NSLayoutConstraint+PureLayout.m */; };
 		42E6A36C23A38C4E007B4160 /* StackViewLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6A36B23A38C4E007B4160 /* StackViewLayoutVC.m */; };
+		42E6A37123A3D6CA007B4160 /* TriangleTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6A37023A3D6CA007B4160 /* TriangleTextFieldView.m */; };
+		42E6A37423A3DEAC007B4160 /* FrameLayoutHeightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6A37323A3DEAC007B4160 /* FrameLayoutHeightVC.m */; };
 		42F771FB2193B9E400FFD237 /* BAActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F62193B9E400FFD237 /* BAActivityIndicatorView.m */; };
 		42F771FC2193B9E400FFD237 /* BALoadingWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F72193B9E400FFD237 /* BALoadingWaveView.m */; };
 		42F771FD2193B9E400FFD237 /* BALoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F771F92193B9E400FFD237 /* BALoadingView.m */; };
@@ -584,6 +586,10 @@
 		42DE3C1522647CD700422577 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		42E6A36A23A38C4E007B4160 /* StackViewLayoutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackViewLayoutVC.h; sourceTree = "<group>"; };
 		42E6A36B23A38C4E007B4160 /* StackViewLayoutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackViewLayoutVC.m; sourceTree = "<group>"; };
+		42E6A36F23A3D6CA007B4160 /* TriangleTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleTextFieldView.h; sourceTree = "<group>"; };
+		42E6A37023A3D6CA007B4160 /* TriangleTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleTextFieldView.m; sourceTree = "<group>"; };
+		42E6A37223A3DEAC007B4160 /* FrameLayoutHeightVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameLayoutHeightVC.h; sourceTree = "<group>"; };
+		42E6A37323A3DEAC007B4160 /* FrameLayoutHeightVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameLayoutHeightVC.m; sourceTree = "<group>"; };
 		42F771F52193B9E400FFD237 /* BALoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALoadingView.h; sourceTree = "<group>"; };
 		42F771F62193B9E400FFD237 /* BAActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAActivityIndicatorView.m; sourceTree = "<group>"; };
 		42F771F72193B9E400FFD237 /* BALoadingWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALoadingWaveView.m; sourceTree = "<group>"; };
@@ -1833,6 +1839,26 @@
 			path = "1，UIStackView";
 			sourceTree = "<group>";
 		};
+		42E6A36D23A3D5F2007B4160 /* 1，UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				42E6A36A23A38C4E007B4160 /* StackViewLayoutVC.h */,
+				42E6A36B23A38C4E007B4160 /* StackViewLayoutVC.m */,
+			);
+			path = "1，UIStackView";
+			sourceTree = "<group>";
+		};
+		42E6A36E23A3D62D007B4160 /* 2，frame控制控件高度 */ = {
+			isa = PBXGroup;
+			children = (
+				42E6A36F23A3D6CA007B4160 /* TriangleTextFieldView.h */,
+				42E6A37023A3D6CA007B4160 /* TriangleTextFieldView.m */,
+				42E6A37223A3DEAC007B4160 /* FrameLayoutHeightVC.h */,
+				42E6A37323A3DEAC007B4160 /* FrameLayoutHeightVC.m */,
+			);
+			path = "2，frame控制控件高度";
+			sourceTree = "<group>";
+		};
 		42F771F42193B9E400FFD237 /* BALoadingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1874,8 +1900,8 @@
 		42FAF98123A1EE100049A836 /* 5，案例 */ = {
 			isa = PBXGroup;
 			children = (
-				42E6A36A23A38C4E007B4160 /* StackViewLayoutVC.h */,
-				42E6A36B23A38C4E007B4160 /* StackViewLayoutVC.m */,
+				42E6A36E23A3D62D007B4160 /* 2，frame控制控件高度 */,
+				42E6A36D23A3D5F2007B4160 /* 1，UIStackView */,
 			);
 			path = "5，案例";
 			sourceTree = "<group>";
@@ -2182,6 +2208,7 @@
 				42D635322191710F0063E763 /* CAShapeLayerVC.m in Sources */,
 				420CFE90229385E1003CB663 /* DrawGradientController.m in Sources */,
 				42F772092193BA9E00FFD237 /* BATransitionDemo.m in Sources */,
+				42E6A37123A3D6CA007B4160 /* TriangleTextFieldView.m in Sources */,
 				426D56202286C5CD0060AEF4 /* UITextView+Fit.m in Sources */,
 				420CFEA722938663003CB663 /* UIView+pgqViewExtension.m in Sources */,
 				420CFEC5229388EA003CB663 /* ImageWipeViewcontroller.m in Sources */,
@@ -2214,6 +2241,7 @@
 				42936E142192DA9D0076F47A /* TitleButton.m in Sources */,
 				4201D5CE221FE6480069080D /* UIImage+CornerRadius.m in Sources */,
 				42936E3B2192EAE30076F47A /* ComprehensiveCaseController.m in Sources */,
+				42E6A37423A3DEAC007B4160 /* FrameLayoutHeightVC.m in Sources */,
 				426D55EF2285C7E10060AEF4 /* Case3ViewController.m in Sources */,
 				420CFE7722938596003CB663 /* DrawLineColorView.m in Sources */,
 				420CFEAA22938663003CB663 /* PQTBDataSource.m in Sources */,

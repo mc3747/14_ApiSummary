@@ -12,6 +12,7 @@
 #import "TestCell.h"
 #import "ALiOSDemoListController.h"
 #import "StackViewLayoutVC.h"
+#import "FrameLayoutHeightVC.h"
 
 @interface AutoLayoutVC ()<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -51,6 +52,11 @@ static NSString *const CellId = @"CellId";
     }else if(indexPath.row == 6){
         
         StackViewLayoutVC *vc = [[StackViewLayoutVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if(indexPath.row == 7){
+        
+        FrameLayoutHeightVC *vc = [[FrameLayoutHeightVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }else{
