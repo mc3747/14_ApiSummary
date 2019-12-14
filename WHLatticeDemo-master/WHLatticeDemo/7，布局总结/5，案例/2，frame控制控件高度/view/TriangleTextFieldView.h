@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TriangleTextFieldView : UIView
--(void)showWarning:(NSString *)tips;
+-(void)showWarning:(NSString *)warning;
 -(void)hideWarning;
 
 @end

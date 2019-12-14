@@ -27,6 +27,7 @@
 
 + (NSArray *)modelList {
 //🟥🟧🟩🟦🟪🟨
+//    父控件高度由子控件来定
     NSArray *dictArray = @[
                 @{@"title": @"Frame系1👉", @"desc": @"🟥纯Frame"},
                 @{@"title": @"Frame系2👉", @"desc": @"🟥MyLayout"},
