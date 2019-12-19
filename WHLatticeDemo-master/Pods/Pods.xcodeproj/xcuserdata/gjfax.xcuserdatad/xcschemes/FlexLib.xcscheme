@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BEB49E190513C577CC015FEBD8A19BB"
+               BlueprintIdentifier = "317454BD8F0A72BD312FCA3621EC3E1E"
+               BuildableName = "libFlexLib.a"
                BlueprintName = "FlexLib"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libFlexLib.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

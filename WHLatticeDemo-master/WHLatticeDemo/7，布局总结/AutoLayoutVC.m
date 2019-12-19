@@ -13,6 +13,7 @@
 #import "ALiOSDemoListController.h"
 #import "StackViewLayoutVC.h"
 #import "FrameLayoutHeightVC.h"
+#import "JsonReturnLayoutVC.h"
 
 @interface AutoLayoutVC ()<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -57,6 +58,14 @@ static NSString *const CellId = @"CellId";
     }else if(indexPath.row == 7){
         
         FrameLayoutHeightVC *vc = [[FrameLayoutHeightVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if(indexPath.row == 8){
+        
+      
+        
+    }else if(indexPath.row == 9){
+        JsonReturnLayoutVC *vc = [[JsonReturnLayoutVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }else{

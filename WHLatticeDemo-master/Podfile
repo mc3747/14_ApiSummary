@@ -6,5 +6,8 @@ pod 'Masonry'
 pod 'ComponentKit'
 pod 'FlexLib'
 pod 'SDAutoLayout'
+pod 'MJExtension'
+pod 'SVPullToRefresh'
+pod 'AFNetworking'
 
 end

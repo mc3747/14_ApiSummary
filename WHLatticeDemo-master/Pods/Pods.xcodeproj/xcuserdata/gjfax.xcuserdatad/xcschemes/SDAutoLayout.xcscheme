@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "634596854AFBC31488C9AA7F60862002"
+               BlueprintIdentifier = "03932C47FBFD347205B2F367F78E9B63"
+               BuildableName = "libSDAutoLayout.a"
                BlueprintName = "SDAutoLayout"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libSDAutoLayout.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
