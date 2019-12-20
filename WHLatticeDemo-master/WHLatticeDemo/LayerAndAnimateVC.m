@@ -81,7 +81,7 @@
 
 - (IBAction)imageSummaryAction:(id)sender {
     ImageSummaryVC *vc = [[ImageSummaryVC alloc] init];
-    vc.title = @"UIKit常见图形问题总结";
+    vc.title = @"图形问题总结";
     [self.navigationController pushViewController:vc animated:YES];
 }
 

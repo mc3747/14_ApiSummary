@@ -62,6 +62,12 @@
 		4210994521EDB9CA0097102C /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994421EDB9C90097102C /* ArrayDataSource.m */; };
 		4210994A21EDBB0E0097102C /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994721EDBB0D0097102C /* TestCell.m */; };
 		4210994B21EDBB0E0097102C /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4210994821EDBB0E0097102C /* TestModel.m */; };
+		421FEBB723AC793A00DE4C4B /* DemoView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 421FEBB623AC793A00DE4C4B /* DemoView1.m */; };
+		421FEBBA23AC794600DE4C4B /* DemoView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 421FEBB923AC794600DE4C4B /* DemoView2.m */; };
+		421FEBBD23AC7CBD00DE4C4B /* DemoView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 421FEBBC23AC7CBD00DE4C4B /* DemoView3.m */; };
+		421FEBC023AC7CCA00DE4C4B /* DemoView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 421FEBBF23AC7CC900DE4C4B /* DemoView4.m */; };
+		421FEBC323ACA68100DE4C4B /* DemoView5.m in Sources */ = {isa = PBXBuildFile; fileRef = 421FEBC223ACA68100DE4C4B /* DemoView5.m */; };
+		421FEBC623ACA68F00DE4C4B /* DemoView6.m in Sources */ = {isa = PBXBuildFile; fileRef = 421FEBC523ACA68F00DE4C4B /* DemoView6.m */; };
 		4231A21C23AB538A00C9C63D /* JsonReturnLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4231A20923AB538800C9C63D /* JsonReturnLayoutVC.m */; };
 		4231A21D23AB538A00C9C63D /* 0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4231A20A23AB538800C9C63D /* 0.txt */; };
 		4231A21E23AB538A00C9C63D /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4231A20B23AB538800C9C63D /* 3.txt */; };
@@ -330,6 +336,18 @@
 		4210994721EDBB0D0097102C /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		4210994821EDBB0E0097102C /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		4210994921EDBB0E0097102C /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		421FEBB523AC793A00DE4C4B /* DemoView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView1.h; sourceTree = "<group>"; };
+		421FEBB623AC793A00DE4C4B /* DemoView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoView1.m; sourceTree = "<group>"; };
+		421FEBB823AC794600DE4C4B /* DemoView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView2.h; sourceTree = "<group>"; };
+		421FEBB923AC794600DE4C4B /* DemoView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoView2.m; sourceTree = "<group>"; };
+		421FEBBB23AC7CBD00DE4C4B /* DemoView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView3.h; sourceTree = "<group>"; };
+		421FEBBC23AC7CBD00DE4C4B /* DemoView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoView3.m; sourceTree = "<group>"; };
+		421FEBBE23AC7CC900DE4C4B /* DemoView4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView4.h; sourceTree = "<group>"; };
+		421FEBBF23AC7CC900DE4C4B /* DemoView4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoView4.m; sourceTree = "<group>"; };
+		421FEBC123ACA68000DE4C4B /* DemoView5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView5.h; sourceTree = "<group>"; };
+		421FEBC223ACA68100DE4C4B /* DemoView5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoView5.m; sourceTree = "<group>"; };
+		421FEBC423ACA68F00DE4C4B /* DemoView6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView6.h; sourceTree = "<group>"; };
+		421FEBC523ACA68F00DE4C4B /* DemoView6.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoView6.m; sourceTree = "<group>"; };
 		4231A20923AB538800C9C63D /* JsonReturnLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonReturnLayoutVC.m; sourceTree = "<group>"; };
 		4231A20A23AB538800C9C63D /* 0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 0.txt; sourceTree = "<group>"; };
 		4231A20B23AB538800C9C63D /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
@@ -768,6 +786,7 @@
 		420CFE5822938495003CB663 /* 6，图形总结 */ = {
 			isa = PBXGroup;
 			children = (
+				421FEBB423AC78E800DE4C4B /* View */,
 				4201D5CF221FE9080069080D /* ImageSummaryVC.h */,
 				4201D5D0221FE9080069080D /* ImageSummaryVC.m */,
 				4201D5D1221FE9080069080D /* ImageSummaryVC.xib */,
@@ -1075,6 +1094,25 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		421FEBB423AC78E800DE4C4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				421FEBB523AC793A00DE4C4B /* DemoView1.h */,
+				421FEBB623AC793A00DE4C4B /* DemoView1.m */,
+				421FEBB823AC794600DE4C4B /* DemoView2.h */,
+				421FEBB923AC794600DE4C4B /* DemoView2.m */,
+				421FEBBB23AC7CBD00DE4C4B /* DemoView3.h */,
+				421FEBBC23AC7CBD00DE4C4B /* DemoView3.m */,
+				421FEBBE23AC7CC900DE4C4B /* DemoView4.h */,
+				421FEBBF23AC7CC900DE4C4B /* DemoView4.m */,
+				421FEBC123ACA68000DE4C4B /* DemoView5.h */,
+				421FEBC223ACA68100DE4C4B /* DemoView5.m */,
+				421FEBC423ACA68F00DE4C4B /* DemoView6.h */,
+				421FEBC523ACA68F00DE4C4B /* DemoView6.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4231A20723AB4FC000C9C63D /* 3，masonry控制控件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1166,8 +1204,8 @@
 		426D55B12285C7E00060AEF4 /* Case5 */ = {
 			isa = PBXGroup;
 			children = (
-				426D55B22285C7E00060AEF4 /* Case5ViewController.m */,
 				426D55B32285C7E00060AEF4 /* Case5ViewController.h */,
+				426D55B22285C7E00060AEF4 /* Case5ViewController.m */,
 			);
 			path = Case5;
 			sourceTree = "<group>";
@@ -2242,6 +2280,7 @@
 				42D6353E219175880063E763 /* PDLayerLabel.m in Sources */,
 				42F772012193BA5F00FFD237 /* UIView+BAAnimation.m in Sources */,
 				4231A22423AB538A00C9C63D /* FSTapGestureRecognizer.m in Sources */,
+				421FEBC023AC7CCA00DE4C4B /* DemoView4.m in Sources */,
 				42D6350E21912ED00063E763 /* CALayerControlsViewController.m in Sources */,
 				426D55F22285C7E10060AEF4 /* Case14StairView.m in Sources */,
 				426D55FE2285C7E10060AEF4 /* Case11ViewController.m in Sources */,
@@ -2260,12 +2299,14 @@
 				426D56232286C5CD0060AEF4 /* UITextField+Fit.m in Sources */,
 				420CFEE82293911F003CB663 /* MainCollectionViewCell.m in Sources */,
 				420CFE7A22938596003CB663 /* DrawLineColorViewcontroller.m in Sources */,
+				421FEBB723AC793A00DE4C4B /* DemoView1.m in Sources */,
 				420CFEE52293911F003CB663 /* ListModel.m in Sources */,
 				42DE3B3E2264733C00422577 /* ALiOSDemo7ViewController.m in Sources */,
 				42936E0221928A420076F47A /* NSObject+LNRefresh.m in Sources */,
 				420CFE7C22938596003CB663 /* DrawRectView.m in Sources */,
 				42D6351021912ED00063E763 /* ClassListViewController.m in Sources */,
 				420CFE8C229385E1003CB663 /* DrawCircleViewcontroller.m in Sources */,
+				421FEBC323ACA68100DE4C4B /* DemoView5.m in Sources */,
 				42936DEC21928A420076F47A /* LNHeaderTaobaoAnimator.m in Sources */,
 				426D56252286C5CD0060AEF4 /* UIView+Fit.m in Sources */,
 				42DE3C1622647CD700422577 /* ALView+PureLayout.m in Sources */,
@@ -2282,9 +2323,11 @@
 				426D562D2286DB510060AEF4 /* AdaptPhoneManager.m in Sources */,
 				42F7720E2193BE3D00FFD237 /* BACAKeyframeAnimationDemo.m in Sources */,
 				426D55F12285C7E10060AEF4 /* Case14Cell.m in Sources */,
+				421FEBC623ACA68F00DE4C4B /* DemoView6.m in Sources */,
 				42D63535219171200063E763 /* CAEAGLLayerVC.m in Sources */,
 				420CFEC8229388EA003CB663 /* ImageContextViewcontroller.m in Sources */,
 				4210994121ED8F580097102C /* AutoLayoutVC.m in Sources */,
+				421FEBBD23AC7CBD00DE4C4B /* DemoView3.m in Sources */,
 				420CFE7622938596003CB663 /* DrawLineViewcontroller.m in Sources */,
 				420CFEA822938663003CB663 /* UIImage+PQImage.m in Sources */,
 				42DE3B3D2264733C00422577 /* ALiOSDemo1ViewController.m in Sources */,
@@ -2370,6 +2413,7 @@
 				42936E4C2192EB210076F47A /* DCPathButton.m in Sources */,
 				4201D5D2221FE9080069080D /* ImageSummaryVC.m in Sources */,
 				42936E4B2192EB210076F47A /* DWBubbleMenuButton.m in Sources */,
+				421FEBBA23AC794600DE4C4B /* DemoView2.m in Sources */,
 				420CFEC1229388EA003CB663 /* ImageClipCircleAndBorderViewcontroller.m in Sources */,
 				426D56212286C5CD0060AEF4 /* UILabel+Fit.m in Sources */,
 				42936E502192EB210076F47A /* MCFireworksView.m in Sources */,
