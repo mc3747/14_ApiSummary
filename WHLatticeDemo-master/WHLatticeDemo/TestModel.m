@@ -35,6 +35,7 @@
                 @{@"title": @"AutoLayout系1👉", @"desc":@"🟩纯AutoLayout"},
                 @{@"title": @"AutoLayout系2👉", @"desc": @"🟩Masonry"},
                 @{@"title": @"AutoLayout系3👉", @"desc": @"🟩PureLayout"},
+                @{@"title": @"控件系1👉", @"desc": @"🟨UIStackView"},
                 @{@"title": @"案例1👉", @"desc": @"🟦控件均分或者屏幕适配-UIStackView"},
                 @{@"title": @"案例2👉", @"desc": @"🟦控件自己的状态影响整个布局-frame"},
                 @{@"title": @"案例3👉", @"desc": @"🟦控件自己的状态影响整个布局-masory"},

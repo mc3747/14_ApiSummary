@@ -172,6 +172,12 @@
 		42936E552192EEA00076F47A /* selected.caf in Resources */ = {isa = PBXBuildFile; fileRef = 42936E522192EEA00076F47A /* selected.caf */; };
 		42936E562192EEA00076F47A /* fold.caf in Resources */ = {isa = PBXBuildFile; fileRef = 42936E532192EEA00076F47A /* fold.caf */; };
 		42936E572192EEA00076F47A /* bloom.caf in Resources */ = {isa = PBXBuildFile; fileRef = 42936E542192EEA00076F47A /* bloom.caf */; };
+		42B8E1A523ED7D7900108E09 /* UIView+QiAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1A423ED7D7900108E09 /* UIView+QiAddition.m */; };
+		42B8E1AA23ED7D8800108E09 /* QiFrameContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1A823ED7D8800108E09 /* QiFrameContentView.m */; };
+		42B8E1AB23ED7D8800108E09 /* QiFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1A923ED7D8800108E09 /* QiFrameViewController.m */; };
+		42B8E1B023ED7EEF00108E09 /* QiAutoresizingContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1AC23ED7EEE00108E09 /* QiAutoresizingContentView.m */; };
+		42B8E1B123ED7EEF00108E09 /* QiAutoresizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1AD23ED7EEF00108E09 /* QiAutoresizingViewController.m */; };
+		42B8E1B423ED7FB000108E09 /* QiStackViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1B323ED7FB000108E09 /* QiStackViewViewController.m */; };
 		42B93BF42191874A00CBB02D /* UIViewAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B93BF22191874A00CBB02D /* UIViewAnimationVC.m */; };
 		42B93BF52191874A00CBB02D /* UIViewAnimationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B93BF32191874A00CBB02D /* UIViewAnimationVC.xib */; };
 		42B93BFA2191877800CBB02D /* CALayerAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B93BF82191877800CBB02D /* CALayerAnimationVC.m */; };
@@ -542,6 +548,18 @@
 		42936E522192EEA00076F47A /* selected.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = selected.caf; sourceTree = "<group>"; };
 		42936E532192EEA00076F47A /* fold.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fold.caf; sourceTree = "<group>"; };
 		42936E542192EEA00076F47A /* bloom.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bloom.caf; sourceTree = "<group>"; };
+		42B8E1A323ED7D7900108E09 /* UIView+QiAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QiAddition.h"; sourceTree = "<group>"; };
+		42B8E1A423ED7D7900108E09 /* UIView+QiAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QiAddition.m"; sourceTree = "<group>"; };
+		42B8E1A623ED7D8700108E09 /* QiFrameContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiFrameContentView.h; sourceTree = "<group>"; };
+		42B8E1A723ED7D8800108E09 /* QiFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiFrameViewController.h; sourceTree = "<group>"; };
+		42B8E1A823ED7D8800108E09 /* QiFrameContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiFrameContentView.m; sourceTree = "<group>"; };
+		42B8E1A923ED7D8800108E09 /* QiFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiFrameViewController.m; sourceTree = "<group>"; };
+		42B8E1AC23ED7EEE00108E09 /* QiAutoresizingContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiAutoresizingContentView.m; sourceTree = "<group>"; };
+		42B8E1AD23ED7EEF00108E09 /* QiAutoresizingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiAutoresizingViewController.m; sourceTree = "<group>"; };
+		42B8E1AE23ED7EEF00108E09 /* QiAutoresizingContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiAutoresizingContentView.h; sourceTree = "<group>"; };
+		42B8E1AF23ED7EEF00108E09 /* QiAutoresizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiAutoresizingViewController.h; sourceTree = "<group>"; };
+		42B8E1B223ED7FAF00108E09 /* QiStackViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiStackViewViewController.h; sourceTree = "<group>"; };
+		42B8E1B323ED7FB000108E09 /* QiStackViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiStackViewViewController.m; sourceTree = "<group>"; };
 		42B93BF12191874A00CBB02D /* UIViewAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewAnimationVC.h; sourceTree = "<group>"; };
 		42B93BF22191874A00CBB02D /* UIViewAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationVC.m; sourceTree = "<group>"; };
 		42B93BF32191874A00CBB02D /* UIViewAnimationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIViewAnimationVC.xib; sourceTree = "<group>"; };
@@ -1015,6 +1033,12 @@
 		4210993821ED6C830097102C /* 1，纯Frame */ = {
 			isa = PBXGroup;
 			children = (
+				42B8E1A623ED7D8700108E09 /* QiFrameContentView.h */,
+				42B8E1A823ED7D8800108E09 /* QiFrameContentView.m */,
+				42B8E1A723ED7D8800108E09 /* QiFrameViewController.h */,
+				42B8E1A923ED7D8800108E09 /* QiFrameViewController.m */,
+				42B8E1A323ED7D7900108E09 /* UIView+QiAddition.h */,
+				42B8E1A423ED7D7900108E09 /* UIView+QiAddition.m */,
 			);
 			name = "1，纯Frame";
 			sourceTree = "<group>";
@@ -1029,6 +1053,10 @@
 		4210993A21ED6CAF0097102C /* 1，纯AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				42B8E1AE23ED7EEF00108E09 /* QiAutoresizingContentView.h */,
+				42B8E1AC23ED7EEE00108E09 /* QiAutoresizingContentView.m */,
+				42B8E1AF23ED7EEF00108E09 /* QiAutoresizingViewController.h */,
+				42B8E1AD23ED7EEF00108E09 /* QiAutoresizingViewController.m */,
 			);
 			name = "1，纯AutoLayout";
 			sourceTree = "<group>";
@@ -1958,6 +1986,8 @@
 		42E6A36923A38C12007B4160 /* 1，UIStackView */ = {
 			isa = PBXGroup;
 			children = (
+				42B8E1B223ED7FAF00108E09 /* QiStackViewViewController.h */,
+				42B8E1B323ED7FB000108E09 /* QiStackViewViewController.m */,
 			);
 			path = "1，UIStackView";
 			sourceTree = "<group>";
@@ -2240,6 +2270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42936DEE21928A420076F47A /* YLoadingPanel.m in Sources */,
+				42B8E1B423ED7FB000108E09 /* QiStackViewViewController.m in Sources */,
 				420CFEE92293911F003CB663 /* AxcCAAnimation.m in Sources */,
 				420CFEC4229388EA003CB663 /* ImageClipRectImageViewcontroller.m in Sources */,
 				42936E0121928A420076F47A /* LNFooterAnimator.m in Sources */,
@@ -2266,6 +2297,7 @@
 				42936E0521928A420076F47A /* DemoVC.m in Sources */,
 				42936DF121928A420076F47A /* LNHeaderKaolaAnimator.m in Sources */,
 				42936E322192EAAF0076F47A /* KeyFrameAnimationController.m in Sources */,
+				42B8E1B023ED7EEF00108E09 /* QiAutoresizingContentView.m in Sources */,
 				42936D9E219288640076F47A /* DrawSummaryVC.m in Sources */,
 				42936DFA21928A420076F47A /* LNHeaderToutiaoAnimator.m in Sources */,
 				42D63523219170A00063E763 /* CATextLayerVC.m in Sources */,
@@ -2301,6 +2333,7 @@
 				420CFE7A22938596003CB663 /* DrawLineColorViewcontroller.m in Sources */,
 				421FEBB723AC793A00DE4C4B /* DemoView1.m in Sources */,
 				420CFEE52293911F003CB663 /* ListModel.m in Sources */,
+				42B8E1AB23ED7D8800108E09 /* QiFrameViewController.m in Sources */,
 				42DE3B3E2264733C00422577 /* ALiOSDemo7ViewController.m in Sources */,
 				42936E0221928A420076F47A /* NSObject+LNRefresh.m in Sources */,
 				420CFE7C22938596003CB663 /* DrawRectView.m in Sources */,
@@ -2351,6 +2384,7 @@
 				426D55EB2285C7E10060AEF4 /* Case5ViewController.m in Sources */,
 				4231A22123AB538A00C9C63D /* FSGridLayoutView.m in Sources */,
 				42D63503219128FE0063E763 /* LayerAndAnimateVC.m in Sources */,
+				42B8E1B123ED7EEF00108E09 /* QiAutoresizingViewController.m in Sources */,
 				420CFE7822938596003CB663 /* DrawTexttView.m in Sources */,
 				42936DF821928A420076F47A /* LNHeaderMeituanAnimator.m in Sources */,
 				426D55F42285C7E10060AEF4 /* Case6ItemView.m in Sources */,
@@ -2384,6 +2418,7 @@
 				426D56082286B9670060AEF4 /* UIViewController+ContentView.m in Sources */,
 				426D55F82285C7E10060AEF4 /* Case8ViewController.m in Sources */,
 				42D63538219171350063E763 /* CATransformLayerVC.m in Sources */,
+				42B8E1AA23ED7D8800108E09 /* QiFrameContentView.m in Sources */,
 				42936DEA21928A420076F47A /* LNHeaderFeizhuAnimator.m in Sources */,
 				42936DFC21928A420076F47A /* LNRefreshAnimator.m in Sources */,
 				42F771FD2193B9E400FFD237 /* BALoadingView.m in Sources */,
@@ -2391,6 +2426,7 @@
 				42936E282192E0F60076F47A /* AppDelegate.m in Sources */,
 				420CFEC6229388EA003CB663 /* ImageAddWaterImageViewcontroller.m in Sources */,
 				426D55EE2285C7E10060AEF4 /* Case2ViewController.m in Sources */,
+				42B8E1A523ED7D7900108E09 /* UIView+QiAddition.m in Sources */,
 				426D55E52285C7E10060AEF4 /* Case10ViewController.m in Sources */,
 				420CFE91229385E1003CB663 /* DrawTextViewcontroller.m in Sources */,
 				42D6354E21917AC10063E763 /* AnimateSummaryVC.m in Sources */,

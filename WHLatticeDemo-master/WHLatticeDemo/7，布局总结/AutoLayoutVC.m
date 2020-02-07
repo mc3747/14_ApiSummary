@@ -14,6 +14,9 @@
 #import "StackViewLayoutVC.h"
 #import "FrameLayoutHeightVC.h"
 #import "JsonReturnLayoutVC.h"
+#import "QiFrameViewController.h"
+#import "QiAutoresizingViewController.h"
+#import "QiStackViewViewController.h"
 
 @interface AutoLayoutVC ()<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -40,7 +43,15 @@ static NSString *const CellId = @"CellId";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row == 4) {
+    if(indexPath.row == 0){
+        QiFrameViewController *vc = [[QiFrameViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if(indexPath.row == 3){
+           QiAutoresizingViewController *vc = [[QiAutoresizingViewController alloc] init];
+           [self.navigationController pushViewController:vc animated:YES];
+           
+    }else if (indexPath.row == 4) {
         // 1.获取当前的StoryBoard面板
         UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MasonryDemoViewController" bundle:nil];
         
@@ -50,27 +61,35 @@ static NSString *const CellId = @"CellId";
         // 3.这里以push的方式加载控制器
         [self.navigationController pushViewController:vc animated:YES];
       
+    }else if(indexPath.row == 5){
+        ALiOSDemoListController *vc = [[ALiOSDemoListController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }else if(indexPath.row == 6){
         
-        StackViewLayoutVC *vc = [[StackViewLayoutVC alloc] init];
+        QiStackViewViewController *vc = [[QiStackViewViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }else if(indexPath.row == 7){
         
-        FrameLayoutHeightVC *vc = [[FrameLayoutHeightVC alloc] init];
+        StackViewLayoutVC *vc = [[StackViewLayoutVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }else if(indexPath.row == 8){
         
-      
+        FrameLayoutHeightVC *vc = [[FrameLayoutHeightVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }else if(indexPath.row == 9){
+        
+      
+        
+    }else if(indexPath.row == 10){
         JsonReturnLayoutVC *vc = [[JsonReturnLayoutVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
     }else{
-        ALiOSDemoListController *vc = [[ALiOSDemoListController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
+        
     }
     
 }
