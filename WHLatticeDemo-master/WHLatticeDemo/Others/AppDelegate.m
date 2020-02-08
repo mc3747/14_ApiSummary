@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LayerAndAnimateVC.h"
-
+#import "XPRootNavigationController.h"
 
 @implementation AppDelegate
 
@@ -18,7 +18,7 @@
     
     _window.backgroundColor = [UIColor whiteColor];
     
-    UINavigationController *vc = [[UINavigationController alloc] initWithRootViewController:[LayerAndAnimateVC new]];
+    XPRootNavigationController *vc = [[XPRootNavigationController alloc] initWithRootViewController:[LayerAndAnimateVC new]];
     
     _window.rootViewController = vc;
     

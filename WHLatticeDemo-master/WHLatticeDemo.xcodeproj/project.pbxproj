@@ -178,6 +178,7 @@
 		42B8E1B023ED7EEF00108E09 /* QiAutoresizingContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1AC23ED7EEE00108E09 /* QiAutoresizingContentView.m */; };
 		42B8E1B123ED7EEF00108E09 /* QiAutoresizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1AD23ED7EEF00108E09 /* QiAutoresizingViewController.m */; };
 		42B8E1B423ED7FB000108E09 /* QiStackViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1B323ED7FB000108E09 /* QiStackViewViewController.m */; };
+		42B8E1BA23ED989A00108E09 /* XPRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B8E1B923ED989A00108E09 /* XPRootNavigationController.m */; };
 		42B93BF42191874A00CBB02D /* UIViewAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B93BF22191874A00CBB02D /* UIViewAnimationVC.m */; };
 		42B93BF52191874A00CBB02D /* UIViewAnimationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B93BF32191874A00CBB02D /* UIViewAnimationVC.xib */; };
 		42B93BFA2191877800CBB02D /* CALayerAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B93BF82191877800CBB02D /* CALayerAnimationVC.m */; };
@@ -560,6 +561,8 @@
 		42B8E1AF23ED7EEF00108E09 /* QiAutoresizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiAutoresizingViewController.h; sourceTree = "<group>"; };
 		42B8E1B223ED7FAF00108E09 /* QiStackViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiStackViewViewController.h; sourceTree = "<group>"; };
 		42B8E1B323ED7FB000108E09 /* QiStackViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiStackViewViewController.m; sourceTree = "<group>"; };
+		42B8E1B823ED989A00108E09 /* XPRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPRootNavigationController.h; sourceTree = "<group>"; };
+		42B8E1B923ED989A00108E09 /* XPRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPRootNavigationController.m; sourceTree = "<group>"; };
 		42B93BF12191874A00CBB02D /* UIViewAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewAnimationVC.h; sourceTree = "<group>"; };
 		42B93BF22191874A00CBB02D /* UIViewAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationVC.m; sourceTree = "<group>"; };
 		42B93BF32191874A00CBB02D /* UIViewAnimationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIViewAnimationVC.xib; sourceTree = "<group>"; };
@@ -1702,6 +1705,8 @@
 		42936E192192E0F60076F47A /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				42B8E1B823ED989A00108E09 /* XPRootNavigationController.h */,
+				42B8E1B923ED989A00108E09 /* XPRootNavigationController.m */,
 				42936E222192E0F60076F47A /* PrefixHeader.pch */,
 				42936E1A2192E0F60076F47A /* AppDelegate.h */,
 				42936E212192E0F60076F47A /* AppDelegate.m */,
@@ -2452,6 +2457,7 @@
 				421FEBBA23AC794600DE4C4B /* DemoView2.m in Sources */,
 				420CFEC1229388EA003CB663 /* ImageClipCircleAndBorderViewcontroller.m in Sources */,
 				426D56212286C5CD0060AEF4 /* UILabel+Fit.m in Sources */,
+				42B8E1BA23ED989A00108E09 /* XPRootNavigationController.m in Sources */,
 				42936E502192EB210076F47A /* MCFireworksView.m in Sources */,
 				42B93BF42191874A00CBB02D /* UIViewAnimationVC.m in Sources */,
 				42DE3C1722647CD700422577 /* NSArray+PureLayout.m in Sources */,
